@@ -1,0 +1,45 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<World>
+    <Entity name="homeScreen" active="false">
+        <HomeScreen navigationTabs="Home"/>
+
+        <Entity name="homeScreenZoomInTransition">
+            <Entity name="homeSectionButtons">
+                <!-- M::personalInformationButton -> personalInformationButton.Sprite -->
+                <Entity name="personalInformationButton" position="0 137 0" template="sectionButton" _text="TEXT_PERSONAL_INFORMATION" _color="BlueButton"/>
+                <!-- M::educationAndTrainingButton -> educationAndTrainingButton.Sprite -->
+                <Entity name="educationAndTrainingButton" position="137 137 0" template="sectionButton" _text="TEXT_EDUCATION_AND_TRAINING" _color="BlueButton"/>
+                <!-- M::professionalExperienceButton -> professionalExperienceButton.Sprite -->
+                <Entity name="professionalExperienceButton" position="0 0 0" template="sectionButton" _text="TEXT_PROFESSIONAL_EXPERIENCE" _color="BlueButton"/>
+                <!-- M::skillsAndInterestsButton -> skillsAndInterestsButton.Sprite -->
+                <Entity name="skillsAndInterestsButton" position="137 0 0" template="sectionButton" _text="TEXT_SKILLS_AND_INTERESTS" _color="BlueButton"/>
+                <SpriteGroup>
+                    <Sprite sprite="personalInformationButton.Sprite"/>
+                    <Sprite sprite="educationAndTrainingButton.Sprite"/>
+                    <Sprite sprite="professionalExperienceButton.Sprite"/>
+                    <Sprite sprite="skillsAndInterestsButton.Sprite"/>
+                </SpriteGroup>
+                <Layouter sprite="SpriteGroup" flags="HCenter|VCenter"/>
+            </Entity>
+            <Entity name="lkText">
+                <TextSprite text="TEXT_LUKASZ_KOSAKOWSKI" font="font22" color="0 0 0"/>
+                <Layouter sprite="TextSprite" flags="HCenter|Top" padding="0 -77"/>
+            </Entity>
+            <Entity name="seText">
+                <TextSprite text="TEXT_SOFTWARE_ENGINEER" font="font14" color="0 0 0"/>
+                <Layouter sprite="TextSprite" flags="HCenter|Top" padding="0 -104"/>
+            </Entity>
+            <Entity name="cvText">
+                <TextSprite text="TEXT_CURRICULUM_VITAE" font="font18" color="0 0 0"/>
+                <Layouter sprite="TextSprite" flags="HCenter|Bottom" padding="0 86"/>
+            </Entity>
+        </Entity>
+
+        <Entity name="aboutButton">
+            <!-- M::aboutButton -->
+            <Sprite image="images/menu/about_button.png" pivot="1 0" touchable="true"/>
+            <Layouter sprite="Sprite" flags="Right|Bottom" padding="0 35.75"/>
+        </Entity>
+    </Entity>
+</World>

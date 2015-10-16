@@ -1,0 +1,82 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<World>
+    <Entity name="projectDetailsScreen" active="false">
+        <ProjectDetailsScreen navigationTabs=""/>
+
+        <Template name="projectDetailsIcon">
+            <Sprite image="images/menu/icons/default.png" height="C::ui/projectDetails/icon/height" pivot="0.5 0.5" touchable="true"/>
+            <Layouter sprite="Sprite" parent="super.Frame" flags="Left|VCenter"/>
+        </Template>
+        <Template name="projectDetailsIconsLine">
+            <Frame width=":appWidth" height="14"/>
+            <Layouter sprite="Frame" flags="Left|Top" padding="._padding"/>
+            <Entity name="text">
+                <TextSprite text="._text" font="font14" color="LightBlueText"/>
+                <Layouter sprite="TextSprite" parent="super.Frame" flags="Left|VCenter"/>
+            </Entity>
+            <Entity name="icons">
+                <Frame width="0" height="C::ui/projectDetails/icon/height"/>
+                <Layouter sprite="Frame" parent="super.Frame" flags="Left|VCenter" padding="82 0"/>
+                <Entity name="noneText" active="false">
+                    <TextSprite text="TEXT_NONE" font="font14" color="0 0 0"/>
+                    <Layouter sprite="TextSprite" parent="super.Frame" flags="Left|VCenter"/>
+                </Entity>
+                <Entity name="icon1" template="projectDetailsIcon"/>
+                <Entity name="icon2" template="projectDetailsIcon"/>
+                <Entity name="icon3" template="projectDetailsIcon"/>
+                <Entity name="icon4" template="projectDetailsIcon"/>
+                <Entity name="icon5" template="projectDetailsIcon"/>
+                <Entity name="icon6" template="projectDetailsIcon"/>
+                <Entity name="icon7" template="projectDetailsIcon"/>
+                <Entity name="icon8" template="projectDetailsIcon"/>
+                <Entity name="icon9" template="projectDetailsIcon"/>
+                <Entity name="icon10" template="projectDetailsIcon"/>
+            </Entity>
+        </Template>
+
+        <Entity name="projectDetailsScreenZoomInTransition">
+            <Entity name="projectDetailsContent" position="10 -56 0">
+                <Entity name="projectDetailsIcon">
+                    <Frame width="0" height="42"/>
+                    <!-- M::projectDetailsIcon -->
+                    <Sprite image="images/menu/empty.png"/>
+                    <Layouter sprite="Frame" flags="Left|Top"/>
+                    <Entity name="projectDetailsName">
+                        <!-- M::projectDetailsName -->
+                        <TextSprite text="" translate="false" font="font19" pivot="0 0.5" color="0 0 0"/>
+                        <Layouter sprite="TextSprite" parent="super.Sprite" parentFlags="Right|VCenter" selfFlags="Left|VCenter" padding="15 0"/>
+                    </Entity>
+                </Entity>
+                <Entity name="projectDetailsDescription">
+                    <!-- M::projectDetailsDescription -->
+                    <TextSprite text="" translate="false" font="font14" color="0 0 0" width=":textWidth10" justify="Left" interline="3"/>
+                    <Layouter sprite="TextSprite" flags="Left|Top" padding="0 -57"/>
+                </Entity>
+                <!-- M::projectDetailsDescriptionShift -->
+                <Entity name="projectDetailsDescriptionShift">
+                    <Entity name="projectDetailsLines" position="0 -82 0">
+                        <!-- M::projectDetailsAppStores -->
+                        <Entity name="projectDetailsAppStores" template="projectDetailsIconsLine" _text="TEXT_APP_STORES_COLON" _padding="0 0"/>
+                        <Entity name="projectDetailsSection2" position="0 -38 0">
+                            <!-- M::projectDetailsTimeFrame -->
+                            <Entity name="projectDetailsTimeFrame" template="detailsTextLine" _key="TEXT_TIME_FRAME_COLON" _parent="" _padding="0 0"/>
+                            <!-- M::projectDetailsPublisher -->
+                            <Entity name="projectDetailsPublisher" template="detailsTextLine" _key="TEXT_PUBLISHER_COLON" _parent="" _padding="0 -25"/>
+                            <!-- M::projectDetailsPlatforms -->
+                            <Entity name="projectDetailsPlatforms" template="projectDetailsIconsLine" _text="TEXT_PLATFORMS_COLON" _padding="0 -50"/>
+                            <!-- M::projectDetailsDeviceClasses -->
+                            <Entity name="projectDetailsDeviceClasses" template="projectDetailsIconsLine" _text="TEXT_DEVICES_COLON" _padding="0 -75"/>
+                            <!-- M::projectDetailsMiddleware -->
+                            <Entity name="projectDetailsMiddleware" template="projectDetailsIconsLine" _text="TEXT_MIDDLEWARE_COLON" _padding="0 -100"/>
+                            <!-- M::projectDetailsLanguages -->
+                            <Entity name="projectDetailsLanguages" template="projectDetailsIconsLine" _text="TEXT_LANGUAGES_COLON" _padding="0 -125"/>
+                        </Entity>
+                    </Entity>
+                </Entity>
+            </Entity>
+        </Entity>
+
+        <Entity name="projectDetailsScreenSlideInBottomTransition" template="footerText" _text="TEXT_TAP_ICONS_TO_NAVIGATE"/>
+    </Entity>
+</World>

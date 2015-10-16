@@ -1,0 +1,59 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<OpenSourceLibraries>
+    <OpenSourceLibrary name="Box2D" icon="images/menu/icons/box2d.png" url="http://box2d.org/">
+        <Project name="Tau"/>
+        <Project name="Fable: Coin Golf"/>
+        <Project name="Funky Ball Worlds"/>
+    </OpenSourceLibrary>
+    <OpenSourceLibrary name="easyexif" icon="images/menu/icons/default.png" url="https://github.com/mayanklahiri/easyexif" firstUsed="2014/Q3">
+        <Project name="ING Mobile"/>
+        <Project name="Tau"/>
+    </OpenSourceLibrary>
+    <OpenSourceLibrary name="libjpeg" icon="images/menu/icons/default.png" url="http://www.ijg.org/" firstUsed="2014/Q3">
+        <Project name="ING Mobile"/>
+        <Project name="Tau"/>
+    </OpenSourceLibrary>
+    <OpenSourceLibrary name="libpng" icon="images/menu/icons/default.png" url="http://www.libpng.org/pub/png/libpng.html">
+        <Project name="Tau"/>
+        <Project name="Claw"/>
+    </OpenSourceLibrary>
+    <OpenSourceLibrary name="Lua" icon="images/menu/icons/lua.png" url="http://www.lua.org/">
+        <Project name="Tau"/>
+        <Project name="Claw"/>
+    </OpenSourceLibrary>
+    <OpenSourceLibrary name="Ogg" icon="images/menu/icons/xiph.png" url="https://xiph.org/ogg/">
+        <Project name="Tau"/>
+        <Project name="Claw"/>
+    </OpenSourceLibrary>
+    <OpenSourceLibrary name="pugixml" icon="images/menu/icons/default.png" url="http://pugixml.org/" firstUsed="2010/Q4">
+        <Project name="Tau"/>
+        <Project name="Claw"/>
+    </OpenSourceLibrary>
+    <OpenSourceLibrary name="Vorbis" icon="images/menu/icons/xiph.png" url="http://www.vorbis.com/">
+        <Project name="Tau"/>
+    </OpenSourceLibrary>
+    <OpenSourceLibrary name="zlib" icon="images/menu/icons/zlib.png" url="http://www.zlib.net/">
+        <Project name="Tau"/>
+        <Project name="Claw"/>
+    </OpenSourceLibrary>
+    <OpenSourceLibrary name="FreeType" icon="images/menu/icons/freetype.png" url="http://www.freetype.org/">
+        <Project name="Tau"/>
+        <Project name="Claw"/>
+    </OpenSourceLibrary>
+    <OpenSourceLibrary name="FFmpeg" icon="images/menu/icons/ffmpeg.png" url="https://www.ffmpeg.org/">
+        <Project name="I Am MTV"/>
+    </OpenSourceLibrary>
+    <OpenSourceLibrary name="OpenCV" icon="images/menu/icons/opencv.png" url="http://opencv.org/">
+        <Project name="ING Mobile"/>
+    </OpenSourceLibrary>
+    <OpenSourceLibrary name="SQLite" icon="images/menu/icons/sqlite.png" url="https://www.sqlite.org/">
+        <Project name="Lyric Legend"/>
+    </OpenSourceLibrary>
+    <OpenSourceLibrary name="ezXML" icon="images/menu/icons/default.png" url="http://ezxml.sourceforge.net/">
+        <Project name="Claw"/>
+    </OpenSourceLibrary>
+    <OpenSourceLibrary name="Tremor" icon="images/menu/icons/xiph.png" url="https://wiki.xiph.org/Tremor">
+        <Project name="Claw"/>
+    </OpenSourceLibrary>
+</OpenSourceLibraries>

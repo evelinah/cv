@@ -1,0 +1,7 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<Settings>
+    <String name="projectsSortBy" value="Date"/>
+    <String name="sdkIntegrationSortBy" value="Platform"/>
+    <String name="categorySortBy" value="Projects"/>
+</Settings>

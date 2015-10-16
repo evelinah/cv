@@ -1,0 +1,58 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<DeviceClasses>
+    <DeviceClass name="Mobile" icon="images/menu/icons/mobile.png" url="https://en.wikipedia.org/wiki/Smartphone">
+        <Project name="HERE Maps"/>
+        <Project name="I Am MTV"/>
+        <Project name="ING Mobile"/>
+        <Project name="7TV"/>
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+        <Project name="Slots: Journey Of Magic"/>
+        <Project name="League Of Heroes"/>
+        <Project name="Monster Shooter"/>
+        <Project name="TGOL iOS6"/>
+        <Project name="The Sims 3 iOS6"/>
+        <Project name="Super Boost"/>
+        <Project name="Video Pro Symbian Belle"/>
+        <Project name="Silent Film Director Symbian Belle"/>
+        <Project name="Crazy Hamster iOS"/>
+        <Project name="Silent Film Director"/>
+        <Project name="Crazy Hamster Android"/>
+        <Project name="Serce Zimy"/>
+        <Project name="Tau"/>
+        <Project name="Lyric Legend"/>
+        <Project name="Fable: Coin Golf"/>
+        <Project name="Cardio Tracker"/>
+        <Project name="Crazy Hamster"/>
+        <Project name="The Sims 3"/>
+        <Project name="Ninja Fighter"/>
+        <Project name="Yeti Sports"/>
+        <Project name="Time Crisis"/>
+        <Project name="Tiger Woods"/>
+        <Project name="Claw"/>
+    </DeviceClass>
+    <DeviceClass name="Desktop" icon="images/menu/icons/desktop.png" url="https://en.wikipedia.org/wiki/Personal_computer">
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+        <Project name="7TV"/>
+        <Project name="Monster Shooter OS X"/>
+        <Project name="TGOL OS X"/>
+        <Project name="Serce Zimy"/>
+        <Project name="Tau"/>
+        <Project name="Block Cascade Fusion"/>
+        <Project name="Funky Ball Worlds"/>
+        <Project name="Despicable Me"/>
+        <Project name="Claw"/>
+        <Project name="GPE"/>
+    </DeviceClass>
+    <DeviceClass name="TV (set-top box)" icon="images/menu/icons/tv.png" url="https://en.wikipedia.org/wiki/Set-top_box" firstUsed="2013/Q3">
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+        <Project name="TGOL Fire TV"/>
+        <Project name="Tau"/>
+    </DeviceClass>
+    <DeviceClass name="Embedded" icon="images/menu/icons/embedded.png" url="https://en.wikipedia.org/wiki/Embedded_system">
+        <Project name="IP-DSLAM"/>
+    </DeviceClass>
+</DeviceClasses>

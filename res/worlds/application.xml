@@ -1,0 +1,56 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<World>
+    <Entity name="config">
+        <ApplicationConfig firstWorld="worlds/menu.xml"
+                           loadingWorld="worlds/loading.xml"
+                           timeFactor="1"
+                           logicFps="60"
+                           multiTouch="false"
+                           maxDt="0.1"/>
+
+        <ThreadConfig globalEnabled="true">
+            <Category name="loading" enabled="false"/>
+            <Category name="networking" enabled="true"/>
+        </ThreadConfig>
+
+        <SettingsConfig allowUnencrypted="false"
+                        allowForeign="false"
+                        unencryptedInDebug="true"
+                        unencryptedInRelease="false"
+                        memoryCrypto="true"/>
+
+        <AbstractSpriteConfig debug="false"
+                              debugTouch="false"
+                              globalSubpixel=""/>
+    </Entity>
+
+    <Include file="sgl/worlds/application/physics.xml"/>
+    <Include file="sgl/worlds/application/camera.xml"/>
+    <Include file="sgl/worlds/application/debug.xml"/>
+
+    <Include file="sgl/worlds/application/analytics.xml"/>
+    <Include file="sgl/worlds/application/screenDimmer.xml"/>
+    <Include file="sgl/worlds/application/settings.xml"/>
+
+    <Entity name="app">
+        <!-- A::app -->
+        <App/>
+    </Entity>
+
+    <Entity name="dictionary">
+        <Dictionary>
+            <Language name="en" file="texts/en.xml"/>
+        </Dictionary>
+    </Entity>
+
+    <Entity name="models">
+        <!-- A::educationAndTraining -->
+        <EducationAndTrainingModels file="data/educationAndTraining.xml"/>
+        <!-- A::professionalExperience -->
+        <ProfessionalExperienceModels categoriesFile="data/professionalExperience/categories.xml"
+                                      publishersFile="data/professionalExperience/publishers.xml"/>
+        <!-- A::skillsAndInterests -->
+        <SkillsAndInterestsModels file="data/skillsAndInterests.xml"/>
+    </Entity>
+</World>

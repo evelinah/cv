@@ -1,0 +1,60 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<VCSs>
+    <VCS name="Git" icon="images/menu/icons/git.png" url="https://git-scm.com/">
+        <Project name="HERE Maps"/>
+        <Project name="I Am MTV"/>
+        <Project name="ING Mobile"/>
+        <Project name="7TV"/>
+        <Project name="TGOL Fire TV"/>
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+        <Project name="Slots: Journey Of Magic"/>
+        <Project name="League Of Heroes"/>
+        <Project name="Monster Shooter"/>
+        <Project name="Monster Shooter OS X"/>
+        <Project name="TGOL OS X"/>
+        <Project name="Tau"/>
+        <Project name="Yeti Sports"/>
+        <Project name="Claw"/>
+    </VCS>
+    <VCS name="SVN" icon="images/menu/icons/svn.png" url="https://subversion.apache.org/">
+        <Project name="Super Boost"/>
+        <Project name="Video Pro Symbian Belle"/>
+        <Project name="Silent Film Director Symbian Belle"/>
+        <Project name="Crazy Hamster iOS"/>
+        <Project name="Silent Film Director"/>
+        <Project name="Crazy Hamster Android"/>
+        <Project name="Serce Zimy"/>
+        <Project name="Tau"/>
+        <Project name="Lyric Legend"/>
+        <Project name="Cardio Tracker"/>
+        <Project name="Crazy Hamster"/>
+        <Project name="Claw Mini Games"/>
+        <Project name="Block Cascade Fusion"/>
+        <Project name="Funky Ball Worlds"/>
+        <Project name="Ninja Fighter"/>
+        <Project name="Despicable Me"/>
+        <Project name="Time Crisis"/>
+        <Project name="Tiger Woods"/>
+        <Project name="GPE"/>
+    </VCS>
+    <VCS name="Mercurial" icon="images/menu/icons/mercurial.png" url="https://mercurial.selenic.com/">
+        <Project name="HERE Maps"/>
+        <Project name="Tau"/>
+    </VCS>
+    <VCS name="Perforce" icon="images/menu/icons/perforce.png" url="http://www.perforce.com/">
+        <Project name="TGOL Fire TV"/>
+        <Project name="TGOL iOS6"/>
+        <Project name="The Sims 3 iOS6"/>
+        <Project name="TGOL OS X"/>
+        <Project name="Fable: Coin Golf"/>
+        <Project name="The Sims 3"/>
+    </VCS>
+    <VCS name="CVS" icon="images/menu/icons/cvs.png" url="http://savannah.nongnu.org/projects/cvs">
+        <Project name="IP-DSLAM"/>
+    </VCS>
+    <VCS name="ClearCase" icon="images/menu/icons/clearcase.png" url="http://www-03.ibm.com/software/products/en/clearcase">
+        <Project name="IP-DSLAM"/>
+    </VCS>
+</VCSs>

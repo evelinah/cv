@@ -1,0 +1,61 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<IDEs>
+    <IDE name="Visual Studio" icon="images/menu/icons/visual_studio.png" url="https://www.visualstudio.com/">
+        <Project name="ING Mobile"/>
+        <Project name="7TV"/>
+        <Project name="TGOL Fire TV"/>
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+        <Project name="Slots: Journey Of Magic"/>
+        <Project name="League Of Heroes"/>
+        <Project name="Monster Shooter"/>
+        <Project name="Crazy Hamster Android"/>
+        <Project name="Serce Zimy"/>
+        <Project name="Tau"/>
+        <Project name="Lyric Legend"/>
+        <Project name="Fable: Coin Golf"/>
+        <Project name="Crazy Hamster"/>
+        <Project name="The Sims 3"/>
+        <Project name="Claw Mini Games"/>
+        <Project name="Block Cascade Fusion"/>
+        <Project name="Funky Ball Worlds"/>
+        <Project name="Yeti Sports"/>
+        <Project name="Tiger Woods"/>
+        <Project name="Claw"/>
+        <Project name="GPE"/>
+    </IDE>
+    <IDE name="Xcode" icon="images/menu/icons/xcode.png" url="https://developer.apple.com/xcode/" firstUsed="2009/Q3">
+        <Project name="HERE Maps"/>
+        <Project name="ING Mobile"/>
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+        <Project name="Slots: Journey Of Magic"/>
+        <Project name="League Of Heroes"/>
+        <Project name="Monster Shooter"/>
+        <Project name="Monster Shooter OS X"/>
+        <Project name="TGOL iOS6"/>
+        <Project name="The Sims 3 iOS6"/>
+        <Project name="TGOL OS X"/>
+        <Project name="Crazy Hamster iOS"/>
+        <Project name="Tau"/>
+        <Project name="Claw"/>
+    </IDE>
+    <IDE name="Qt Creator" icon="images/menu/icons/qt.png" url="https://www.qt.io/">
+        <Project name="Video Pro Symbian Belle"/>
+        <Project name="Silent Film Director Symbian Belle"/>
+        <Project name="Silent Film Director"/>
+        <Project name="Cardio Tracker"/>
+    </IDE>
+    <IDE name="Unity" icon="images/menu/icons/unity.png" url="https://unity3d.com/">
+        <Project name="Super Boost"/>
+        <Project name="Despicable Me"/>
+    </IDE>
+    <IDE name="MonoDevelop" icon="images/menu/icons/mono_develop.png" url="http://www.monodevelop.com/">
+        <Project name="Super Boost"/>
+        <Project name="Despicable Me"/>
+    </IDE>
+    <IDE name="Eclipse" icon="images/menu/icons/eclipse.png" url="https://eclipse.org/">
+        <Project name="Time Crisis"/>
+    </IDE>
+</IDEs>

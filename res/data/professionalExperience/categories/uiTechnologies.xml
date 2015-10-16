@@ -1,0 +1,58 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<UITechnologies>
+    <UITechnology name="UIKit" icon="images/menu/icons/xcode.png" url="https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIKit_Framework/">
+        <Project name="HERE Maps"/>
+    </UITechnology>
+    <UITechnology name="WPF" icon="images/menu/icons/xaml.png" url="https://msdn.microsoft.com/en-us/library/ms754130(v=vs.110).aspx">
+        <Project name="7TV"/>
+    </UITechnology>
+    <UITechnology name="Qt Creator" icon="images/menu/icons/qt.png" url="http://www.qt.io/ide/">
+        <Project name="Silent Film Director Symbian Belle"/>
+        <Project name="Silent Film Director"/>
+        <Project name="Cardio Tracker"/>
+    </UITechnology>
+    <UITechnology name="QML" icon="images/menu/icons/qt.png" url="http://doc.qt.io/qt-5/qtqml-index.html">
+        <Course name="Meego Hands-On"/>
+    </UITechnology>
+    <UITechnology name="Marmalade IwUI" icon="images/menu/icons/marmalade.png" url="http://docs.madewithmarmalade.com/display/MD/IwUI+overview">
+        <Project name="ING Mobile"/>
+        <Project name="TGOL Fire TV"/>
+        <Project name="TGOL iOS6"/>
+        <Project name="TGOL OS X"/>
+        <Project name="Fable: Coin Golf"/>
+        <Project name="The Sims 3"/>
+    </UITechnology>
+    <UITechnology name="Unity UI" icon="images/menu/icons/unity.png" url="https://unity3d.com/learn/tutorials/topics/user-interface-ui">
+        <Project name="Super Boost"/>
+        <Project name="Despicable Me"/>
+    </UITechnology>
+    <UITechnology name="Tau Graphics" icon="images/menu/icons/tau.png">
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+        <Project name="Tau"/>
+    </UITechnology>
+    <UITechnology name="Claw Guif" icon="images/menu/icons/claw.png">
+        <Project name="Monster Shooter"/>
+        <Project name="Monster Shooter OS X"/>
+        <Project name="TGOL OS X"/>
+        <Project name="Crazy Hamster iOS"/>
+        <Project name="Crazy Hamster Android"/>
+        <Project name="Serce Zimy"/>
+        <Project name="Crazy Hamster"/>
+        <Project name="Claw Mini Games"/>
+        <Project name="Block Cascade Fusion"/>
+        <Project name="Funky Ball Worlds"/>
+        <Project name="Ninja Fighter"/>
+        <Project name="Yeti Sports"/>
+        <Project name="Tiger Woods"/>
+        <Project name="Claw"/>
+    </UITechnology>
+    <UITechnology name="Windows Forms" icon="images/menu/icons/windows.png" url="https://msdn.microsoft.com/en-us/library/dd30h2yb(v=vs.110).aspx">
+        <Project name="Serce Zimy"/>
+        <Project name="GPE"/>
+    </UITechnology>
+    <UITechnology name="Tkinter" icon="images/menu/icons/tkinter.png" url="https://docs.python.org/2/library/tkinter.html">
+        <Project name="Tau"/>
+    </UITechnology>
+</UITechnologies>

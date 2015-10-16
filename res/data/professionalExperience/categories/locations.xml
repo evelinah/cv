@@ -1,0 +1,55 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<Locations>
+    <Location name="Szczecin, Poland" icon="images/menu/icons/poland.png" url="https://en.wikipedia.org/wiki/Szczecin">
+        <Project name="HERE Maps"/>
+        <Project name="I Am MTV"/>
+        <Project name="ING Mobile"/>
+        <Project name="7TV"/>
+        <Project name="TGOL Fire TV"/>
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+        <Project name="Slots: Journey Of Magic"/>
+        <Project name="League Of Heroes"/>
+        <Project name="Monster Shooter"/>
+        <Project name="Monster Shooter OS X"/>
+        <Project name="TGOL iOS6"/>
+        <Project name="The Sims 3 iOS6"/>
+        <Project name="Super Boost"/>
+        <Project name="Video Pro Symbian Belle"/>
+        <Project name="Silent Film Director Symbian Belle"/>
+        <Project name="TGOL OS X"/>
+        <Project name="Crazy Hamster iOS"/>
+        <Project name="Silent Film Director"/>
+        <Project name="Crazy Hamster Android"/>
+        <Project name="Serce Zimy"/>
+        <Project name="Tau"/>
+        <Project name="Lyric Legend"/>
+        <Project name="Cardio Tracker"/>
+        <Project name="Crazy Hamster"/>
+        <Project name="Claw Mini Games"/>
+        <Project name="Block Cascade Fusion"/>
+        <Project name="Funky Ball Worlds"/>
+        <Project name="Ninja Fighter"/>
+        <Project name="Despicable Me"/>
+        <Project name="Yeti Sports"/>
+        <Project name="Time Crisis"/>
+        <Project name="Tiger Woods"/>
+        <Project name="Claw"/>
+        <Project name="GPE"/>
+        <Project name="IP-DSLAM"/>
+    </Location>
+    <Location name="London, UK" icon="images/menu/icons/uk.png" url="https://en.wikipedia.org/wiki/London">
+        <Project name="Fable: Coin Golf"/>
+        <Project name="The Sims 3"/>
+    </Location>
+    <Location name="Espoo, Finland" icon="images/menu/icons/finland.png" url="https://en.wikipedia.org/wiki/Espoo">
+        <Course name="Meego Hands-On"/>
+    </Location>
+    <Location name="Greifswald, Germany" icon="images/menu/icons/germany.png" url="https://en.wikipedia.org/wiki/Greifswald" firstUsed="2007/Q2" lastUsed="2007/Q3">
+        <Project name="IP-DSLAM"/>
+    </Location>
+    <Location name="Munich, Germany" icon="images/menu/icons/germany.png" url="https://en.wikipedia.org/wiki/Munich" firstUsed="2013/Q4" lastUsed="2013/Q4">
+        <Project name="7TV"/>
+    </Location>
+</Locations>

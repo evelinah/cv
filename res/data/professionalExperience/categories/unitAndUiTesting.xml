@@ -1,0 +1,16 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<UnitAndUITestings>
+    <UnitAndUITesting name="XCTest" icon="images/menu/icons/xcode.png" url="https://developer.apple.com/library/prerelease/ios/documentation/DeveloperTools/Conceptual/testing_with_xcode/chapters/01-introduction.html">
+        <Project name="HERE Maps"/>
+    </UnitAndUITesting>
+    <UnitAndUITesting name="OCMock" icon="images/menu/icons/ocmock.png" url="http://ocmock.org/">
+        <Project name="HERE Maps"/>
+    </UnitAndUITesting>
+    <UnitAndUITesting name="Calabash" icon="images/menu/icons/calabash.png" url="http://calaba.sh/">
+        <Project name="HERE Maps"/>
+    </UnitAndUITesting>
+    <UnitAndUITesting name="Cucumber" icon="images/menu/icons/cucumber.png" url="https://cucumber.io/">
+        <Project name="HERE Maps"/>
+    </UnitAndUITesting>
+</UnitAndUITestings>

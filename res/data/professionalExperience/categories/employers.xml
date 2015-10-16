@@ -1,0 +1,44 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<Employers>
+    <Employer name="BLStream" startDate="2013/Q3" endDate="-" icon="images/menu/icons/blstream.png" url="http://blstream.com/">
+        <Project name="HERE Maps"/>
+        <Project name="I Am MTV"/>
+        <Project name="ING Mobile"/>
+        <Project name="7TV"/>
+        <Project name="TGOL Fire TV"/>
+    </Employer>
+    <Employer name="Gamelion Studios" startDate="2009/Q1" endDate="2013/Q3" icon="images/menu/icons/gamelion.png" url="https://www.game-lion.com">
+        <Project name="Slots: Journey Of Magic"/>
+        <Project name="League Of Heroes"/>
+        <Project name="Monster Shooter"/>
+        <Project name="Monster Shooter OS X"/>
+        <Project name="TGOL iOS6"/>
+        <Project name="The Sims 3 iOS6"/>
+        <Project name="Super Boost"/>
+        <Project name="Video Pro Symbian Belle"/>
+        <Project name="Silent Film Director Symbian Belle"/>
+        <Project name="TGOL OS X"/>
+        <Project name="Crazy Hamster iOS"/>
+        <Project name="Silent Film Director"/>
+        <Project name="Crazy Hamster Android"/>
+        <Project name="Serce Zimy"/>
+        <Project name="Lyric Legend"/>
+        <Project name="Fable: Coin Golf"/>
+        <Project name="Cardio Tracker"/>
+        <Project name="Crazy Hamster"/>
+        <Project name="The Sims 3"/>
+        <Project name="Claw Mini Games"/>
+        <Project name="Block Cascade Fusion"/>
+        <Project name="Funky Ball Worlds"/>
+        <Project name="Ninja Fighter"/>
+        <Project name="Despicable Me"/>
+        <Project name="Yeti Sports"/>
+        <Project name="Time Crisis"/>
+        <Project name="Tiger Woods"/>
+        <Project name="Claw"/>
+    </Employer>
+    <Employer name="TietoEnator RTS" startDate="2006/Q4" endDate="2008/Q2" icon="images/menu/icons/tieto.png" url="http://www.tieto.pl/">
+        <Project name="IP-DSLAM"/>
+    </Employer>
+</Employers>

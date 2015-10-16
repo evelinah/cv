@@ -1,0 +1,112 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<ProgrammingLanguages>
+    <ProgrammingLanguage name="C" icon="images/menu/icons/c.png" url="https://en.wikipedia.org/wiki/C_(programming_language)">
+        <Project name="I Am MTV"/>
+        <Project name="ING Mobile"/>
+        <Project name="Tau"/>
+        <Project name="Lyric Legend"/>
+        <Project name="Claw"/>
+        <Project name="IP-DSLAM"/>
+        <School name="Technical University of Szczecin"/>
+        <School name="High School"/>
+    </ProgrammingLanguage>
+    <ProgrammingLanguage name="C++" icon="images/menu/icons/c++.png" url="https://en.wikipedia.org/wiki/C%2B%2B" firstUsed="2006/Q4">
+        <Project name="ING Mobile"/>
+        <Project name="TGOL Fire TV"/>
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+        <Project name="Slots: Journey Of Magic"/>
+        <Project name="League Of Heroes"/>
+        <Project name="Monster Shooter"/>
+        <Project name="Monster Shooter OS X"/>
+        <Project name="TGOL iOS6"/>
+        <Project name="The Sims 3 iOS6"/>
+        <Project name="Video Pro Symbian Belle"/>
+        <Project name="Silent Film Director Symbian Belle"/>
+        <Project name="TGOL OS X"/>
+        <Project name="Crazy Hamster iOS"/>
+        <Project name="Silent Film Director"/>
+        <Project name="Crazy Hamster Android"/>
+        <Project name="Serce Zimy"/>
+        <Project name="Tau"/>
+        <Project name="Lyric Legend"/>
+        <Project name="Cardio Tracker"/>
+        <Project name="Crazy Hamster"/>
+        <Project name="The Sims 3"/>
+        <Project name="Claw Mini Games"/>
+        <Project name="Block Cascade Fusion"/>
+        <Project name="Funky Ball Worlds"/>
+        <Project name="Ninja Fighter"/>
+        <Project name="Yeti Sports"/>
+        <Project name="Tiger Woods"/>
+        <Project name="Claw"/>
+        <Project name="GPE"/>
+        <School name="Technical University of Szczecin"/>
+        <School name="High School"/>
+    </ProgrammingLanguage>
+    <ProgrammingLanguage name="C#" icon="images/menu/icons/c_sharp.png" url="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)">
+        <Project name="7TV"/>
+        <Project name="Super Boost"/>
+        <Project name="Serce Zimy"/>
+        <Project name="Fable: Coin Golf"/>
+        <Project name="Despicable Me"/>
+        <Project name="GPE"/>
+    </ProgrammingLanguage>
+    <ProgrammingLanguage name="Objective-C" icon="images/menu/icons/objective_c.png" url="https://en.wikipedia.org/wiki/Objective-C" firstUsed="2009/Q3">
+        <Project name="HERE Maps"/>
+        <Project name="Monster Shooter OS X"/>
+        <Project name="TGOL iOS6"/>
+        <Project name="The Sims 3 iOS6"/>
+        <Project name="TGOL OS X"/>
+        <Project name="Tau"/>
+        <Project name="Crazy Hamster iOS"/>
+        <Project name="The Sims 3"/>
+        <Project name="Yeti Sports"/>
+        <Project name="Claw"/>
+    </ProgrammingLanguage>
+    <ProgrammingLanguage name="Java" icon="images/menu/icons/java.png" url="https://en.wikipedia.org/wiki/Java_(programming_language)" firstUsed="2009/Q2">
+        <Project name="I Am MTV"/>
+        <Project name="TGOL Fire TV"/>
+        <Project name="Tau"/>
+        <Project name="Crazy Hamster Android"/>
+        <Project name="Claw"/>
+        <Project name="Time Crisis"/>
+    </ProgrammingLanguage>
+    <ProgrammingLanguage name="Python" icon="images/menu/icons/python.png" url="https://en.wikipedia.org/wiki/Python_(programming_language)">
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+        <Project name="Monster Shooter OS X"/>
+        <Project name="Crazy Hamster Android"/>
+        <Project name="Tau"/>
+        <Project name="Crazy Hamster iOS"/>
+        <Project name="Crazy Hamster"/>
+        <Project name="Claw Mini Games"/>
+        <Project name="The Sims 3"/>
+    </ProgrammingLanguage>
+    <ProgrammingLanguage name="Lua" icon="images/menu/icons/lua.png" url="https://en.wikipedia.org/wiki/Lua_(programming_language)">
+        <Project name="Monster Shooter"/>
+        <Project name="Monster Shooter OS X"/>
+        <Project name="TGOL OS X"/>
+        <Project name="Crazy Hamster iOS"/>
+        <Project name="Crazy Hamster Android"/>
+        <Project name="Serce Zimy"/>
+        <Project name="Crazy Hamster"/>
+        <Project name="Claw Mini Games"/>
+        <Project name="Block Cascade Fusion"/>
+        <Project name="Funky Ball Worlds"/>
+        <Project name="Ninja Fighter"/>
+        <Project name="Yeti Sports"/>
+        <Project name="Tiger Woods"/>
+        <Project name="Claw"/>
+    </ProgrammingLanguage>
+    <ProgrammingLanguage name="Ruby" icon="images/menu/icons/ruby.png" url="https://en.wikipedia.org/wiki/Lua_(programming_language)">
+        <Project name="HERE Maps"/>
+    </ProgrammingLanguage>
+    <ProgrammingLanguage name="Perl" icon="images/menu/icons/perl.png" url="https://en.wikipedia.org/wiki/Perl">
+        <Project name="Claw"/>
+    </ProgrammingLanguage>
+    <ProgrammingLanguage name="QML" icon="images/menu/icons/qt.png" url="https://en.wikipedia.org/wiki/QML">
+        <Course name="Meego Hands-On"/>
+    </ProgrammingLanguage>
+</ProgrammingLanguages>

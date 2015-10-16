@@ -1,0 +1,29 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<World>
+    <Entity name="skillsAndInterestsScreen" active="false">
+        <SkillsAndInterestsScreen navigationTabs="Home/Skills &amp; interests"/>
+
+        <Entity name="skillsAndInterestsScreenZoomInTransition">
+            <Entity name="skillsAndInterestsSectionButtons">
+                <!-- M::traitsButton -> traitsButton.Sprite -->
+                <Entity name="traitsButton" position="0 137 0" template="sectionButton" _text="TEXT_TRAITS" _color="LightBlueButton"/>
+                <!-- M::languagesButton -> languagesButton.Sprite -->
+                <Entity name="languagesButton" position="137 137 0" template="sectionButton" _text="TEXT_LANGUAGES" _color="LightBlueButton"/>
+                <!-- M::interestsButton -> interestsButton.Sprite -->
+                <Entity name="interestsButton" position="0 0 0" template="sectionButton" _text="TEXT_INTERESTS" _color="LightBlueButton"/>
+                <!-- M::philosophyButton -> philosophyButton.Sprite -->
+                <Entity name="philosophyButton" position="137 0 0" template="sectionButton" _text="TEXT_PHILOSOPHY" _color="LightBlueButton"/>
+                <SpriteGroup>
+                    <Sprite sprite="traitsButton.Sprite"/>
+                    <Sprite sprite="languagesButton.Sprite"/>
+                    <Sprite sprite="interestsButton.Sprite"/>
+                    <Sprite sprite="philosophyButton.Sprite"/>
+                </SpriteGroup>
+                <Layouter sprite="SpriteGroup" flags="HCenter|VCenter"/>
+            </Entity>
+        </Entity>
+
+        <Entity name="skillsAndInterestsScreenSlideInBottomTransition" template="footerText" _text="TEXT_SELECT_CATEGORY"/>
+    </Entity>
+</World>

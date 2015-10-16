@@ -1,0 +1,39 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<DataExchangeFormats>
+    <DataExchangeFormat name="JSON" icon="images/menu/icons/json.png" url="https://en.wikipedia.org/wiki/JSON">
+        <Project name="HERE Maps"/>
+        <Project name="7TV"/>
+    </DataExchangeFormat>
+    <DataExchangeFormat name="XML" icon="images/menu/icons/default.png" url="https://en.wikipedia.org/wiki/XML">
+        <Project name="HERE Maps"/>
+        <Project name="ING Mobile"/>
+        <Project name="7TV"/>
+        <Project name="TGOL Fire TV"/>
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+        <Project name="Slots: Journey Of Magic"/>
+        <Project name="League Of Heroes"/>
+        <Project name="Monster Shooter"/>
+        <Project name="Monster Shooter OS X"/>
+        <Project name="Video Pro Symbian Belle"/>
+        <Project name="Silent Film Director Symbian Belle"/>
+        <Project name="TGOL OS X"/>
+        <Project name="Crazy Hamster iOS"/>
+        <Project name="Crazy Hamster Android"/>
+        <Project name="Serce Zimy"/>
+        <Project name="Tau"/>
+        <Project name="Cardio Tracker"/>
+        <Project name="Crazy Hamster"/>
+        <Project name="Claw Mini Games"/>
+        <Project name="Block Cascade Fusion"/>
+        <Project name="Funky Ball Worlds"/>
+        <Project name="Ninja Fighter"/>
+        <Project name="Yeti Sports"/>
+        <Project name="Tiger Woods"/>
+        <Project name="Claw"/>
+    </DataExchangeFormat>
+    <DataExchangeFormat name="CSV" icon="images/menu/icons/default.png" url="https://en.wikipedia.org/wiki/Comma-separated_values">
+        <Project name="Crazy Hamster"/>
+    </DataExchangeFormat>
+</DataExchangeFormats>

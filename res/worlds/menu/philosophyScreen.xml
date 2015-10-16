@@ -1,0 +1,28 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<World>
+    <Entity name="philosophyScreen" active="false">
+        <PhilosophyScreen navigationTabs="Home/Skills &amp; interests/Philosophy"/>
+
+        <Template name="philosophyListLabel">
+            <TextSprite text="._text" font="font16" color="._color"/>
+            <Layouter sprite="TextSprite" flags="Left|Top" padding="._padding"/>
+        </Template>
+
+        <Entity name="philosophyScreenZoomInTransition">
+            <Entity name="philosophyScreenTopContent" position="12 -58 0">
+                <Entity name="philosophyDoLabel" template="philosophyListLabel" _text="TEXT_DO_COLON" _color="0 0 0" _padding="0 0"/>
+                <!-- M::philosophyDoList -> philosophyDoList.ListView -->
+                <Entity name="philosophyDoList" template="list" _cellName="skillsAndInterestsCell" _padding="0 -15" _height="0" _spriteSelector="philosophyScreen.SpriteSelector" _listView="philosophyDoList.ListView"/>
+                <Entity name="philosophyDontLabel" template="philosophyListLabel" _text="TEXT_DONT_COLON" _color="0 0 0" _padding="0 -165"/>
+                <!-- M::philosophyDontList -> philosophyDontList.ListView -->
+                <Entity name="philosophyDontList" template="list" _cellName="skillsAndInterestsCell" _padding="0 -180" _height="0" _spriteSelector="philosophyScreen.SpriteSelector" _listView="philosophyDontList.ListView"/>
+            </Entity>
+            <Entity name="philosophyQuote">
+                <!-- M::philosophyQuote -->
+                <TextSprite text="" translate="false" font="font14" color="0 0 0" width=":textWidth12" interline="3"/>
+                <Layouter sprite="TextSprite" flags="HCenter|Bottom" padding="0 48"/>
+            </Entity>
+        </Entity>
+    </Entity>
+</World>

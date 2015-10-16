@@ -1,0 +1,34 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<World>
+    <Entity name="personalInformationScreen" active="false">
+        <PersonalInformationScreen navigationTabs="Home/Personal information"/>
+
+        <Template name="personalInformationData">
+            <TextSprite text="._key" font="font16" color="LightBlueText"/>
+            <Layouter sprite="TextSprite" flags="Top|Left" padding="._padding"/>
+            <Entity name="value">
+                <TextSprite text="._value" translate="false" font="font16" color="0 0 0" pivot="0.5 0.5" touchable="._touchable"/>
+                <Layouter sprite="TextSprite" parent="super.TextSprite" flags="VCenter|Left" padding="120 0"/>
+            </Entity>
+        </Template>
+
+        <Entity name="personalInformationScreenZoomInTransition">
+            <Entity name="personalInformationContent" position="12 -58 0">
+                <Entity name="personalInformationPhoto">
+                    <Sprite image="images/menu/photo.png"/>
+                    <Layouter sprite="Sprite" flags="Top|Left"/>
+                </Entity>
+                <Entity name="personalInformation" position="0 -141 0">
+                    <Entity name="personalInformationName" template="personalInformationData" _key="TEXT_NAME_COLON" _value="Łukasz Kosakowski" _padding="0 0" _touchable="false"/>
+                    <Entity name="personalInformationAddress" template="personalInformationData" _key="TEXT_ADDRESS_COLON" _value="****, Szczecin, Poland" _padding="0 -25" _touchable="false"/>
+                    <Entity name="personalInformationDateOfBirth" template="personalInformationData" _key="TEXT_DATE_OF_BIRTH_COLON" _value="1983-07-04" _padding="0 -50" _touchable="false"/>
+                    <Entity name="personalInformationMaritalStatus" template="personalInformationData" _key="TEXT_MARITAL_STATUS_COLON" _value="married" _padding="0 -75" _touchable="false"/>
+                    <Entity name="personalInformationPhoneNumber" template="personalInformationData" _key="TEXT_PHONE_NUMBER_COLON" _value="****" _padding="0 -100" _touchable="false"/>
+                    <!-- M::personalInformationEmail -->
+                    <Entity name="personalInformationEmail" template="personalInformationData" _key="TEXT_EMAIL_COLON" _value="ld.kosakowski@gmail.com" _padding="0 -125" _touchable="true"/>
+                </Entity>
+            </Entity>
+        </Entity>
+    </Entity>
+</World>

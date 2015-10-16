@@ -1,0 +1,34 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<SkillsAndInterests>
+    <Traits label="Traits">
+        <Trait name="focus on problem solving"/>
+        <Trait name="willingness to learn new things"/>
+        <Trait name="attention to details"/>
+        <Trait name="openness"/>
+    </Traits>
+    <Languages label="Languages">
+        <Language name="Polish (native)"/>
+        <Language name="English (C1)"/>
+        <Language name="German (B2)"/>
+        <Language name="French (A2)"/>
+    </Languages>
+    <Interests label="Interests">
+        <Interest name="programming"/>
+        <Interest name="composing music"/>
+        <Interest name="playing instruments"/>
+        <Interest name="running"/>
+    </Interests>
+    <Philosophy quote="The domain of unsolvable problems is quite narrow and issues with code we encounter just never happen to fit there.">
+        <Do>
+            <Item name="automate repetitive tasks"/>
+            <Item name="keep it simple"/>
+            <Item name="keep it modular"/>
+            <Item name="favour composition over inheritance"/>
+        </Do>
+        <Dont>
+            <Item name="repeat yourself, not even twice"/>
+            <Item name="say you're going to need it"/>
+        </Dont>
+    </Philosophy>
+</SkillsAndInterests>

@@ -1,0 +1,44 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<AppStores>
+    <AppStore name="Apple" displayName="App Store" icon="images/menu/icons/appstore.png" url="https://www.apple.com/itunes/charts/free-apps/">
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+    </AppStore>
+    <AppStore name="Google" displayName="Google Play" icon="images/menu/icons/google_play.png" url="https://play.google.com/store/apps">
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+    </AppStore>
+    <AppStore name="Amazon" displayName="Amazon Appstore" icon="images/menu/icons/amazon.png" url="http://www.amazon.com/mobile-apps/b?node=2350149011">
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+    </AppStore>
+    <AppStore name="Nokia" displayName="Nokia Store" icon="images/menu/icons/nokia_store.png" url="https://en.wikipedia.org/wiki/Nokia_Store" firstUsed="2014/Q1" lastUsed="2014/Q1">
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+    </AppStore>
+    <AppStore name="Opera" displayName="Opera Mobile Store" icon="images/menu/icons/opera_mobile_store.png" url="http://apps.opera.com/en_us/" firstUsed="2015/Q1">
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+    </AppStore>
+    <AppStore name="WP" displayName="Windows Phone Store" icon="images/menu/icons/windows_phone_store.png" url="https://www.microsoft.com/en-us/store/apps/windows-phone" firstUsed="2013/Q4">
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+    </AppStore>
+    <AppStore name="WS" displayName="Windows Store" icon="images/menu/icons/windows_store_store.png" url="https://www.microsoft.com/en-us/store/apps/windows" firstUsed="2015/Q2">
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+    </AppStore>
+    <AppStore name="BlackBerry" displayName="BlackBerry World" icon="images/menu/icons/blackberry_world.png" url="https://appworld.blackberry.com/webstore/?countrycode=US&amp;lang=en" firstUsed="2013/Q4">
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+    </AppStore>
+    <AppStore name="Tizen" displayName="Tizen Store" icon="images/menu/icons/tizen_store.png" url="http://www.tizenstore.com/main/getMain.as" firstUsed="2013/Q4">
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+    </AppStore>
+    <AppStore name="Roku" displayName="Roku Channel Store" icon="images/menu/icons/roku_channel_store.png" url="https://channelstore.roku.com/browse/apps" firstUsed="2014/Q3">
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+    </AppStore>
+</AppStores>

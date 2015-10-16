@@ -1,0 +1,41 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<SDKIntegrations>
+    <!-- iOS -->
+    <SDKIntegration name="Adjust" date="2014/Q4" platform="iOS" icon="images/menu/icons/adjust.png" url="https://www.adjust.com/"/>
+    <SDKIntegration name="Amazon Insights" date="2015/Q1" platform="iOS" icon="images/menu/icons/amazon.png" url="https://developer.amazon.com/public/apis/manage/ab-testing"/>
+    <SDKIntegration name="Flurry" date="2013/Q1" platform="iOS" icon="images/menu/icons/flurry.png" url="http://www.flurry.com/"/>
+    <SDKIntegration name="Google Analytics" date="2013/Q1" platform="iOS" icon="images/menu/icons/google_analytics.png" url="http://www.google.com/analytics/"/>
+
+    <SDKIntegration name="Game Center" date="2014/Q2" platform="iOS" icon="images/menu/icons/game_center.png" url="https://developer.apple.com/game-center/"/>
+
+    <SDKIntegration name="Supersonic Ads" date="2013/Q1" platform="iOS" icon="images/menu/icons/supersonic_ads.png" url="https://www.supersonic.com/"/>
+    <SDKIntegration name="AdColony" date="2013/Q1" platform="iOS" icon="images/menu/icons/adcolony.png" url="http://www.adcolony.com/"/>
+    <SDKIntegration name="Tapjoy" date="2013/Q1" platform="iOS" icon="images/menu/icons/tapjoy.png" url="http://home.tapjoy.com/"/>
+
+    <SDKIntegration name="Amazon Ads" date="2015/Q1" platform="iOS" icon="images/menu/icons/amazon.png" url="https://developer.amazon.com/public/apis/earn/mobile-ads"/>
+    <SDKIntegration name="Google Mobile Ads" date="2013/Q1" platform="iOS" icon="images/menu/icons/admob.png" url="https://developers.google.com/admob/"/>
+    <SDKIntegration name="Chartboost" date="2013/Q1" platform="iOS" icon="images/menu/icons/chartboost.png" url="https://www.chartboost.com/"/>
+    <SDKIntegration name="Playhaven" date="2013/Q1" platform="iOS" icon="images/menu/icons/playhaven.png" url="http://www.playhaven.com/"/>
+
+    <SDKIntegration name="Facebook" date="2012/Q4" platform="iOS" icon="images/menu/icons/facebook.png" url="https://developers.facebook.com/docs/ios"/>
+
+    <!-- Android -->
+    <SDKIntegration name="Amazon Insights" date="2013/Q3" platform="Android" icon="images/menu/icons/amazon.png" url="https://developer.amazon.com/public/apis/manage/ab-testing"/>
+    <SDKIntegration name="Flurry" date="2013/Q1" platform="Android" icon="images/menu/icons/flurry.png" url="http://www.flurry.com/"/>
+    <SDKIntegration name="Google Analytics" date="2013/Q1" platform="Android" icon="images/menu/icons/google_analytics.png" url="http://www.google.com/analytics/"/>
+
+    <SDKIntegration name="Game Circle" date="2014/Q1" platform="Android" icon="images/menu/icons/game_circle.png" url="https://developer.amazon.com/appsandservices/apis/engage/gamecircle"/>
+    <SDKIntegration name="Google Play Games" date="2014/Q1" platform="Android" icon="images/menu/icons/google_play_games.png" url="https://developers.google.com/games/services/"/>
+
+    <SDKIntegration name="AdColony" date="2013/Q1" platform="Android" icon="images/menu/icons/adcolony.png" url="http://www.adcolony.com/"/>
+    <SDKIntegration name="Tapjoy" date="2013/Q1" platform="Android" icon="images/menu/icons/tapjoy.png" url="http://home.tapjoy.com/"/>
+
+    <SDKIntegration name="Amazon Ads" date="2013/Q3" platform="Android" icon="images/menu/icons/amazon.png" url="https://developer.amazon.com/public/apis/earn/mobile-ads"/>
+    <SDKIntegration name="Google Mobile Ads" date="2011/Q2" platform="Android" icon="images/menu/icons/admob.png" url="https://developers.google.com/admob/"/>
+    <SDKIntegration name="Chartboost" date="2013/Q1" platform="Android" icon="images/menu/icons/chartboost.png" url="https://www.chartboost.com/"/>
+    <SDKIntegration name="Playhaven" date="2013/Q1" platform="Android" icon="images/menu/icons/playhaven.png" url="http://www.playhaven.com/"/>
+
+    <!-- Symbian -->
+    <SDKIntegration name="Inneractive Ads" date="2011/Q1" platform="Symbian" icon="images/menu/icons/inneractive.png" url="http://inner-active.com/"/>
+</SDKIntegrations>

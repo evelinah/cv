@@ -1,0 +1,50 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<DevelopmentTeamSizes>
+    <DevelopmentTeamSize name="1" icon="images/menu/icons/default.png">
+        <Project name="ING Mobile"/>
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+        <Project name="TGOL iOS6"/>
+        <Project name="The Sims 3 iOS6"/>
+        <Project name="Silent Film Director Symbian Belle"/>
+        <Project name="Crazy Hamster iOS"/>
+        <Project name="Silent Film Director"/>
+        <Project name="Crazy Hamster Android"/>
+        <Project name="Serce Zimy"/>
+        <Project name="Tau"/>
+        <Project name="Claw Mini Games"/>
+        <Project name="Ninja Fighter"/>
+        <Project name="Despicable Me"/>
+        <Project name="GPE"/>
+    </DevelopmentTeamSize>
+    <DevelopmentTeamSize name="2" icon="images/menu/icons/default.png">
+        <Project name="TGOL Fire TV"/>
+        <Project name="Monster Shooter OS X"/>
+        <Project name="Super Boost"/>
+        <Project name="Video Pro Symbian Belle"/>
+        <Project name="Crazy Hamster"/>
+        <Project name="The Sims 3"/>
+        <Project name="Yeti Sports"/>
+        <Project name="Tiger Woods"/>
+    </DevelopmentTeamSize>
+    <DevelopmentTeamSize name="3" icon="images/menu/icons/default.png">
+        <Project name="Slots: Journey Of Magic"/>
+        <Project name="TGOL OS X"/>
+        <Project name="Lyric Legend"/>
+        <Project name="Cardio Tracker"/>
+        <Project name="Block Cascade Fusion"/>
+        <Project name="Funky Ball Worlds"/>
+    </DevelopmentTeamSize>
+    <DevelopmentTeamSize name="4+" icon="images/menu/icons/default.png">
+        <Project name="HERE Maps"/>
+        <Project name="I Am MTV"/>
+        <Project name="7TV"/>
+        <Project name="League Of Heroes"/>
+        <Project name="Monster Shooter"/>
+        <Project name="Fable: Coin Golf"/>
+        <Project name="Time Crisis"/>
+        <Project name="Claw"/>
+        <Project name="IP-DSLAM"/>
+    </DevelopmentTeamSize>
+</DevelopmentTeamSizes>

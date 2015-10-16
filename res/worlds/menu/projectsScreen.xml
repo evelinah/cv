@@ -1,0 +1,34 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<World>
+    <Entity name="projectsScreen" active="false">
+        <ProjectsScreen navigationTabs="Home/Professional experience/Projects" listView="projectsList.ListView" sortButtons="projectsTabButtons.RadioButtonGroup"/>
+
+        <Entity name="projectsScreenZoomInTransition">
+            <!-- M::projectsList -> projectsList.ListView -->
+            <!-- M::projectsListSorter -> projectsList.ListViewSorter -->
+            <Entity name="projectsList" template="list" _cellName="basicCell" _padding="0 -46" _height="ListHeight" _spriteSelector="projectsScreen.SpriteSelector" _listView="projectsList.ListView"/>
+        </Entity>
+
+        <Entity name="projectsScreenSlideInBottomTransition">
+            <Entity name="projectsTabButtons">
+                <!-- M::projectsSortByDate -> projectsSortByDate.Frame -->
+                <Entity name="projectsSortByDate" template="sortButton" _text="TEXT_DATE"/>
+                <!-- M::projectsSortByName -> projectsSortByName.Frame -->
+                <Entity name="projectsSortByName" template="sortButton" _text="TEXT_NAME"/>
+                <!-- M::projectsSortByPublisher -> projectsSortByPublisher.Frame -->
+                <Entity name="projectsSortByPublisher" template="sortButton" _text="TEXT_PUBLISHER"/>
+                <SpriteGroup>
+                    <Sprite sprite="projectsSortByDate.Frame"/>
+                    <Sprite sprite="projectsSortByName.Frame"/>
+                    <Sprite sprite="projectsSortByPublisher.Frame"/>
+                </SpriteGroup>
+                <Layouter sprite="SpriteGroup" flags="Left|Bottom"/>
+                <!-- M::projectsRadioButtons -->
+                <RadioButtonGroup>
+                    <SpriteGroup spriteGroup="SpriteGroup"/>
+                </RadioButtonGroup>
+            </Entity>
+        </Entity>
+    </Entity>
+</World>

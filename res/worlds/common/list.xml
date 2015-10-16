@@ -1,0 +1,21 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<World>
+    <Constant name="ListHeight" value="487"/>
+    <Constant name="ListCellMargin" value="0 5"/>
+
+    <Template name="list">
+        <ListView cellName="._cellName" cellMargin="ListCellMargin" height="._height" touchable="true"/>
+        <ListViewScroller sprite="ListView" slope="0.1" overshoot="50" deselectScroll="10" spriteSelector="._spriteSelector"/>
+        <ListViewSorter/>
+        <Layouter sprite="ListView" flags="Left|Top" padding="._padding"/>
+        <Entity name="topFadeOut">
+            <Sprite image="images/menu/list_gradient.png" flip="None" layer="1" size=":listGradientSize"/>
+            <Layouter sprite="Sprite" parent="._listView" flags="Left|Top" padding="0 0.5"/>
+        </Entity>
+        <Entity name="bottomFadeOut">
+            <Sprite image="images/menu/list_gradient.png" flip="Vertical" layer="1" size=":listGradientSize"/>
+            <Layouter sprite="Sprite" parent="._listView" flags="Left|Bottom" padding="0 -0.5"/>
+        </Entity>
+    </Template>
+</World>

@@ -1,0 +1,12 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<World>
+    <Entity name="skillsAndInterestsCategoryScreen" active="false">
+        <SkillsAndInterestsCategoryScreen navigationTabs=""/>
+
+        <Entity name="skillsAndInterestsCategoryScreenZoomInTransition">
+            <!-- M::skillsAndInterestsCategoryList -> skillsAndInterestsCategoryList.ListView -->
+            <Entity name="skillsAndInterestsCategoryList" template="list" _cellName="skillsAndInterestsCell" _padding="2 -48" _height="481" _spriteSelector="skillsAndInterestsCategoryScreen.SpriteSelector" _listView="skillsAndInterestsCategoryList.ListView"/>
+        </Entity>
+    </Entity>
+</World>

@@ -1,0 +1,104 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<World>
+    <Constant name="basicCellIconPadding" value="20 0"/>
+    <Constant name="basicCellNamePadding" value="41 -1"/>
+
+    <Template name="cellHighlight">
+        <RectangleSprite width=":appWidth" height="._height" color="CellHighlight" touchable="true" touchTransparent="true" pivot="0 0.5" alpha="0"/>
+        <Layouter sprite="RectangleSprite" parent="super.Frame" flags="Left|Top"/>
+    </Template>
+    <Template name="cellIcon">
+        <Frame width="0" height="14"/>
+        <Sprite image="images/menu/empty.png" pivot="0.5 0.5"/>
+        <Layouter sprite="Sprite" parent="super.Frame" selfFlags="HCenter|VCenter" parentFlags="Left|VCenter" padding="._padding"/>
+    </Template>
+    <Template name="cellName">
+        <TextSprite text="" translate="false" font="font16" pivot="0 0.5" color="0 0 0"/>
+        <Layouter sprite="TextSprite" parent="super.Frame" flags="Left|VCenter" padding="._padding"/>
+    </Template>
+    <Template name="cellText">
+        <Frame width="45" height="C::ui/basicCellHeight"/>
+        <Layouter sprite="Frame" parent="super.Frame" flags="._flags" padding="._padding"/>
+        <Entity name="text">
+            <TextSprite text="._text" translate="._translate" font="font9" color="._color"/>
+            <Layouter sprite="TextSprite" parent="super.Frame" flags="._textFlags" padding="0 -2"/>
+        </Entity>
+    </Template>
+
+    <Template name="detailsTextLine">
+        <TextSprite text="._key" font="font14" color="LightBlueText"/>
+        <Layouter sprite="TextSprite" parent="._parent" flags="Left|Top" padding="._padding"/>
+        <Entity name="value">
+            <TextSprite text="" translate="false" font="font14" color="0 0 0" pivot="0.5 0.5"/>
+            <Layouter sprite="TextSprite" parent="super.TextSprite" flags="Left|VCenter" padding="82 0"/>
+        </Entity>
+    </Template>
+    <Template name="detailsTextLineSmall">
+        <TextSprite text="._key" font="font13" color="LightBlueText"/>
+        <Layouter sprite="TextSprite" parent="._parent" flags="Left|Top" padding="._padding"/>
+        <Entity name="value">
+            <TextSprite text="" translate="false" font="font13" color="0 0 0"/>
+            <Layouter sprite="TextSprite" parent="super.TextSprite" flags="Left|VCenter" padding="76 0"/>
+        </Entity>
+    </Template>
+
+    <Virtual name="educationAndTrainingCell">
+        <ListViewCell/>
+        <Frame width=":appWidth" height="82"/>
+        <Entity name="highlight" template="cellHighlight" _height="76"/>
+        <Entity name="icon" template="cellIcon" _padding="20 26"/>
+        <Entity name="name" template="cellName" _padding="41 24"/>
+        <Entity name="startDate" template="detailsTextLineSmall" _key="TEXT_START_DATE_COLON" _parent="super.Frame" _padding="10 -35"/>
+        <Entity name="endDate" template="detailsTextLineSmall" _key="TEXT_END_DATE_COLON" _parent="super.Frame" _padding="10 -55"/>
+    </Virtual>
+
+    <Virtual name="basicCell">
+        <ListViewCell/>
+        <Frame width=":appWidth" height="C::ui/basicCellHeight"/>
+        <Entity name="highlight" template="cellHighlight" _height="C::ui/basicCellHeight"/>
+        <Entity name="icon" template="cellIcon" _padding="basicCellIconPadding"/>
+        <Entity name="name" template="cellName" _padding="basicCellNamePadding"/>
+    </Virtual>
+    <Virtual name="employerCell">
+        <ListViewCell/>
+        <Frame width=":appWidth" height="82"/>
+        <Entity name="highlight" template="cellHighlight" _height="76"/>
+        <Entity name="icon" template="cellIcon" _padding="20 26"/>
+        <Entity name="name" template="cellName" _padding="41 24"/>
+        <Entity name="endDate" template="detailsTextLineSmall" _key="TEXT_END_DATE_COLON" _parent="super.Frame" _padding="10 -35"/>
+        <Entity name="startDate" template="detailsTextLineSmall" _key="TEXT_START_DATE_COLON" _parent="super.Frame" _padding="10 -55"/>
+    </Virtual>
+    <Virtual name="sdkIntegrationCell">
+        <ListViewCell/>
+        <Frame width=":appWidth" height="C::ui/basicCellHeight"/>
+        <Entity name="highlight" template="cellHighlight" _height="C::ui/basicCellHeight"/>
+        <Entity name="icon" template="cellIcon" _padding="basicCellIconPadding"/>
+        <Entity name="name" template="cellName" _padding="basicCellNamePadding"/>
+        <Entity name="date" template="cellText" _text="" _translate="false" _color="0 0 0" _flags="Right|VCenter" _padding="-50 0" _textFlags="HCenter|VCenter"/>
+        <Entity name="platform" template="cellText" _text="" _translate="false" _color="0 0 0" _flags="Right|VCenter" _padding="-5 0" _textFlags="HCenter|VCenter"/>
+    </Virtual>
+    <Virtual name="genericCategoryCell">
+        <ListViewCell/>
+        <Frame width=":appWidth" height="C::ui/basicCellHeight"/>
+        <Entity name="highlight" template="cellHighlight" _height="C::ui/basicCellHeight"/>
+        <Entity name="icon" template="cellIcon" _padding="basicCellIconPadding"/>
+        <Entity name="name" template="cellName" _padding="basicCellNamePadding"/>
+        <Entity name="firstUsed" template="cellText" _text="" _translate="false" _color="0 0 0" _flags="Right|VCenter" _padding="-95 0" _textFlags="HCenter|VCenter"/>
+        <Entity name="lastUsed" template="cellText" _text="" _translate="false" _color="0 0 0" _flags="Right|VCenter" _padding="-50 0" _textFlags="HCenter|VCenter"/>
+        <Entity name="projects" template="cellText" _text="" _translate="false" _color="0 0 0" _flags="Right|VCenter" _padding="-5 0" _textFlags="HCenter|VCenter"/>
+    </Virtual>
+
+    <Virtual name="skillsAndInterestsCell">
+        <ListViewCell/>
+        <Frame width=":appWidth" height="30"/>
+        <Entity name="dot">
+            <Sprite image="images/menu/dot.png" color="LightBlueSprite"/>
+            <Layouter sprite="Sprite" parent="super.Frame" flags="Left|VCenter" padding="10 0"/>
+        </Entity>
+        <Entity name="text">
+            <TextSprite text="" translate="false" font="font16" color="0 0 0"/>
+            <Layouter sprite="TextSprite" parent="super.Frame" flags="Left|VCenter" padding="24 0"/>
+        </Entity>
+    </Virtual>
+</World>

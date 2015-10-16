@@ -1,0 +1,36 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<World>
+    <Template name="sectionButton">
+        <Sprite image="images/menu/button.png" touchable="true" pivot="0.5 0.5" color="._color"/>
+        <Entity name="buttonText">
+            <TextSprite text="._text" font="font20" color="1 1 1" pivot="0.5 0.5" width="112" interline="1"/>
+            <Layouter sprite="TextSprite" parent="super.Sprite" flags="HCenter|VCenter"/>
+        </Entity>
+    </Template>
+    <Template name="sectionButtonSmallSquare">
+        <Sprite image="images/menu/button_small_square.png" touchable="true" pivot="0.5 0.5" color="._color"/>
+        <Entity name="buttonText">
+            <TextSprite text="._text" font="font14" color="1 1 1" pivot="0.5 0.5" width="76"/>
+            <Layouter sprite="TextSprite" parent="super.Sprite" flags="HCenter|VCenter"/>
+        </Entity>
+    </Template>
+    <Template name="sectionButtonSmallRect">
+        <Sprite image="images/menu/button_small_rect.png" touchable="true" pivot="0.5 0.5" color="._color"/>
+        <Entity name="buttonText">
+            <TextSprite text="._text" font="font12" color="1 1 1" pivot="0.5 0.5" width="76" interline="1"/>
+            <Layouter sprite="TextSprite" parent="super.Sprite" flags="HCenter|VCenter"/>
+        </Entity>
+    </Template>
+    <Template name="sortButton">
+        <Frame width="0" height="36" touchable="true"/>
+        <Entity name="buttonIcon">
+            <Sprite image="images/menu/arrow.png" color="LightBlueSprite" pivot="0.5 0.5" layerDepth="true" layer="3"/>
+            <Layouter sprite="Sprite" parent="super.Frame" flags="Left|VCenter" padding="0 0"/>
+        </Entity>
+        <Entity name="buttonText">
+            <TextSprite text="._text" font="font11" pivot="0.5 0.5" layerDepth="true" layer="3"/>
+            <Layouter sprite="TextSprite" parent="super.Frame" flags="Left|VCenter" padding="14 0"/>
+        </Entity>
+    </Template>
+</World>

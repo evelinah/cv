@@ -1,0 +1,27 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<MediaTechnologies>
+    <MediaTechnology name="OpenGL" icon="images/menu/icons/open_gl.png" url="https://en.wikipedia.org/wiki/OpenGL">
+        <Project name="Tau"/>
+        <Project name="Claw"/>
+        <Project name="GPE"/>
+    </MediaTechnology>
+    <MediaTechnology name="Image processing" icon="images/menu/icons/default.png" url="https://en.wikipedia.org/wiki/Digital_image_processing">
+        <Project name="ING Mobile"/>
+        <Project name="Silent Film Director"/>
+        <Project name="Tau"/>
+        <Project name="Tiger Woods"/>
+        <Project name="Claw"/>
+    </MediaTechnology>
+    <MediaTechnology name="Video processing" icon="images/menu/icons/default.png" url="https://en.wikipedia.org/wiki/Video_processing">
+        <Project name="I Am MTV"/>
+        <Project name="Silent Film Director"/>
+    </MediaTechnology>
+    <MediaTechnology name="Audio processing" icon="images/menu/icons/default.png" url="https://en.wikipedia.org/wiki/Audio_signal_processing">
+        <Project name="Tau"/>
+        <Project name="Claw"/>
+    </MediaTechnology>
+    <MediaTechnology name="HLS" icon="images/menu/icons/default.png" url="https://en.wikipedia.org/wiki/HTTP_Live_Streaming">
+        <Project name="7TV"/>
+    </MediaTechnology>
+</MediaTechnologies>

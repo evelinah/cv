@@ -1,0 +1,13 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<WebTechnologies>
+    <WebTechnology name="REST" icon="images/menu/icons/default.png" url="https://en.wikipedia.org/wiki/Representational_state_transfer">
+        <Project name="HERE Maps"/>
+        <Project name="7TV"/>
+        <SDKIntegration name="Facebook" platform="iOS"/>
+    </WebTechnology>
+    <WebTechnology name="CSS" icon="images/menu/icons/css.png" url="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">
+        <Project name="Cardio Tracker"/>
+        <Project name="Silent Film Director"/>
+    </WebTechnology>
+</WebTechnologies>

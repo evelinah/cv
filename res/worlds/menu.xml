@@ -1,0 +1,119 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<World>
+    <Include file="sgl/worlds/menu/detectors.xml"/>
+
+    <Include file="worlds/common/buttons.xml"/>
+    <Include file="worlds/common/cells.xml"/>
+    <Include file="worlds/common/colors.xml"/>
+    <Include file="worlds/common/list.xml"/>
+    <Include file="worlds/common/texts.xml"/>
+
+    <Entity name="menu">
+        <!-- M::menu -->
+        <Menu/>
+    </Entity>
+
+    <Entity name="backgrounds">
+        <Template name="background">
+            <RectangleSprite width="320" height="570" color="1 1 1" static="true" background="true" layerDepth="._layerDepth"/>
+            <Layouter sprite="RectangleSprite" flags="HCenter|VCenter"/>
+        </Template>
+        <Entity name="background" template="background" _layerDepth="true"/>
+        <!-- M::fadeOut -> fadeOut.RectangleSprite -->
+        <Entity name="fadeOut" template="background" _layerDepth="false"/>
+        <Entity name="fadeIn">
+            <!-- M::fadeIn -->
+            <GlobalAlpha layer="2"/>
+        </Entity>
+        <Entity name="fadeInClear">
+            <GlobalAlpha layerDepth="true" layer="2"/>
+        </Entity>
+    </Entity>
+
+    <Include file="worlds/menu/homeScreen.xml"/>
+        <Include file="worlds/menu/personalInformationScreen.xml"/>
+        <Include file="worlds/menu/educationAndTrainingScreen.xml"/>
+            <Include file="worlds/menu/educationAndTrainingDetailsScreen.xml"/>
+        <Include file="worlds/menu/professionalExperienceScreen.xml"/>
+            <Include file="worlds/menu/employersScreen.xml"/>
+            <Include file="worlds/menu/projectsScreen.xml"/>
+                <Include file="worlds/menu/projectDetailsScreen.xml"/>
+            <Include file="worlds/menu/sdkIntegrationScreen.xml"/>
+            <Include file="worlds/menu/professionalExperienceCategoryScreen.xml"/>
+                <Include file="worlds/menu/professionalExperienceCategoryDetailsScreen.xml"/>
+        <Include file="worlds/menu/skillsAndInterestsScreen.xml"/>
+            <Include file="worlds/menu/skillsAndInterestsCategoryScreen.xml"/>
+            <Include file="worlds/menu/philosophyScreen.xml"/>
+        <Include file="worlds/menu/aboutScreen.xml"/>
+
+    <Entity name="header">
+        <!-- M::header -->
+        <RectangleSprite width=":appWidth" height="46" color="DarkTheme" layerDepth="true" layer="2"/>
+        <Layouter sprite="RectangleSprite" flags="Left|Top"/>
+
+        <Template name="navigationTab">
+            <Frame width="68" height="46" touchable="._touchable" pivot="0.5 0.5" layerDepth="true" layer="2"/>
+            <Entity name="buttonText">
+                <TextSprite text="" translate="false" font="font11" color="1 1 1" pivot="0.5 0.5" width="68" layerDepth="true" layer="2" alpha="0"/>
+                <Layouter sprite="TextSprite" parent="super.Frame" flags="HCenter|VCenter"/>
+            </Entity>
+        </Template>
+        <Template name="navigationTabSeparator">
+            <Sprite image="images/menu/separator.png" pivot="0.5 0.5" layerDepth="true" layer="2" alpha="0"/>
+        </Template>
+
+        <Entity name="navigationTabs">
+            <!-- M::navigationTab1 -> navigationTab1.Frame -->
+            <!-- M::navigationTab2 -> navigationTab2.Frame -->
+            <!-- M::navigationTab3 -> navigationTab3.Frame -->
+            <!-- M::navigationTab4 -> navigationTab4.Frame -->
+            <Entity name="navigationTab1" template="navigationTab" _touchable="true"/>
+            <Entity name="navigationTab2Separator" template="navigationTabSeparator"/>
+            <Entity name="navigationTab2" template="navigationTab" _touchable="true"/>
+            <Entity name="navigationTab3Separator" template="navigationTabSeparator"/>
+            <Entity name="navigationTab3" template="navigationTab" _touchable="true"/>
+            <Entity name="navigationTab4Separator" template="navigationTabSeparator"/>
+            <Entity name="navigationTab4" template="navigationTab" _touchable="true"/>
+
+            <Entity name="navigationTab1FadeOut" template="navigationTab" _touchable="false"/>
+            <Entity name="navigationTab2FadeOutSeparator" template="navigationTabSeparator"/>
+            <Entity name="navigationTab2FadeOut" template="navigationTab" _touchable="false"/>
+            <Entity name="navigationTab3FadeOutSeparator" template="navigationTabSeparator"/>
+            <Entity name="navigationTab3FadeOut" template="navigationTab" _touchable="false"/>
+            <Entity name="navigationTab4FadeOutSeparator" template="navigationTabSeparator"/>
+            <Entity name="navigationTab4FadeOut" template="navigationTab" _touchable="false"/>
+
+            <SpriteGroup>
+                <Sprite sprite="navigationTab1.Frame"/>
+                <Sprite sprite="navigationTab2Separator.Sprite"/>
+                <Sprite sprite="navigationTab2.Frame"/>
+                <Sprite sprite="navigationTab3Separator.Sprite"/>
+                <Sprite sprite="navigationTab3.Frame"/>
+                <Sprite sprite="navigationTab4Separator.Sprite"/>
+                <Sprite sprite="navigationTab4.Frame"/>
+            </SpriteGroup>
+            <Layouter sprite="SpriteGroup" flags="Left|Top" padding="23 0"/>
+        </Entity>
+
+        <Entity name="backButton">
+            <Entity name="backButtonFrame" position="-6 0 0 ">
+                <!-- M::backButtonFrame -->
+                <Frame width="39" height="46" pivot="0.5 0.5" layerDepth="true" layer="2" touchable="true"/>
+            </Entity>
+            <!-- M::backButton -->
+            <Sprite image="images/menu/back.png" pivot="0.5 0.5" layerDepth="true" layer="2" color="LightBlueSprite"/>
+            <Layouter sprite="Sprite" parent="super.RectangleSprite" flags="Left|VCenter" padding="11 0"/>
+        </Entity>
+    </Entity>
+    <Entity name="headerFadeOut">
+        <Sprite image="images/menu/bar_gradient.png" layerDepth="true" layer="2" color="DarkTheme"/>
+        <Layouter sprite="Sprite" flags="Top|Right"/>
+    </Entity>
+
+    <Entity name="footer">
+        <!-- M::footer -->
+        <RectangleSprite width=":appWidth" height="36" color="DarkTheme" layerDepth="true" layer="2"/>
+        <Layouter sprite="RectangleSprite" flags="Left|Bottom"/>
+    </Entity>
+</World>

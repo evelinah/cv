@@ -1,0 +1,18 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<World>
+    <Template name="footerText">
+        <Entity name="text">
+            <TextSprite text="._text" font="font11" layerDepth="true" layer="3"/>
+            <Layouter sprite="TextSprite" flags="HCenter|Bottom" padding="0 12"/>
+        </Entity>
+    </Template>
+
+    <Virtual name="projectsLabelText">
+        <Frame width=":appWidth" height="C::ui/projects/labelHeight"/>
+        <Entity name="text">
+            <TextSprite text="" translate="false" font="font13" color="LightBlueText"/>
+            <Layouter sprite="TextSprite" parent="super.Frame" flags="Left|Bottom" padding="10 3"/>
+        </Entity>
+    </Virtual>
+</World>

@@ -1,0 +1,75 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<Middlewares>
+    <Middleware name="SDL" icon="images/menu/icons/sdl.png" url="https://www.libsdl.org/">
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+        <Project name="Tau"/>
+        <Project name="Funky Ball Worlds"/>
+        <Project name="Claw"/>
+    </Middleware>
+    <Middleware name="Marmalade" icon="images/menu/icons/marmalade.png" url="https://www.madewithmarmalade.com/">
+        <Project name="ING Mobile"/>
+        <Project name="TGOL Fire TV"/>
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+        <Project name="TGOL iOS6"/>
+        <Project name="TGOL OS X"/>
+        <Project name="Tau"/>
+        <Project name="The Sims 3"/>
+    </Middleware>
+    <Middleware name="Qt" icon="images/menu/icons/qt.png" url="https://www.qt.io/" firstUsed="2010/Q3" lastUsed="2012/Q4">
+        <Project name="Claw"/>
+        <Project name="Tau"/>
+        <Project name="Video Pro Symbian Belle"/>
+        <Project name="Silent Film Director Symbian Belle"/>
+        <Project name="Silent Film Director"/>
+        <Project name="Cardio Tracker"/>
+    </Middleware>
+    <Middleware name="Unity" icon="images/menu/icons/unity.png" url="https://unity3d.com/">
+        <Project name="Super Boost"/>
+        <Project name="Despicable Me"/>
+    </Middleware>
+    <Middleware name="WPF" icon="images/menu/icons/dotnet.png" url="https://msdn.microsoft.com/en-us/library/ms754130.aspx">
+        <Project name="7TV"/>
+    </Middleware>
+    <Middleware name="iOS SDK" icon="images/menu/icons/apple.png" url="https://developer.apple.com/ios/" firstUsed="2009/Q3">
+        <Project name="HERE Maps"/>
+        <Project name="The Sims 3 iOS6"/>
+        <Project name="Tau"/>
+        <Project name="Claw"/>
+    </Middleware>
+    <Middleware name="Android SDK" icon="images/menu/icons/android.png" url="https://developer.android.com/sdk/index.html" firstUsed="2010/Q2">
+        <Project name="Tau"/>
+        <Project name="Claw"/>
+    </Middleware>
+    <Middleware name="Claw" icon="images/menu/icons/claw.png" lastUsed="2013/Q3">
+        <Project name="Slots: Journey Of Magic"/>
+        <Project name="League Of Heroes"/>
+        <Project name="Monster Shooter"/>
+        <Project name="Monster Shooter OS X"/>
+        <Project name="TGOL OS X"/>
+        <Project name="Crazy Hamster iOS"/>
+        <Project name="Crazy Hamster Android"/>
+        <Project name="Serce Zimy"/>
+        <Project name="Tau"/>
+        <Project name="Lyric Legend"/>
+        <Project name="Crazy Hamster"/>
+        <Project name="Claw Mini Games"/>
+        <Project name="Block Cascade Fusion"/>
+        <Project name="Funky Ball Worlds"/>
+        <Project name="Ninja Fighter"/>
+        <Project name="Yeti Sports"/>
+        <Project name="Tiger Woods"/>
+    </Middleware>
+    <Middleware name="Tau" icon="images/menu/icons/tau.png" firstUsed="2010/Q4">
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+    </Middleware>
+    <Middleware name="XNA" icon="images/menu/icons/xna.png">
+        <Project name="Fable: Coin Golf"/>
+    </Middleware>
+    <Middleware name="Bedrock" icon="images/menu/icons/bedrock.png">
+        <Project name="Time Crisis"/>
+    </Middleware>
+</Middlewares>

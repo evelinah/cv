@@ -1,0 +1,27 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<Categories>
+    <Category name="Employers" file="data/professionalExperience/categories/employers.xml"/>
+    <Category name="Projects" file="data/professionalExperience/categories/projects.xml"/>
+    <Category name="SDK integration" file="data/professionalExperience/categories/sdkIntegration.xml"/>
+
+    <Category name="Programming languages" file="data/professionalExperience/categories/programmingLanguages.xml"/>
+    <Category name="Platforms" file="data/professionalExperience/categories/platforms.xml"/>
+    <Category name="Middleware" file="data/professionalExperience/categories/middleware.xml"/>
+    <Category name="Device classes" file="data/professionalExperience/categories/deviceClasses.xml"/>
+    <Category name="Open source libraries" file="data/professionalExperience/categories/openSourceLibraries.xml"/>
+    <Category name="App stores" file="data/professionalExperience/categories/appStores.xml"/>
+
+    <Category name="UI technologies" file="data/professionalExperience/categories/uiTechnologies.xml"/>
+    <Category name="Media technologies" file="data/professionalExperience/categories/mediaTechnologies.xml"/>
+    <Category name="Web technologies" file="data/professionalExperience/categories/webTechnologies.xml"/>
+    <Category name="IDE" file="data/professionalExperience/categories/ide.xml"/>
+    <Category name="VCS" file="data/professionalExperience/categories/vcs.xml"/>
+    <Category name="Unit &amp; UI testing" file="data/professionalExperience/categories/unitAndUITesting.xml"/>
+    <Category name="DBMS" file="data/professionalExperience/categories/dbms.xml"/>
+    <Category name="Data exchange formats" file="data/professionalExperience/categories/dataExchangeFormats.xml"/>
+    <Category name="Locations" file="data/professionalExperience/categories/locations.xml"/>
+    <Category name="Methodologies" displayName="Methodo- logies" file="data/professionalExperience/categories/methodologies.xml"/>
+    <Category name="Development team size" file="data/professionalExperience/categories/developmentTeamSize.xml"/>
+    <Category name="Roles" file="data/professionalExperience/categories/roles.xml"/>
+</Categories>

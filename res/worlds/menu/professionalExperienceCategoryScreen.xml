@@ -1,0 +1,46 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<World>
+    <Entity name="professionalExperienceCategoryScreen" active="false">
+        <ProfessionalExperienceCategoryScreen navigationTabs="" listView="professionalExperienceCategoryList.ListView" sortButtons="categoryTabButtons.RadioButtonGroup"/>
+
+        <Entity name="professionalExperienceCategoryScreenZoomInTransition">
+            <Entity name="professionalExperienceCategoryListColumnTexts">
+                <Frame width=":appWidth" height="C::ui/basicCellHeight"/>
+                <Layouter sprite="Frame" flags="Left|Top" padding="0 -48"/>
+                <Entity name="professionalExperienceCategoryNameText" template="cellText" _text="TEXT_NAME" _translate="true" _color="LightBlueText" _flags="Left|VCenter" _padding="41 0" _textFlags="Left|VCenter"/>
+                <Entity name="professionalExperienceCategoryFirstUsedText" template="cellText" _text="TEXT_FIRST_USED" _translate="true" _color="LightBlueText" _flags="Right|VCenter" _padding="-95 0" _textFlags="HCenter|VCenter"/>
+                <Entity name="professionalExperienceCategoryLastUsedText" template="cellText" _text="TEXT_LAST_USED" _translate="true" _color="LightBlueText" _flags="Right|VCenter" _padding="-50 0" _textFlags="HCenter|VCenter"/>
+                <Entity name="professionalExperienceCategoryProjectsText" template="cellText" _text="TEXT_PROJECTS" _translate="true" _color="LightBlueText" _flags="Right|VCenter" _padding="-5 0" _textFlags="HCenter|VCenter"/>
+            </Entity>
+            <!-- M::professionalExperienceCategoryList -> professionalExperienceCategoryList.ListView -->
+            <!-- M::professionalExperienceCategoryListScroller -> professionalExperienceCategoryList.ListViewScroller -->
+            <!-- M::professionalExperienceCategoryListSorter -> professionalExperienceCategoryList.ListViewSorter -->
+            <Entity name="professionalExperienceCategoryList" template="list" _cellName="genericCategoryCell" _padding="0 -72" _height="461" _spriteSelector="professionalExperienceCategoryScreen.SpriteSelector" _listView="professionalExperienceCategoryList.ListView"/>
+        </Entity>
+
+        <Entity name="professionalExperienceCategoryScreenSlideInBottomTransition">
+            <Entity name="categoryTabButtons">
+                <!-- M::professionalExperienceCategorySortByName -> professionalExperienceCategorySortByName.Frame -->
+                <Entity name="professionalExperienceCategorySortByName" template="sortButton" _text="TEXT_NAME"/>
+                <!-- M::professionalExperienceCategorySortByFirstUsed -> professionalExperienceCategorySortByFirstUsed.Frame -->
+                <Entity name="professionalExperienceCategorySortByFirstUsed" template="sortButton" _text="TEXT_FIRST_USED"/>
+                <!-- M::professionalExperienceCategorySortByLastUsed -> professionalExperienceCategorySortByLastUsed.Frame -->
+                <Entity name="professionalExperienceCategorySortByLastUsed" template="sortButton" _text="TEXT_LAST_USED"/>
+                <!-- M::professionalExperienceCategorySortByProjects -> professionalExperienceCategorySortByProjects.Frame -->
+                <Entity name="professionalExperienceCategorySortByProjects" template="sortButton" _text="TEXT_PROJECTS"/>
+                <SpriteGroup>
+                    <Sprite sprite="professionalExperienceCategorySortByName.Frame"/>
+                    <Sprite sprite="professionalExperienceCategorySortByFirstUsed.Frame"/>
+                    <Sprite sprite="professionalExperienceCategorySortByLastUsed.Frame"/>
+                    <Sprite sprite="professionalExperienceCategorySortByProjects.Frame"/>
+                </SpriteGroup>
+                <Layouter sprite="SpriteGroup" flags="Left|Bottom"/>
+                <!-- M::professionalExperienceCategoryRadioButtons -->
+                <RadioButtonGroup>
+                    <SpriteGroup spriteGroup="SpriteGroup"/>
+                </RadioButtonGroup>
+            </Entity>
+        </Entity>
+    </Entity>
+</World>

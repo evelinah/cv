@@ -1,0 +1,38 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<World>
+    <Entity name="educationAndTrainingDetailsScreen" active="false">
+        <EducationAndTrainingDetailsScreen navigationTabs=""/>
+
+        <Entity name="educationAndTrainingDetailsScreenZoomInTransition">
+            <Entity name="educationAndTrainingDetailsContent" position="10 -56 0">
+                <Entity name="educationAndTrainingDetailsIcon">
+                    <!-- M::educationAndTrainingDetailsFrame -->
+                    <Frame width="0" height="42"/>
+                    <!-- M::educationAndTrainingDetailsIcon -->
+                    <Sprite image="images/menu/empty.png"/>
+                    <Layouter sprite="Frame" flags="Left|Top"/>
+                    <Entity name="educationAndTrainingDetailsName">
+                        <!-- M::educationAndTrainingDetailsName -->
+                        <TextSprite text="" translate="false" font="font19" pivot="0 0.5" color="0 0 0" justify="Left" netHeight="true"/>
+                        <Layouter sprite="TextSprite" parent="super.Sprite" parentFlags="Right|VCenter" selfFlags="Left|VCenter" padding="15 0"/>
+                    </Entity>
+                </Entity>
+                <Entity name="educationAndTrainingDetailsInfo">
+                    <!-- M::educationAndTrainingDetailsInfo -->
+                    <TextSprite text="" translate="false" font="font14" color="0 0 0" width=":textWidth10" justify="Left" interline="3"/>
+                    <Layouter sprite="TextSprite" flags="Left|Top" padding="0 -57"/>
+                </Entity>
+                <!-- M::educationAndTrainingDetailsInfoShift -->
+                <Entity name="educationAndTrainingDetailsInfoShift">
+                    <Entity name="educationAndTrainingDetailsLines" position="0 -95 0">
+                        <!-- M::educationAndTrainingDetailsTimeFrame -->
+                        <Entity name="educationAndTrainingDetailsTimeFrame" template="detailsTextLine" _key="TEXT_TIME_FRAME_COLON" _parent="" _padding="0 0"/>
+                        <!-- M::educationAndTrainingDetailsLocation -->
+                        <Entity name="educationAndTrainingDetailsLocation" template="detailsTextLine" _key="TEXT_LOCATION_COLON" _parent="" _padding="0 -25"/>
+                    </Entity>
+                </Entity>
+            </Entity>
+        </Entity>
+    </Entity>
+</World>

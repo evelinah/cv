@@ -1,0 +1,7 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<DBMSs>
+    <DBMS name="SQLite" icon="images/menu/icons/sqlite.png" url="https://www.sqlite.org/">
+        <Project name="Lyric Legend"/>
+    </DBMS>
+</DBMSs>

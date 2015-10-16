@@ -1,0 +1,11 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<World>
+    <Constant name="DarkTheme" value="rgb 30 40 46"/>
+    <Constant name="OrangeButton" value="rgb 204 156 71"/>
+    <Constant name="BlueButton" value="rgb 38 93 128"/>
+    <Constant name="LightBlueButton" value="rgb 53 130 179"/>
+    <Constant name="LightBlueSprite" value="rgb 84 181 242"/>
+    <Constant name="LightBlueText" value="rgb 0 125 204"/>
+    <Constant name="CellHighlight" value="rgb 255 234 128"/>
+</World>

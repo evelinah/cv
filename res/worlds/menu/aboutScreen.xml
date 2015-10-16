@@ -1,0 +1,34 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<World>
+    <Entity name="aboutScreen" active="false">
+        <AboutScreen navigationTabs="Home/About"/>
+
+        <Template name="aboutText">
+            <TextSprite text="._text" font="font19" color="0 0 0" width=":textWidth12"/>
+            <Layouter sprite="TextSprite" parentFlags="HCenter|VCenter" selfFlags="._selfFlags" padding="._padding"/>
+        </Template>
+        <Template name="aboutIcon">
+            <Sprite image="._image" pivot="0.5 0.5" touchable="true"/>
+            <Layouter sprite="Sprite" parentFlags="HCenter|VCenter" selfFlags="._selfFlags" padding="._padding"/>
+        </Template>
+
+        <Entity name="aboutScreenZoomInTransition">
+            <Entity name="aboutScreenContent" position="0 42 0">
+                <Entity name="tauText" template="aboutText" _selfFlags="HCenter|Bottom" _padding="0 0" _text="TEXT_ABOUT_TAU"/>
+                <!-- M::tauIcon -> tauIcon.Sprite -->
+                <Entity name="tauIcon" template="aboutIcon" _selfFlags="HCenter|Top" _padding="0 -12" _image="images/menu/tau.png"/>
+                <Entity name="appText" template="aboutText" _selfFlags="HCenter|Bottom" _padding="0 -140" _text="TEXT_ABOUT_GITHUB"/>
+                <!-- M::appIcon -> appIcon.Sprite -->
+                <Entity name="appIcon" template="aboutIcon" _selfFlags="HCenter|Top" _padding="0 -152" _image="images/menu/cv.png"/>
+            </Entity>
+            <SpriteGroup>
+                <Sprite sprite="tauText.TextSprite"/>
+                <Sprite sprite="tauIcon.Sprite"/>
+                <Sprite sprite="appText.TextSprite"/>
+                <Sprite sprite="appIcon.Sprite"/>
+            </SpriteGroup>
+            <Layouter sprite="SpriteGroup" flags="HCenter|VCenter"/>
+        </Entity>
+    </Entity>
+</World>

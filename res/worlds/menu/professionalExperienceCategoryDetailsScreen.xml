@@ -1,0 +1,33 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<World>
+    <Entity name="professionalExperienceCategoryDetailsScreen" active="false">
+        <ProfessionalExperienceCategoryDetailsScreen navigationTabs="" listView="professionalExperienceCategoryDetailsList.ListView"/>
+
+        <Entity name="professionalExperienceCategoryDetailsScreenZoomInTransition">
+            <Entity name="professionalExperienceCategoryDetailsContent" position="0 -56 0">
+                <Entity name="professionalExperienceCategoryDetailsIcon">
+                    <!-- M::professionalExperienceCategoryDetailsFrame -->
+                    <Frame width="0" height="42"/>
+                    <!-- M::professionalExperienceCategoryDetailsIcon -->
+                    <Sprite image="images/menu/empty.png"/>
+                    <Layouter sprite="Frame" flags="Left|Top" padding="10 0"/>
+                    <Entity name="professionalExperienceCategoryDetailsName">
+                        <!-- M::professionalExperienceCategoryDetailsName -->
+                        <TextSprite text="" translate="false" font="font19" pivot="0.5 0.5" color="0 0 0"/>
+                        <Layouter sprite="TextSprite" parent="super.Sprite" parentFlags="Right|VCenter" selfFlags="Left|VCenter" padding="15 0"/>
+                    </Entity>
+                </Entity>
+                <!-- M::professionalExperienceCategoryDetailsTimeFrame -->
+                <Entity name="professionalExperienceCategoryDetailsTimeFrame" template="detailsTextLine" _key="TEXT_TIME_FRAME_COLON" _parent="" _padding="10 -57"/>
+                <Entity name="professionalExperienceCategoryDetailsProjects">
+                    <!-- M::professionalExperienceCategoryDetailsProjects -->
+                    <TextSprite text="" translate="false" font="font14" color="LightBlueText"/>
+                    <Layouter sprite="TextSprite" flags="Left|Top" padding="10 -82"/>
+                </Entity>
+                <!-- M::professionalExperienceCategoryDetailsList -> professionalExperienceCategoryDetailsList.ListView -->
+                <Entity name="professionalExperienceCategoryDetailsList" template="list" _cellName="basicCell" _padding="0 -102" _height="375" _spriteSelector="professionalExperienceCategoryDetailsScreen.SpriteSelector" _listView="professionalExperienceCategoryDetailsList.ListView"/>
+            </Entity>
+        </Entity>
+    </Entity>
+</World>

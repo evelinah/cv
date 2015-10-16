@@ -1,0 +1,120 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<Platforms>
+    <Platform name="iOS" icon="images/menu/icons/apple.png" url="http://www.apple.com/ios/" firstUsed="2009/Q4">
+        <Project name="HERE Maps"/>
+        <Project name="ING Mobile"/>
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+        <Project name="Slots: Journey Of Magic"/>
+        <Project name="League Of Heroes"/>
+        <Project name="Monster Shooter"/>
+        <Project name="TGOL iOS6"/>
+        <Project name="The Sims 3 iOS6"/>
+        <Project name="Super Boost"/>
+        <Project name="Crazy Hamster iOS"/>
+        <Project name="Tau"/>
+        <Project name="Ninja Fighter"/>
+        <Project name="Claw"/>
+    </Platform>
+    <Platform name="Android" icon="images/menu/icons/android.png" url="https://www.android.com/" firstUsed="2010/Q1">
+        <Project name="I Am MTV"/>
+        <Project name="ING Mobile"/>
+        <Project name="TGOL Fire TV"/>
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+        <Project name="Slots: Journey Of Magic"/>
+        <Project name="League Of Heroes"/>
+        <Project name="Monster Shooter"/>
+        <Project name="Crazy Hamster Android"/>
+        <Project name="Serce Zimy"/>
+        <Project name="Tau"/>
+        <Project name="The Sims 3"/>
+        <Project name="Claw"/>
+    </Platform>
+    <Platform name="Windows Phone" icon="images/menu/icons/windows_phone.png" url="https://www.windowsphone.com/en-us">
+        <Project name="ING Mobile"/>
+        <Project name="7TV"/>
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+        <Project name="Tau"/>
+        <Project name="Fable: Coin Golf"/>
+    </Platform>
+    <Platform name="Windows RT" icon="images/menu/icons/windows_store.png" url="https://en.wikipedia.org/wiki/Windows_Runtime" firstUsed="2013/Q4">
+        <Project name="7TV"/>
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+        <Project name="Tau"/>
+    </Platform>
+    <Platform name="BlackBerry" icon="images/menu/icons/blackberry.png" url="http://us.blackberry.com/software/smartphones/blackberry-10-os.html" firstUsed="2013/Q4" lastUsed="2013/Q4">
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+        <Project name="Tau"/>
+    </Platform>
+    <Platform name="Tizen" icon="images/menu/icons/tizen.png" url="https://www.tizen.org/" firstUsed="2013/Q4" lastUsed="2013/Q4">
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+        <Project name="Tau"/>
+    </Platform>
+    <Platform name="Roku" icon="images/menu/icons/roku.png" url="https://www.roku.com/" firstUsed="2014/Q3">
+        <Project name="Memo Blocks"/>
+        <Project name="Poker Slot Machine"/>
+        <Project name="Tau"/>
+    </Platform>
+    <Platform name="OS X" icon="images/menu/icons/os_x.png" url="http://www.apple.com/osx/" firstUsed="2011/Q4" lastUsed="2012/Q4">
+        <Project name="Monster Shooter OS X"/>
+        <Project name="TGOL OS X"/>
+        <Project name="Claw"/>
+    </Platform>
+    <Platform name="Windows Desktop" icon="images/menu/icons/windows.png" url="https://dev.windows.com/en-us/desktop" lastUsed="2011/Q2">
+        <Project name="Serce Zimy"/>
+        <Project name="Block Cascade Fusion"/>
+        <Project name="Funky Ball Worlds"/>
+        <Project name="Claw"/>
+        <Project name="Despicable Me"/>
+        <Project name="GPE"/>
+    </Platform>
+    <Platform name="Moblin" icon="images/menu/icons/moblin.png" url="https://en.wikipedia.org/wiki/Moblin">
+        <Project name="Block Cascade Fusion"/>
+        <Project name="Funky Ball Worlds"/>
+    </Platform>
+    <Platform name="Meego" icon="images/menu/icons/meego.png" url="https://en.wikipedia.org/wiki/MeeGo">
+        <Course name="Meego Hands-On"/>
+    </Platform>
+    <Platform name="Maemo" icon="images/menu/icons/maemo.png" url="http://maemo.org/" firstUsed="2010/Q2" lastUsed="2010/Q3">
+        <Project name="Cardio Tracker"/>
+        <Project name="Crazy Hamster"/>
+        <Project name="Claw"/>
+    </Platform>
+    <Platform name="Symbian" icon="images/menu/icons/symbian.png" url="https://en.wikipedia.org/wiki/Symbian" lastUsed="2012/Q1">
+        <Project name="Video Pro Symbian Belle"/>
+        <Project name="Silent Film Director Symbian Belle"/>
+        <Project name="Silent Film Director"/>
+        <Project name="Serce Zimy"/>
+        <Project name="Tau"/>
+        <Project name="Lyric Legend"/>
+        <Project name="Cardio Tracker"/>
+        <Project name="Crazy Hamster"/>
+        <Project name="The Sims 3"/>
+        <Project name="Tiger Woods"/>
+        <Project name="Claw"/>
+    </Platform>
+    <Platform name="Windows Mobile" icon="images/menu/icons/windows.png" url="https://en.wikipedia.org/wiki/Windows_Mobile">
+        <Project name="The Sims 3"/>
+    </Platform>
+    <Platform name="PSP" icon="images/menu/icons/psp.png" url="https://en.wikipedia.org/wiki/PlayStation_Portable">
+        <Project name="Yeti Sports"/>
+    </Platform>
+    <Platform name="J2ME" icon="images/menu/icons/j2me.png" url="https://en.wikipedia.org/wiki/Java_Platform,_Micro_Edition">
+        <Project name="Time Crisis"/>
+    </Platform>
+    <Platform name="VxWorks" icon="images/menu/icons/vxworks.png" url="https://en.wikipedia.org/wiki/VxWorks" lastUsed="2006/Q4">
+        <Project name="IP-DSLAM"/>
+    </Platform>
+    <Platform name="Embedded Linux" icon="images/menu/icons/linux.png" url="https://en.wikipedia.org/wiki/Linux_on_embedded_systems">
+        <Project name="IP-DSLAM"/>
+    </Platform>
+    <Platform name="Microsoft Azure" icon="images/menu/icons/azure.png" url="https://azure.microsoft.com/en-us/">
+        <Course name="Microsoft Azure"/>
+    </Platform>
+</Platforms>

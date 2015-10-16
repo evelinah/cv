@@ -1,0 +1,14 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<Methodologies>
+    <Methodology name="Scrum" icon="images/menu/icons/default.png" url="https://en.wikipedia.org/wiki/Scrum_(software_development)">
+        <Project name="HERE Maps"/>
+        <Project name="I Am MTV"/>
+        <Project name="7TV"/>
+        <Project name="Super Boost"/>
+        <Project name="Fable: Coin Golf"/>
+    </Methodology>
+    <Methodology name="Kanban" icon="images/menu/icons/default.png" url="https://en.wikipedia.org/wiki/Kanban_(development)">
+        <Project name="HERE Maps"/>
+    </Methodology>
+</Methodologies>

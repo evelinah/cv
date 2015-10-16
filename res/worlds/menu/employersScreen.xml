@@ -1,0 +1,15 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<World>
+    <Entity name="employersScreen" active="false">
+        <EmployersScreen navigationTabs="Home/Professional experience/Employers"/>
+
+        <Entity name="employersScreenZoomInTransition">
+            <Entity name="employersList">
+                <!-- M::employersList -->
+                <ListView cellName="employerCell" cellMargin="ListCellMargin" height="ListHeight" touchable="true"/>
+                <Layouter sprite="ListView" flags="HCenter|Top" padding="0 -46"/>
+            </Entity>
+        </Entity>
+    </Entity>
+</World>

@@ -1,0 +1,174 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<Projects>
+    <Group label="2015 - 2014">
+        <Project name="HERE Maps" icon="images/menu/icons/projects/here_maps.png" startDate="2014/Q4" endDate="now" publisher="Nokia Apps">
+            <Description text="A mobile maps and navigation application for iOS."/>
+            <Link store="Apple" url="https://itunes.apple.com/us/app/here-offline-navigation-maps/id955837609"/>
+        </Project>
+        <Project name="I Am MTV" icon="images/menu/icons/projects/i_am_mtv.png" startDate="2014/Q4" endDate="2014/Q4" publisher="Viacom" status="unavailable">
+            <Description text="A mobile video recording and processing application for Android."/>
+        </Project>
+        <Project name="ING Mobile" displayName="INGMobile" icon="images/menu/icons/projects/ing_mobile.png" startDate="2014/Q3" publisher="ING Bank Slaski">
+            <Description text="A mobile multiplatform banking application."/>
+            <Link store="Apple" url="https://itunes.apple.com/us/app/ingmobile/id489485389"/>
+            <Link store="Google" url="https://play.google.com/store/apps/details?id=pl.ing.ingmobile"/>
+            <Link store="WP" url="http://www.windowsphone.com/en-us/store/app/ingmobile/40dc04a4-6287-4bfb-8ddd-d86026da3034"/>
+        </Project>
+    </Group>
+    <Group label="2013">
+        <Project name="7TV" icon="images/menu/icons/projects/7tv.png" startDate="2013/Q4" endDate="2014/Q2" publisher="ProSiebenSat.1 Digital">
+            <Description text="A video streaming application for Windows Store and Windows Phone."/>
+            <Link store="WS" url="http://apps.microsoft.com/windows/de-de/app/7tv/0fa8303d-1eae-4150-8af4-52460107fc75"/>
+            <Link store="WP" url="http://www.windowsphone.com/de-de/store/app/7tv/90d79c9a-de40-4367-ac4f-66e7b5ff46fc"/>
+        </Project>
+        <Project name="TGOL Fire TV" displayName="The Game Of Life (Fire TV)" icon="images/menu/icons/projects/the_game_of_life.png" startDate="2013/Q3" publisher="Electronic Arts">
+            <Description text="A set-top box game for Amazon Fire TV."/>
+            <Link store="Amazon" url="http://www.amazon.com/Electronic-Arts-THE-GAME-LIFE/dp/B0094K662S"/>
+        </Project>
+        <Project name="Memo Blocks" icon="images/menu/icons/projects/memo_blocks.png" startDate="2013/Q3" endDate="now" publisher="Liquid Design">
+            <Description text="A multiplatform puzzle game."/>
+            <Link store="Apple" url="https://itunes.apple.com/us/app/memo-blocks-hd/id820623378"/>
+            <Link store="Google" url="https://play.google.com/store/apps/details?id=org.libsdl.app.MemoBlocks"/>
+            <Link store="Amazon" url="http://www.amazon.com/Tau-Design-Memo-Blocks/dp/B00EWRSGT4"/>
+            <Link store="Opera" url="http://apps.opera.com/en_us/memo_blocks.html"/>
+            <Link store="BlackBerry" url="http://appworld.blackberry.com/webstore/content/47523891"/>
+        </Project>
+        <Project name="Poker Slot Machine" icon="images/menu/icons/projects/poker_slot_machine.png" startDate="2013/Q3" endDate="now" publisher="Liquid Design">
+            <Description text="A multiplatform casino game."/>
+            <Link store="Apple" url="https://itunes.apple.com/us/app/poker-slot-machine-hd/id778874599"/>
+            <Link store="Google" url="https://play.google.com/store/apps/details?id=org.libsdl.app.PokerSlotMachine"/>
+            <Link store="Amazon" url="http://www.amazon.com/Liquid-Design-Poker-Slot-Machine/dp/B00EWQ7ZQA"/>
+            <Link store="Opera" url="http://apps.opera.com/en_us/poker_slot_machine_poker_slot_machine.html"/>
+            <Link store="WP" url="http://www.windowsphone.com/en-us/store/app/poker-slot-machine/33444ecf-156f-45bc-87cb-643a986a9f0b"/>
+            <Link store="WS" url="http://apps.microsoft.com/windows/app/poker-slot-machine/b31912a4-5881-4eaf-8f3d-b960f470a58f"/>
+            <Link store="BlackBerry" url="http://appworld.blackberry.com/webstore/content/47402887"/>
+        </Project>
+        <Project name="Slots: Journey Of Magic" icon="images/menu/icons/projects/slots_journey_of_magic.png" startDate="2013/Q2" endDate="2013/Q3" publisher="Gamelion Studios">
+            <Description text="A mobile multiplatform game."/>
+            <Link store="Apple" url="https://itunes.apple.com/us/app/slots-journey-of-magic/id684172190"/>
+            <Link store="Google" url="https://play.google.com/store/apps/details?id=com.gamelion.slots"/>
+            <Link store="Amazon" url="http://www.amazon.com/HUUUGE-GAMES-Slots-Journey-Magic/dp/B00FZUF5VY"/>
+        </Project>
+        <Project name="League Of Heroes" displayName="League Of Heroes (maint.)" icon="images/menu/icons/projects/league_of_heroes.png" startDate="2013/Q1" publisher="Gamelion Studios">
+            <Description text="A mobile multiplatform game."/>
+            <Link store="Apple" url="https://itunes.apple.com/us/app/league-of-heroes/id555272157"/>
+            <Link store="Google" url="https://play.google.com/store/apps/details?id=com.gamelion.loh"/>
+            <Link store="Amazon" url="http://www.amazon.com/HUUUGE-GAMES-League-of-Heroes/dp/B00AAX3VQM"/>
+        </Project>
+        <Project name="Monster Shooter" displayName="Monster Shooter (maint.)" icon="images/menu/icons/projects/monster_shooter.png" startDate="2013/Q1" publisher="Gamelion Studios">
+            <Description text="A mobile multiplatform game."/>
+            <Link store="Apple" url="https://itunes.apple.com/us/app/monster-shooter-dual-stick/id482574214"/>
+            <Link store="Google" url="https://play.google.com/store/apps/details?id=com.gamelion.MonsterShooter"/>
+            <Link store="Amazon" url="http://www.amazon.com/HUUUGE-GAMES-Monster-Shooter/dp/B007ZS69YQ"/>
+        </Project>
+    </Group>
+    <Group label="2012">
+        <Project name="Monster Shooter OS X" displayName="MS: The Lost Levels (OS X)" icon="images/menu/icons/projects/monster_shooter_the_lost_levels.png" startDate="2012/Q4" publisher="Gamelion Studios">
+            <Description text="A desktop game for OS X."/>
+            <Link store="Apple" url="https://itunes.apple.com/us/app/monster-shooter-lost-levels/id581473634"/>
+        </Project>
+        <Project name="TGOL iOS6" displayName="The Game Of Life (iOS6)" icon="images/menu/icons/projects/the_game_of_life.png" startDate="2012/Q4" publisher="Electronic Arts">
+            <Description text="A mobile game for iOS."/>
+            <Link store="Apple" url="https://itunes.apple.com/us/app/game-life-classic-edition/id326912270"/>
+        </Project>
+        <Project name="The Sims 3 iOS6" displayName="The Sims 3 (iOS6)" icon="images/menu/icons/projects/the_sims_3.png" startDate="2012/Q4" publisher="Electronic Arts">
+            <Description text="A mobile game for iOS."/>
+            <Link store="Apple" url="https://itunes.apple.com/us/app/the-sims-3/id317904170"/>
+        </Project>
+        <Project name="Super Boost" startDate="2012/Q2" endDate="2012/Q3" icon="images/menu/icons/default.png" publisher="Gamelion Studios" status="cancelled">
+            <Description text="A mobile multiplatform game."/>
+        </Project>
+        <Project name="Video Pro Symbian Belle" displayName="Video Pro (Symbian Belle)" icon="images/menu/icons/projects/video_pro.png" startDate="2012/Q1" publisher="BLStream">
+            <Description text="A mobile video processing application for Symbian."/>
+            <Link store="Opera" url="http://symbian.apps.opera.com/en_us/videopro_lite_edition.html"/>
+        </Project>
+        <Project name="Silent Film Director Symbian Belle" displayName="Silent Film Director (S. Belle)" icon="images/menu/icons/projects/silent_film_director.png" startDate="2012/Q1" publisher="BLStream">
+            <Description text="A mobile video recording and processing application for Symbian."/>
+            <Link store="Opera" url="http://symbian.apps.opera.com/en_us/silent_film_director.html"/>
+        </Project>
+    </Group>
+    <Group label="2011">
+        <Project name="TGOL OS X" displayName="The Game Of Life (OS X)" icon="images/menu/icons/projects/the_game_of_life.png" startDate="2011/Q4" publisher="Electronic Arts">
+            <Description text="A desktop game for OS X."/>
+            <Link store="Apple" url="https://itunes.apple.com/us/app/the-game-of-life/id488317477"/>
+        </Project>
+        <Project name="Crazy Hamster iOS" displayName="Crazy Hamster (iOS)" icon="images/menu/icons/projects/crazy_hamster.png" startDate="2011/Q4" publisher="Gamelion Studios">
+            <Description text="A mobile multiplatform game."/>
+            <Link store="Apple" url="https://itunes.apple.com/us/app/crazy-hamster/id337721499"/>
+        </Project>
+        <Project name="Silent Film Director" startDate="2011/Q2" icon="images/menu/icons/projects/silent_film_director.png" endDate="2011/Q3" publisher="BLStream">
+            <Description text="A mobile video recording and processing application for Symbian."/>
+            <Link store="Opera" url="http://symbian.apps.opera.com/en_us/silent_film_director.html"/>
+        </Project>
+        <Project name="Crazy Hamster Android" displayName="Crazy Hamster (Android)" icon="images/menu/icons/projects/crazy_hamster.png" startDate="2011/Q2" publisher="Gamelion Studios">
+            <Description text="A mobile multiplatform game."/>
+            <Link store="Google" url="https://play.google.com/store/apps/details?id=com.Gamelion.CrazyHamster"/>
+        </Project>
+        <Project name="Serce Zimy" displayName="1812: Serce Zimy (maint.)" startDate="2011/Q1" icon="images/menu/icons/projects/serce_zimy.png" endDate="2011/Q2" publisher="Telekomunikacja Polska">
+            <Description text="A mobile multiplatform audiogame."/>
+            <Link store="Apple" url="https://itunes.apple.com/pl/app/1812-serce-zimy/id472212105"/>
+        </Project>
+    </Group>
+    <Group label="2010">
+        <Project name="Tau" displayName="Tau R&amp;D" icon="images/menu/icons/tau.png" startDate="2010/Q4" endDate="now" publisher="Łukasz Kosakowski" status="internal">
+            <Description text="A platform abstraction framework."/>
+        </Project>
+        <Project name="Lyric Legend" displayName="Lyric Legend Music Game" icon="images/menu/icons/projects/lyric_legend.png" startDate="2010/Q4" publisher="TuneWiki">
+            <Description text="A mobile multiplatform game."/>
+            <Link store="Opera" url="http://apps.opera.com/en_pl/lyric_legend_music_game.html"/>
+        </Project>
+        <Project name="Fable: Coin Golf" icon="images/menu/icons/projects/fable_coin_golf.png" startDate="2010/Q3" endDate="2010/Q4" publisher="Microsoft Studios">
+            <Description text="A mobile game for Windows Phone 7."/>
+            <Link store="WP" url="http://www.windowsphone.com/en-us/store/app/fable-coin-golf/788c002f-5649-e011-854c-00237de2db9e"/>
+        </Project>
+        <Project name="Cardio Tracker" icon="images/menu/icons/projects/cardio_tracker.png" startDate="2010/Q3" publisher="BLStream">
+            <Description text="A mobile multiplatform fitness application."/>
+            <Link store="Opera" url="http://symbian.apps.opera.com/en_us/cardio_tracker.html"/>
+        </Project>
+        <Project name="Crazy Hamster" icon="images/menu/icons/projects/crazy_hamster.png" startDate="2010/Q2" publisher="Gamelion Studios" status="unavailable">
+            <Description text="A mobile multiplatform game."/>
+        </Project>
+        <Project name="The Sims 3" icon="images/menu/icons/projects/the_sims_3.png" startDate="2010/Q1" publisher="Electronic Arts">
+            <Description text="A mobile multiplatform game."/>
+            <Link store="Google" url="https://play.google.com/store/apps/details?id=com.eamobile.sims3_row_qwf"/>
+        </Project>
+        <Project name="Claw Mini Games" icon="images/menu/icons/claw.png" startDate="2010/Q1" publisher="Gamelion Studios" status="internal">
+            <Description text="A framework aimed at speeding up development of simple games."/>
+        </Project>
+    </Group>
+    <Group label="2009">
+        <Project name="Block Cascade Fusion" displayName="Block Cascade Fusion (desktop)" icon="images/menu/icons/projects/block_cascade_fusion.png" startDate="2009/Q4" endDate="2010/Q1" publisher="Gamelion Studios" status="unavailable">
+            <Description text="A mobile multiplatform game."/>
+        </Project>
+        <Project name="Funky Ball Worlds" displayName="Funky Ball Worlds (desktop)" icon="images/menu/icons/projects/funky_ball_worlds.png" startDate="2009/Q4" endDate="2010/Q1" publisher="Gamelion Studios" status="unavailable">
+            <Description text="A mobile multiplatform game."/>
+        </Project>
+        <Project name="Ninja Fighter" icon="images/menu/icons/default.png" startDate="2009/Q4" publisher="Gamelion Studios" status="cancelled">
+            <Description text="A mobile multiplatform game."/>
+        </Project>
+        <Project name="Despicable Me" icon="images/menu/icons/default.png" startDate="2009/Q4" publisher="Gamelion Studios" status="demo">
+            <Description text="A mobile multiplatform game."/>
+        </Project>
+        <Project name="Yeti Sports" displayName="Yeti Sports: Pingu Throw (PSP)" icon="images/menu/icons/projects/yeti_sports.png" startDate="2009/Q3" publisher="Xendex" status="unavailable">
+            <Description text="A mobile multiplatform game."/>
+        </Project>
+        <Project name="Time Crisis" displayName="Time Crisis 2D" startDate="2009/Q2" icon="images/menu/icons/projects/time_crisis.png" endDate="2009/Q3" publisher="Namco Bandai Games"  status="unavailable">
+            <Description text="A mobile J2ME game."/>
+        </Project>
+        <Project name="Tiger Woods" displayName="Tiger Woods PGA Tour 09" icon="images/menu/icons/projects/tiger_woods.png" startDate="2009/Q1" endDate="2009/Q2" publisher="Electronic Arts" status="unavailable">
+            <Description text="A mobile N-Gage game for Symbian."/>
+        </Project>
+        <Project name="Claw" displayName="Claw R&amp;D" icon="images/menu/icons/claw.png" startDate="2009/Q1" endDate="2013/Q3" publisher="Gamelion Studios" status="internal">
+            <Description text="A platform abstraction framework."/>
+        </Project>
+    </Group>
+    <Group label="2008 - 2006">
+        <Project name="GPE" displayName="GP Engine" icon="images/menu/icons/projects/gpe.png" startDate="2008/Q2" endDate="2008/Q4" publisher="Łukasz Kosakowski" status="internal">
+            <Description text="Graphics and physics engine with scene editing application."/>
+        </Project>
+        <Project name="IP-DSLAM" icon="images/menu/icons/projects/ipdslam.png" startDate="2006/Q4" endDate="2008/Q2" publisher="Nokia Siemens Networks" status="internal">
+            <Description text="Firmware for Siemens SURPASS hiX devices."/>
+        </Project>
+    </Group>
+</Projects>

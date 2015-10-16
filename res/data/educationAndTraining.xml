@@ -1,0 +1,23 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<EdocuationAndTraining>
+    <Education>
+        <School name="High School" icon="images/menu/icons/schools/lo.png" url="http://www.lo1.szczecin.pl/" location="Szczecin, Poland" startDate="1998/Q3" endDate="2002/Q2">
+            <Info text="Profile: mathematics &amp; computer science"/>
+        </School>
+        <School name="Technical University of Szczecin" icon="images/menu/icons/schools/zut.png" url="https://www.wi.zut.edu.pl/" location="Szczecin, Poland" startDate="2002/Q3" endDate="2007/Q2">
+            <Info text="Faculty of Computer Science&#10;Specialization: computer graphics &amp; multimedia"/>
+        </School>
+        <School name="University of Szczecin" icon="images/menu/icons/schools/us.png" url="http://www.wf.usz.edu.pl/instituteofgermanphilology" location="Szczecin, Poland" startDate="2003/Q3" endDate="2004/Q2">
+            <Info text="Faculty of Humanities&#10;One year of German studies"/>
+        </School>
+    </Education>
+    <Training>
+        <Course name="Meego Hands-On" icon="images/menu/icons/meego.png" url="https://en.wikipedia.org/wiki/MeeGo" location="Espoo, Finland" startDate="2010/Q3" endDate="2010/Q3">
+            <Info text="Organized by Nokia for select partners."/>
+        </Course>
+        <Course name="Microsoft Azure" icon="images/menu/icons/azure.png" url="https://azure.microsoft.com/en-us/" location="Szczecin, Poland" startDate="2015/Q2" endDate="2015/Q2">
+            <Info text="Carried out by Bottega IT Solutions."/>
+        </Course>
+    </Training>
+</EdocuationAndTraining>

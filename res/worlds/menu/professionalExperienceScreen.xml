@@ -1,0 +1,87 @@
+<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+
+<World>
+    <Entity name="professionalExperienceScreen" active="false">
+        <ProfessionalExperienceScreen navigationTabs="Home/Professional experience"/>
+
+        <Constant name="professionalExperienceColumn1" value="0 0 0"/>
+        <Constant name="professionalExperienceColumn2" value="98 0 0"/>
+        <Constant name="professionalExperienceColumn3" value="196 0 0"/>
+
+        <Entity name="professionalExperienceScreenZoomInTransition">
+            <Entity name="professionalExperienceSectionButtons">
+                <Entity name="professionalExperienceBlock1" position="0 0 0">
+                    <Entity name="professionalExperienceRow1" position="0 0 0">
+                        <!-- M::employersButton -> employersButton.Sprite -->
+                        <Entity name="employersButton" position="professionalExperienceColumn1" template="sectionButtonSmallSquare" _text="TEXT_EMPLOYERS" _color="OrangeButton"/>
+                        <!-- M::projectsButton -> projectsButton.Sprite -->
+                        <Entity name="projectsButton" position="professionalExperienceColumn2" template="sectionButtonSmallSquare" _text="TEXT_PROJECTS" _color="OrangeButton"/>
+                        <!-- M::sdkIntegrationButton -> sdkIntegrationButton.Sprite -->
+                        <Entity name="sdkIntegrationButton" position="professionalExperienceColumn3" template="sectionButtonSmallSquare" _text="TEXT_SDK_INTEGRATION" _color="OrangeButton"/>
+                    </Entity>
+                </Entity>
+                <Entity name="professionalExperienceBlock2" position="0 -85 0">
+                    <Entity name="professionalExperienceRow2" position="0 0 0">
+                        <!-- M::programmingLanguagesButton -> programmingLanguagesButton.Sprite -->
+                        <Entity name="programmingLanguagesButton" position="professionalExperienceColumn1" template="sectionButtonSmallRect" _text="TEXT_PROGRAMMING_LANGUAGES" _color="BlueButton"/>
+                        <!-- M::platformsButton -> platformsButton.Sprite -->
+                        <Entity name="platformsButton" position="professionalExperienceColumn2" template="sectionButtonSmallRect" _text="TEXT_PLATFORMS" _color="BlueButton"/>
+                        <!-- M::middlewareButton -> middlewareButton.Sprite -->
+                        <Entity name="middlewareButton" position="professionalExperienceColumn3" template="sectionButtonSmallRect" _text="TEXT_MIDDLEWARE" _color="BlueButton"/>
+                    </Entity>
+                    <Entity name="professionalExperienceRow3" position="0 -52 0">
+                        <!-- M::deviceClassesButton -> deviceClassesButton.Sprite -->
+                        <Entity name="deviceClassesButton" position="professionalExperienceColumn1" template="sectionButtonSmallRect" _text="TEXT_DEVICE_CLASSES" _color="BlueButton"/>
+                        <!-- M::openSourceLibrariesButton -> openSourceLibrariesButton.Sprite -->
+                        <Entity name="openSourceLibrariesButton" position="professionalExperienceColumn2" template="sectionButtonSmallRect" _text="TEXT_OPEN_SOURCE_LIBRARIES" _color="BlueButton"/>
+                        <!-- M::appStoresButton -> appStoresButton.Sprite -->
+                        <Entity name="appStoresButton" position="professionalExperienceColumn3" template="sectionButtonSmallRect" _text="TEXT_APP_STORES" _color="BlueButton"/>
+                    </Entity>
+                </Entity>
+                <Entity name="professionalExperienceBlock3" position="0 -199 0">
+                    <Entity name="professionalExperienceRow4" position="0 0 0">
+                        <!-- M::uiTechnologiesButton -> uiTechnologiesButton.Sprite -->
+                        <Entity name="uiTechnologiesButton" position="professionalExperienceColumn1" template="sectionButtonSmallRect" _text="TEXT_UI_TECHNOLOGIES" _color="LightBlueButton"/>
+                        <!-- M::mediaTchnologiesButton -> mediaTchnologiesButton.Sprite -->
+                        <Entity name="mediaTchnologiesButton" position="professionalExperienceColumn2" template="sectionButtonSmallRect" _text="TEXT_MEDIA_TECHNOLOGIES" _color="LightBlueButton"/>
+                        <!-- M::webTechnologiesButton -> webTechnologiesButton.Sprite -->
+                        <Entity name="webTechnologiesButton" position="professionalExperienceColumn3" template="sectionButtonSmallRect" _text="TEXT_WEB_TECHNOLOGIES" _color="LightBlueButton"/>
+                    </Entity>
+                    <Entity name="professionalExperienceRow5" position="0 -52 0">
+                        <!-- M::ideButton -> ideButton.Sprite -->
+                        <Entity name="ideButton" position="professionalExperienceColumn1" template="sectionButtonSmallRect" _text="TEXT_IDE" _color="LightBlueButton"/>
+                        <!-- M::vcsButton -> vcsButton.Sprite -->
+                        <Entity name="vcsButton" position="professionalExperienceColumn2" template="sectionButtonSmallRect" _text="TEXT_VCS" _color="LightBlueButton"/>
+                        <!-- M::unitAndUITesting -> unitAndUITesting.Sprite -->
+                        <Entity name="unitAndUITesting" position="professionalExperienceColumn3" template="sectionButtonSmallRect" _text="TEXT_UNIT_AND_UI_TESTING" _color="LightBlueButton"/>
+                    </Entity>
+                    <Entity name="professionalExperienceRow6" position="0 -104 0">
+                        <!-- M::dbmsButton -> dbmsButton.Sprite -->
+                        <Entity name="dbmsButton" position="professionalExperienceColumn1" template="sectionButtonSmallRect" _text="TEXT_DBMS" _color="LightBlueButton"/>
+                        <!-- M::dataExchangeFormatsButton -> dataExchangeFormatsButton.Sprite -->
+                        <Entity name="dataExchangeFormatsButton" position="professionalExperienceColumn2" template="sectionButtonSmallRect" _text="TEXT_DATA_EXCHANGE_FORMATS" _color="LightBlueButton"/>
+                        <!-- M::locationsButton -> locationsButton.Sprite -->
+                        <Entity name="locationsButton" position="professionalExperienceColumn3" template="sectionButtonSmallRect" _text="TEXT_LOCATIONS" _color="LightBlueButton"/>
+                    </Entity>
+                    <Entity name="professionalExperienceRow7" position="0 -156 0">
+                        <!-- M::methodologiesButton -> methodologiesButton.Sprite -->
+                        <Entity name="methodologiesButton" position="professionalExperienceColumn1" template="sectionButtonSmallRect" _text="TEXT_METHODOLOGIES" _color="LightBlueButton"/>
+                        <!-- M::developmentTeamSizeButton -> developmentTeamSizeButton.Sprite -->
+                        <Entity name="developmentTeamSizeButton" position="professionalExperienceColumn2" template="sectionButtonSmallRect" _text="TEXT_DEVELOPMENT_TEAM_SIZE" _color="LightBlueButton"/>
+                        <!-- M::rolesButton -> rolesButton.Sprite -->
+                        <Entity name="rolesButton" position="professionalExperienceColumn3" template="sectionButtonSmallRect" _text="TEXT_ROLES" _color="LightBlueButton"/>
+                    </Entity>
+                </Entity>
+                <SpriteGroup>
+                    <Sprite sprite="employersButton.Sprite"/>
+                    <Sprite sprite="sdkIntegrationButton.Sprite"/>
+                    <Sprite sprite="developmentTeamSizeButton.Sprite"/>
+                    <Sprite sprite="locationsButton.Sprite"/>
+                </SpriteGroup>
+                <Layouter sprite="SpriteGroup" flags="HCenter|VCenter"/>
+            </Entity>
+        </Entity>
+
+        <Entity name="professionalExperienceScreenSlideInBottomTransition" template="footerText" _text="TEXT_SELECT_CATEGORY"/>
+    </Entity>
+</World>
