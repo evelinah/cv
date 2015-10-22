@@ -1,10 +1,26 @@
-<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
 
 <World>
     <Template name="footerText">
         <Entity name="text">
             <TextSprite text="._text" font="font11" layerDepth="true" layer="3"/>
             <Layouter sprite="TextSprite" flags="HCenter|Bottom" padding="0 12"/>
+        </Entity>
+    </Template>
+    <Template name="detailsTextLine">
+        <TextSprite text="._key" font="font14" color="LightBlueText"/>
+        <Layouter sprite="TextSprite" parent="._parent" flags="Left|Top" padding="._padding"/>
+        <Entity name="value">
+            <TextSprite text="" translate="false" font="font14" color="0 0 0" pivot="0.5 0.5" justify="Left"/>
+            <Layouter sprite="TextSprite" parent="super.TextSprite" flags="Left|VCenter" padding="82 0"/>
+        </Entity>
+    </Template>
+    <Template name="detailsTextLineSmall">
+        <TextSprite text="._key" font="font13" color="LightBlueText"/>
+        <Layouter sprite="TextSprite" parent="._parent" flags="Left|Top" padding="._padding"/>
+        <Entity name="value">
+            <TextSprite text="" translate="false" font="font13" color="0 0 0"/>
+            <Layouter sprite="TextSprite" parent="super.TextSprite" flags="Left|VCenter" padding="76 0"/>
         </Entity>
     </Template>
 

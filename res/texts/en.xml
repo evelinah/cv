@@ -1,4 +1,4 @@
-<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
 
 <Dictionary>
     <!-- home -->
@@ -17,6 +17,7 @@
     <Text name="TEXT_DATE" value="Date"/>
     <Text name="TEXT_NAME" value="Name"/>
     <Text name="TEXT_PROJECTS" value="Projects"/>
+    <Text name="TEXT_NONE" value="None"/>
     <!-- personal information -->
     <Text name="TEXT_NAME_COLON" value="Name:"/>
     <Text name="TEXT_ADDRESS_COLON" value="Address:"/>
@@ -55,26 +56,28 @@
     <Text name="TEXT_FIRST_USED" value="First used"/>
     <Text name="TEXT_LAST_USED" value="Last used"/>
     <!-- professional experience category details -->
+    <Text name="TEXT_WEBSITE_COLON" value="Website:"/>
+    <Text name="TEXT_WIKIPEDIA_PAGE" value="Wikipedia page"/>
     <Text name="TEXT_PROJECTS_COUNT_COLON" value="Projects ($()):"/>
+    <Text name="TEXT_SELECT_PROJECT" value="Select project"/>
     <!-- project details -->
-    <Text name="TEXT_UNAVAILABLE" value="&lt;unavailable&gt;"/>
-    <Text name="TEXT_INTERNAL_PROJECT" value="&lt;internal project&gt;"/>
-    <Text name="TEXT_CANCELLED" value="&lt;cancelled&gt;"/>
-    <Text name="TEXT_DEMO" value="&lt;demo&gt;"/>
+    <Text name="TEXT_UNAVAILABLE" value="None (unavailable)"/>
+    <Text name="TEXT_INTERNAL_PROJECT" value="None (internal project)"/>
+    <Text name="TEXT_CANCELLED" value="None (cancelled)"/>
+    <Text name="TEXT_DEMO" value="None (demo project)"/>
     <Text name="TEXT_APP_STORES_COLON" value="App stores:"/>
     <Text name="TEXT_PUBLISHER_COLON" value="Publisher:"/>
     <Text name="TEXT_PLATFORMS_COLON" value="Platforms:"/>
     <Text name="TEXT_DEVICES_COLON" value="Devices:"/>
     <Text name="TEXT_MIDDLEWARE_COLON" value="Middleware:"/>
     <Text name="TEXT_LANGUAGES_COLON" value="Languages:"/>
-    <Text name="TEXT_NONE" value="&lt;none&gt;"/>
     <Text name="TEXT_EMPTY" value=""/>
     <Text name="TEXT_TAP_ICONS_TO_NAVIGATE" value="Tap icons to navigate"/>
     <!-- skills and interests -->
     <Text name="TEXT_TRAITS" value="Traits"/>
     <Text name="TEXT_LANGUAGES" value="Languages"/>
     <Text name="TEXT_INTERESTS" value="Interests"/>
-    <Text name="TEXT_PHILOSOPHY" value="Interests"/>
+    <Text name="TEXT_PHILOSOPHY" value="Philosophy"/>
     <!-- philosophy -->
     <Text name="TEXT_DO_COLON" value="Do:"/>
     <Text name="TEXT_DONT_COLON" value="Don't:"/>

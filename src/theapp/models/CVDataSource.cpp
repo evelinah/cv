@@ -1,4 +1,4 @@
-// rev: 89281ca, exported: 2015-10-16 23:24:12
+// rev: 524a6b2, exported: 2015-10-22 11:19:28
 
 #include "theapp/models/CVDataSource.hpp"
 
@@ -9,6 +9,11 @@
 
 namespace TheApp
 {
+
+    Tau::String CVDataSource::GetDisplayUrl( const Tau::String& url )
+    {
+        return !url.HasLength() ? (Tau::String)Tau::Dictionary::Get()->GetText( "TEXT_NONE" ) : Tau::StringUtils::Has( url, "wikipedia" ) ? (Tau::String)Tau::Dictionary::Get()->GetText( "TEXT_WIKIPEDIA_PAGE" ) : url;
+    }
 
     void CVDataSource::ValidateTimeFrame( const Tau::String& startDate, const Tau::String& endDate )
     {

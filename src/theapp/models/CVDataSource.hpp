@@ -1,8 +1,9 @@
-// rev: 89281ca, exported: 2015-10-16 23:24:12
+// rev: 524a6b2, exported: 2015-10-22 11:19:28
 
 #ifndef __INCLUDED_THE_APP_CV_DATA_SOURCE_HPP__
 #define __INCLUDED_THE_APP_CV_DATA_SOURCE_HPP__
 
+#include "components/base/Dictionary.hpp"
 #include "components/ui/ListView.hpp"
 
 namespace TheApp
@@ -19,6 +20,7 @@ namespace TheApp
             object.template Cast< CVDataSource >()->DisplayName = d.TryGet< Tau::String >( "displayName", object.template Cast< CVDataSource >()->Name );
             object.template Cast< CVDataSource >()->Icon = d.TryGet< Tau::String >( "icon", Tau::String::EMPTY );
             object.template Cast< CVDataSource >()->Url = d.TryGet< Tau::String >( "url", Tau::String::EMPTY );
+            object.template Cast< CVDataSource >()->DisplayUrl = GetDisplayUrl( object.template Cast< CVDataSource >()->Url );
 
             object->Deserialize( d );
             return object;
@@ -30,11 +32,15 @@ namespace TheApp
         Property::String< CVDataSource > DisplayName;
         Property::String< CVDataSource > Icon;
         Property::String< CVDataSource > Url;
+        Property::String< CVDataSource > DisplayUrl;
 
     protected:
         CVDataSource() {}
 
         static void ValidateTimeFrame( const Tau::String& startDate, const Tau::String& endDate );
+
+    private:
+        static Tau::String GetDisplayUrl( const Tau::String& url );
     };
 
     TAU_SMART_PTR( CVDataSource )

@@ -1,16 +1,24 @@
-// rev: 89281ca, exported: 2015-10-16 23:24:12
+// rev: 524a6b2, exported: 2015-10-22 11:19:28
 
 #include "theapp/controllers/ProfessionalExperienceCategoryDetailsScreen.hpp"
 #include "theapp/models/ProfessionalExperience.hpp"
 #include "taugen/TauSettingsCache.hpp"
 #include "taugen/TauWorldsCache.hpp"
 
-#include "components/base/Dictionary.hpp"
+#include "components/graphics/Camera.hpp"
+#include "components/graphics/Layouter.hpp"
 
 #include "extensions_platform/SystemUtils.hpp"
 
 namespace TheApp
 {
+
+    void ProfessionalExperienceCategoryDetailsScreen::Deserialize( const Tau::Deserializer& d )
+    {
+        CVMenuScreen::Deserialize( d );
+
+        Website = Tau::WeakPtr< Tau::TextSprite >( M::professionalExperienceCategoryDetailsWebsite->GetChild( "value" )->GetComponent( Tau::TextSprite ) );
+    }
 
     void ProfessionalExperienceCategoryDetailsScreen::Navigation_Setup( const Tau::Any& data )
     {
@@ -25,6 +33,14 @@ namespace TheApp
         M::professionalExperienceCategoryDetailsIcon->SetHeight( M::professionalExperienceCategoryDetailsIcon->GetComponent( Tau::Frame )->Height );
         M::professionalExperienceCategoryDetailsName->SetText( DataSource->DisplayName );
         M::professionalExperienceCategoryDetailsTimeFrame->GetChild( "value" )->GetComponent( Tau::TextSprite )->SetText( DataSource->GetFirstUsed() + " - " + DataSource->GetLastUsed() );
+
+        Website->SetWidth( Tau::Camera::Get()->ProjectionResolution - C::uiMargin10.Get() - Website->GetPosition().X + Tau::Camera::Get()->ProjectionRect.Val().X, false );
+        Website->SetEllipsis( true, false );
+        Website->SetText( DataSource->DisplayUrl );
+        Website->SetPivot( Website->GetTextWidth() / ( 2 * Website->Width ) );
+        Website->GetComponent( Tau::Layouter )->Align();
+        Website->SetTouchable( DataSource->Url.Val().HasLength() );
+
         M::professionalExperienceCategoryDetailsProjects->SetText( Tau::Dictionary::Get()->GetText( "TEXT_PROJECTS_COUNT_COLON" ).Replace( DataSource->Projects.Size() ) );
 
         Projects.Clear();
@@ -33,25 +49,13 @@ namespace TheApp
         ListView->GetComponent( Tau::ListViewScroller )->Reset();
 
         M::professionalExperienceCategoryDetailsFrame->SetWidth( M::professionalExperienceCategoryDetailsName->GetPosition().X + M::professionalExperienceCategoryDetailsName->GetWidth() - M::professionalExperienceCategoryDetailsIcon->GetPosition().X );
-        M::professionalExperienceCategoryDetailsFrame->SetTouchable( DataSource->Url.Val().HasLength() );
-    }
-
-    static Tau::AbstractSprite* SubstituteFrame( Tau::AbstractSprite* sprite )
-    {
-        return sprite == M::professionalExperienceCategoryDetailsFrame ? M::professionalExperienceCategoryDetailsName : sprite;
-    }
-
-    void ProfessionalExperienceCategoryDetailsScreen::OnSelectSprite( Tau::AbstractSprite* sprite, const Tau::String& name, bool select )
-    {
-        sprite = SubstituteFrame( sprite );
-        CVMenuScreen::OnSelectSprite( sprite, sprite->Owner->Name, select );
     }
 
     void ProfessionalExperienceCategoryDetailsScreen::OnSpriteUp( Tau::AbstractSprite* sprite, const Tau::String& name )
     {
         CVMenuScreen::OnSpriteUp( sprite, name );
 
-        if( sprite == M::professionalExperienceCategoryDetailsFrame )
+        if( sprite == Website )
         {
             A::analytics->Log( "go to item url", DataSource->Name + ", " + DataSource->Url );
             Tau::SystemUtils::OpenWebBrowser( DataSource->Url );

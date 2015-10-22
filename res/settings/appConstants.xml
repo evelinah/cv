@@ -1,4 +1,4 @@
-<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
 
 <Settings>
     <Node name="interpolation">
@@ -31,7 +31,10 @@
     </Node>
     <Node name="ui">
         <String name="basicCellHeight" value="25"/>
+        <String name="basicCellIconPadding" value="20 0"/>
+        <String name="basicCellNamePadding" value="41 -1"/>
         <String name="listGradientHeight" value="9"/>
+
         <Real name="navigationTabPadding" value="10"/>
         <Real name="margin10" value="10"/>
         <Real name="margin12" value="12"/>
@@ -48,6 +51,7 @@
         <Node name="projects">
             <String name="navigationTabs" value="Home/Professional experience/Projects"/>
             <String name="labelHeight" value="31"/>
+            <Real name="labelSectionWidth" value="140"/>
         </Node>
         <Node name="projectDetails">
             <Node name="icon">

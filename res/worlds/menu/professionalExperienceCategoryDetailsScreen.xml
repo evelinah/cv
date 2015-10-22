@@ -1,4 +1,4 @@
-<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
 
 <World>
     <Entity name="professionalExperienceCategoryDetailsScreen" active="false">
@@ -20,14 +20,18 @@
                 </Entity>
                 <!-- M::professionalExperienceCategoryDetailsTimeFrame -->
                 <Entity name="professionalExperienceCategoryDetailsTimeFrame" template="detailsTextLine" _key="TEXT_TIME_FRAME_COLON" _parent="" _padding="10 -57"/>
+                <!-- M::professionalExperienceCategoryDetailsWebsite -->
+                <Entity name="professionalExperienceCategoryDetailsWebsite" template="detailsTextLine" _key="TEXT_WEBSITE_COLON" _parent="" _padding="10 -82"/>
                 <Entity name="professionalExperienceCategoryDetailsProjects">
                     <!-- M::professionalExperienceCategoryDetailsProjects -->
                     <TextSprite text="" translate="false" font="font14" color="LightBlueText"/>
-                    <Layouter sprite="TextSprite" flags="Left|Top" padding="10 -82"/>
+                    <Layouter sprite="TextSprite" flags="Left|Top" padding="10 -107"/>
                 </Entity>
                 <!-- M::professionalExperienceCategoryDetailsList -> professionalExperienceCategoryDetailsList.ListView -->
-                <Entity name="professionalExperienceCategoryDetailsList" template="list" _cellName="basicCell" _padding="0 -102" _height="375" _spriteSelector="professionalExperienceCategoryDetailsScreen.SpriteSelector" _listView="professionalExperienceCategoryDetailsList.ListView"/>
+                <Entity name="professionalExperienceCategoryDetailsList" template="list" _cellName="basicCell" _padding="0 -127" _height="350" _spriteSelector="professionalExperienceCategoryDetailsScreen.SpriteSelector" _listView="professionalExperienceCategoryDetailsList.ListView"/>
             </Entity>
         </Entity>
+
+        <Entity name="professionalExperienceCategoryDetailsScreenSlideInBottomTransition" template="footerText" _text="TEXT_SELECT_PROJECT"/>
     </Entity>
 </World>

@@ -1,4 +1,4 @@
-<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
 
 <Projects>
     <Group label="2015 - 2014">
@@ -18,7 +18,7 @@
     </Group>
     <Group label="2013">
         <Project name="7TV" icon="images/menu/icons/projects/7tv.png" startDate="2013/Q4" endDate="2014/Q2" publisher="ProSiebenSat.1 Digital">
-            <Description text="A video streaming application for Windows Store and Windows Phone."/>
+            <Description text="A video streaming application for Windows RT and Windows Phone."/>
             <Link store="WS" url="http://apps.microsoft.com/windows/de-de/app/7tv/0fa8303d-1eae-4150-8af4-52460107fc75"/>
             <Link store="WP" url="http://www.windowsphone.com/de-de/store/app/7tv/90d79c9a-de40-4367-ac4f-66e7b5ff46fc"/>
         </Project>

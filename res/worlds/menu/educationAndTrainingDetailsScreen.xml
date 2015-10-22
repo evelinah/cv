@@ -1,4 +1,4 @@
-<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
 
 <World>
     <Entity name="educationAndTrainingDetailsScreen" active="false">
@@ -28,8 +28,10 @@
                     <Entity name="educationAndTrainingDetailsLines" position="0 -95 0">
                         <!-- M::educationAndTrainingDetailsTimeFrame -->
                         <Entity name="educationAndTrainingDetailsTimeFrame" template="detailsTextLine" _key="TEXT_TIME_FRAME_COLON" _parent="" _padding="0 0"/>
+                        <!-- M::educationAndTrainingDetailsWebsite -->
+                        <Entity name="educationAndTrainingDetailsWebsite" template="detailsTextLine" _key="TEXT_WEBSITE_COLON" _parent="" _padding="0 -25"/>
                         <!-- M::educationAndTrainingDetailsLocation -->
-                        <Entity name="educationAndTrainingDetailsLocation" template="detailsTextLine" _key="TEXT_LOCATION_COLON" _parent="" _padding="0 -25"/>
+                        <Entity name="educationAndTrainingDetailsLocation" template="detailsTextLine" _key="TEXT_LOCATION_COLON" _parent="" _padding="0 -50"/>
                     </Entity>
                 </Entity>
             </Entity>

@@ -1,4 +1,4 @@
-# rev: 89281ca, exported: 2015-10-16 23:24:12
+# rev: 524a6b2, exported: 2015-10-22 11:19:28
 
 import os, sys
 thisFile = os.path.abspath( __file__ )
@@ -19,20 +19,27 @@ isGame = False
 
 windowsStoreIdentityName = '<obfuscated>'
 
-version = ( 1, 0, 0 )
+version = ( 1, 0, 1 )
 
 # ---------------- #
 
 resResolution = 2880
 narrowScreenZoomOutFactor = 1
+atlasSplitHalves = Constants.AtlasSplitHalves.No
+
+iapEnabled = False
+googleAnalyticsTrackingId = '<obfuscated>'
 
 if Settings.platform == Constants.Platform.iOS:
     directResolutions = [ 640, 750, 1080, 1152 ]
+    flurryAppKey = '<obfuscated>'
 elif Settings.platform == Constants.Platform.Android:
     if Settings.androidBuild == Constants.AndroidBuild.Google:
         directResolutions = [ 320, 480, 720, 1080, 1440, 1600 ]
+        flurryAppKey = '<obfuscated>'
     elif Settings.androidBuild == Constants.AndroidBuild.Amazon:
         directResolutions = [ 600, 800, 1200, 1600 ]
+        flurryAppKey = '<obfuscated>'
     else:
         raise ValueError( 'Unexpected android build: ' + Settings.androidBuild )
 elif Settings.platform == Constants.Platform.WindowsPhone:
@@ -52,12 +59,3 @@ fonts = [ ( 'debugConsole', 'app' , 'MyriadPro-Regular.ttf', 8                  
           ( 'font19'      , 'menu', 'MyriadPro-Regular.ttf', 19                         , Constants.CharacterSet.Ascii       ),
           ( 'font20'      , 'menu', 'MyriadPro-Regular.ttf', 20                         , Constants.CharacterSet.Ascii       ),
           ( 'font22'      , 'menu', 'MyriadPro-Regular.ttf', 22                         , Constants.CharacterSet.PolishAscii ) ]
-
-atlasSplitHalves = Constants.AtlasSplitHalves.No
-
-# ---------------- #
-
-flurryAppKey = '<obfuscated>'
-googleAnalyticsTrackingId = '<obfuscated>'
-
-iapEnabled = False

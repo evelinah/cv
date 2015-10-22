@@ -1,13 +1,13 @@
-<!-- rev: 89281ca, exported: 2015-10-16 23:24:12 -->
+<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
 
 <World>
     <Include file="sgl/worlds/menu/detectors.xml"/>
 
+    <Include file="worlds/common/texts.xml"/>
     <Include file="worlds/common/buttons.xml"/>
     <Include file="worlds/common/cells.xml"/>
     <Include file="worlds/common/colors.xml"/>
     <Include file="worlds/common/list.xml"/>
-    <Include file="worlds/common/texts.xml"/>
 
     <Entity name="menu">
         <!-- M::menu -->

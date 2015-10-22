@@ -1,4 +1,4 @@
-// rev: 89281ca, exported: 2015-10-16 23:24:12
+// rev: 524a6b2, exported: 2015-10-22 11:19:28
 
 #include "theapp/controllers/ProjectDetailsScreen.hpp"
 #include "theapp/controllers/ProfessionalExperienceCategoryDetailsScreen.hpp"
@@ -138,7 +138,7 @@ namespace TheApp
             icon->SetVisible( true );
             icon->SetImage( extractIcon( items, i ) );
             icon->SetHeight( HEIGHT );
-            if( icon->GetWidth() > MAX_WIDTH ) { icon->SetWidth( MAX_WIDTH ); } 
+            if( icon->GetWidth() > MAX_WIDTH ) { icon->SetWidth( MAX_WIDTH ); }
 
             icon->GetComponent( Tau::Layouter )->SetPaddingX( shift );
             icon->GetComponent( Tau::Layouter )->Align();
