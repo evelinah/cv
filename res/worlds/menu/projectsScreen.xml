@@ -1,4 +1,4 @@
-<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
+<!-- rev: 5b8c3b9, exported: 2015-11-26 00:57:21 -->
 
 <World>
     <Entity name="projectsScreen" active="false">
@@ -7,7 +7,7 @@
         <Entity name="projectsScreenZoomInTransition">
             <!-- M::projectsList -> projectsList.ListView -->
             <!-- M::projectsListSorter -> projectsList.ListViewSorter -->
-            <Entity name="projectsList" template="list" _cellName="basicCell" _padding="0 -46" _height="ListHeight" _spriteSelector="projectsScreen.SpriteSelector" _listView="projectsList.ListView"/>
+            <Entity name="projectsList" template="list" _cellName="basicCell" _padding="0 -46" _height="ListHeight" _leftFadeOut="true" _spriteSelector="projectsScreen.SpriteSelector" _listView="projectsList.ListView"/>
         </Entity>
 
         <Entity name="projectsScreenSlideInBottomTransition">
@@ -23,7 +23,7 @@
                     <Sprite sprite="projectsSortByName.Frame"/>
                     <Sprite sprite="projectsSortByPublisher.Frame"/>
                 </SpriteGroup>
-                <Layouter sprite="SpriteGroup" flags="Left|Bottom"/>
+                <Layouter sprite="SpriteGroup" parent="contentFrame.Frame" flags="Left|Bottom"/>
                 <!-- M::projectsRadioButtons -->
                 <RadioButtonGroup>
                     <SpriteGroup spriteGroup="SpriteGroup"/>

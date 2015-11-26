@@ -1,4 +1,4 @@
-<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
+<!-- rev: 5b8c3b9, exported: 2015-11-26 00:57:21 -->
 
 <Middlewares>
     <Middleware name="SDL" icon="images/menu/icons/sdl.png" url="https://www.libsdl.org/">
@@ -42,6 +42,9 @@
     <Middleware name="Android SDK" icon="images/menu/icons/android.png" url="https://developer.android.com/sdk/index.html" firstUsed="2010/Q2">
         <Project name="Tau"/>
         <Project name="Claw"/>
+    </Middleware>
+    <Middleware name="Emscripten" icon="images/menu/icons/emscripten.png" url="http://kripken.github.io/emscripten-site/" firstUsed="2015/Q4">
+        <Project name="Tau"/>
     </Middleware>
     <Middleware name="Claw" icon="images/menu/icons/claw.png" lastUsed="2013/Q3">
         <Project name="Slots: Journey Of Magic"/>

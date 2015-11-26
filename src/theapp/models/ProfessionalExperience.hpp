@@ -1,4 +1,4 @@
-// rev: 524a6b2, exported: 2015-10-22 11:19:28
+// rev: 5b8c3b9, exported: 2015-11-26 00:57:21
 
 #ifndef __INCLUDED_THE_APP_PROFESSIONAL_EXPERIENCE_HPP__
 #define __INCLUDED_THE_APP_PROFESSIONAL_EXPERIENCE_HPP__
@@ -102,18 +102,20 @@ namespace TheApp
         enum ProjectStatus
         {
             PROJECT_STATUS_LIVE,
-            PROJECT_STATUS_UNAVAILABLE,
+            PROJECT_STATUS_NOT_YET_AVAILABLE,
+            PROJECT_STATUS_NO_LONGER_AVAILABLE,
             PROJECT_STATUS_INTERNAL,
             PROJECT_STATUS_CANCELLED,
             PROJECT_STATUS_DEMO
         };
 
         TAU_ENUM_STRING( TheApp::ProfessionalExperience, ProjectStatus,
-                         "live"       , PROJECT_STATUS_LIVE,
-                         "unavailable", PROJECT_STATUS_UNAVAILABLE,
-                         "internal"   , PROJECT_STATUS_INTERNAL,
-                         "cancelled"  , PROJECT_STATUS_CANCELLED,
-                         "demo"       , PROJECT_STATUS_DEMO,
+                         "live"               , PROJECT_STATUS_LIVE,
+                         "not yet available"  , PROJECT_STATUS_NOT_YET_AVAILABLE,
+                         "no longer available", PROJECT_STATUS_NO_LONGER_AVAILABLE,
+                         "internal"           , PROJECT_STATUS_INTERNAL,
+                         "cancelled"          , PROJECT_STATUS_CANCELLED,
+                         "demo"               , PROJECT_STATUS_DEMO,
                          NULL )
 
         class Project: public DataSource

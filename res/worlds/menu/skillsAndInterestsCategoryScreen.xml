@@ -1,4 +1,4 @@
-<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
+<!-- rev: 5b8c3b9, exported: 2015-11-26 00:57:21 -->
 
 <World>
     <Entity name="skillsAndInterestsCategoryScreen" active="false">
@@ -6,7 +6,7 @@
 
         <Entity name="skillsAndInterestsCategoryScreenZoomInTransition">
             <!-- M::skillsAndInterestsCategoryList -> skillsAndInterestsCategoryList.ListView -->
-            <Entity name="skillsAndInterestsCategoryList" template="list" _cellName="skillsAndInterestsCell" _padding="2 -48" _height="481" _spriteSelector="skillsAndInterestsCategoryScreen.SpriteSelector" _listView="skillsAndInterestsCategoryList.ListView"/>
+            <Entity name="skillsAndInterestsCategoryList" template="list" _cellName="skillsAndInterestsCell" _padding="2 -48" _height="481" _leftFadeOut="false" _spriteSelector="skillsAndInterestsCategoryScreen.SpriteSelector" _listView="skillsAndInterestsCategoryList.ListView"/>
         </Entity>
     </Entity>
 </World>

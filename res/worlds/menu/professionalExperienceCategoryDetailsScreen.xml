@@ -1,4 +1,4 @@
-<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
+<!-- rev: 5b8c3b9, exported: 2015-11-26 00:57:21 -->
 
 <World>
     <Entity name="professionalExperienceCategoryDetailsScreen" active="false">
@@ -7,11 +7,9 @@
         <Entity name="professionalExperienceCategoryDetailsScreenZoomInTransition">
             <Entity name="professionalExperienceCategoryDetailsContent" position="0 -56 0">
                 <Entity name="professionalExperienceCategoryDetailsIcon">
-                    <!-- M::professionalExperienceCategoryDetailsFrame -->
-                    <Frame width="0" height="42"/>
                     <!-- M::professionalExperienceCategoryDetailsIcon -->
                     <Sprite image="images/menu/empty.png"/>
-                    <Layouter sprite="Frame" flags="Left|Top" padding="10 0"/>
+                    <Layouter sprite="Sprite" parent="contentFrame.Frame" flags="Left|Top" padding="10 0"/>
                     <Entity name="professionalExperienceCategoryDetailsName">
                         <!-- M::professionalExperienceCategoryDetailsName -->
                         <TextSprite text="" translate="false" font="font19" pivot="0.5 0.5" color="0 0 0"/>
@@ -19,16 +17,16 @@
                     </Entity>
                 </Entity>
                 <!-- M::professionalExperienceCategoryDetailsTimeFrame -->
-                <Entity name="professionalExperienceCategoryDetailsTimeFrame" template="detailsTextLine" _key="TEXT_TIME_FRAME_COLON" _parent="" _padding="10 -57"/>
+                <Entity name="professionalExperienceCategoryDetailsTimeFrame" template="detailsTextLine" _key="TEXT_TIME_FRAME_COLON" _parent="contentFrame.Frame" _padding="10 -57"/>
                 <!-- M::professionalExperienceCategoryDetailsWebsite -->
-                <Entity name="professionalExperienceCategoryDetailsWebsite" template="detailsTextLine" _key="TEXT_WEBSITE_COLON" _parent="" _padding="10 -82"/>
+                <Entity name="professionalExperienceCategoryDetailsWebsite" template="detailsTextLine" _key="TEXT_WEBSITE_COLON" _parent="contentFrame.Frame" _padding="10 -82"/>
                 <Entity name="professionalExperienceCategoryDetailsProjects">
                     <!-- M::professionalExperienceCategoryDetailsProjects -->
                     <TextSprite text="" translate="false" font="font14" color="LightBlueText"/>
-                    <Layouter sprite="TextSprite" flags="Left|Top" padding="10 -107"/>
+                    <Layouter sprite="TextSprite" parent="contentFrame.Frame" flags="Left|Top" padding="10 -107"/>
                 </Entity>
                 <!-- M::professionalExperienceCategoryDetailsList -> professionalExperienceCategoryDetailsList.ListView -->
-                <Entity name="professionalExperienceCategoryDetailsList" template="list" _cellName="basicCell" _padding="0 -127" _height="350" _spriteSelector="professionalExperienceCategoryDetailsScreen.SpriteSelector" _listView="professionalExperienceCategoryDetailsList.ListView"/>
+                <Entity name="professionalExperienceCategoryDetailsList" template="list" _cellName="basicCell" _padding="0 -127" _height="350" _leftFadeOut="false" _spriteSelector="professionalExperienceCategoryDetailsScreen.SpriteSelector" _listView="professionalExperienceCategoryDetailsList.ListView"/>
             </Entity>
         </Entity>
 

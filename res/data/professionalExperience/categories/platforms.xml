@@ -1,4 +1,4 @@
-<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
+<!-- rev: 5b8c3b9, exported: 2015-11-26 00:57:21 -->
 
 <Platforms>
     <Platform name="iOS" icon="images/menu/icons/apple.png" url="http://www.apple.com/ios/" firstUsed="2009/Q4">
@@ -99,7 +99,7 @@
         <Project name="Tiger Woods"/>
         <Project name="Claw"/>
     </Platform>
-    <Platform name="Windows Mobile" icon="images/menu/icons/windows.png" url="https://en.wikipedia.org/wiki/Windows_Mobile">
+    <Platform name="Windows Mobile" icon="images/menu/icons/windows_mobile.png" url="https://en.wikipedia.org/wiki/Windows_Mobile">
         <Project name="The Sims 3"/>
     </Platform>
     <Platform name="PSP" icon="images/menu/icons/psp.png" url="https://en.wikipedia.org/wiki/PlayStation_Portable">

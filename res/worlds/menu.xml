@@ -1,4 +1,4 @@
-<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
+<!-- rev: 5b8c3b9, exported: 2015-11-26 00:57:21 -->
 
 <World>
     <Include file="sgl/worlds/menu/detectors.xml"/>
@@ -16,7 +16,7 @@
 
     <Entity name="backgrounds">
         <Template name="background">
-            <RectangleSprite width="320" height="570" color="1 1 1" static="true" background="true" layerDepth="._layerDepth"/>
+            <RectangleSprite width=":appWidth" height="568" color="1 1 1" static="true" layerDepth="._layerDepth"/>
             <Layouter sprite="RectangleSprite" flags="HCenter|VCenter"/>
         </Template>
         <Entity name="background" template="background" _layerDepth="true"/>
@@ -31,21 +31,26 @@
         </Entity>
     </Entity>
 
-    <Include file="worlds/menu/homeScreen.xml"/>
-        <Include file="worlds/menu/personalInformationScreen.xml"/>
-        <Include file="worlds/menu/educationAndTrainingScreen.xml"/>
-            <Include file="worlds/menu/educationAndTrainingDetailsScreen.xml"/>
-        <Include file="worlds/menu/professionalExperienceScreen.xml"/>
-            <Include file="worlds/menu/employersScreen.xml"/>
-            <Include file="worlds/menu/projectsScreen.xml"/>
-                <Include file="worlds/menu/projectDetailsScreen.xml"/>
-            <Include file="worlds/menu/sdkIntegrationScreen.xml"/>
-            <Include file="worlds/menu/professionalExperienceCategoryScreen.xml"/>
-                <Include file="worlds/menu/professionalExperienceCategoryDetailsScreen.xml"/>
-        <Include file="worlds/menu/skillsAndInterestsScreen.xml"/>
-            <Include file="worlds/menu/skillsAndInterestsCategoryScreen.xml"/>
-            <Include file="worlds/menu/philosophyScreen.xml"/>
-        <Include file="worlds/menu/aboutScreen.xml"/>
+    <Entity name="contentFrame">
+        <Frame width=":contentWidth" height="568"/>
+        <Layouter sprite="Frame" flags="HCenter|VCenter"/>
+
+        <Include file="worlds/menu/homeScreen.xml"/>
+            <Include file="worlds/menu/personalInformationScreen.xml"/>
+            <Include file="worlds/menu/educationAndTrainingScreen.xml"/>
+                <Include file="worlds/menu/educationAndTrainingDetailsScreen.xml"/>
+            <Include file="worlds/menu/professionalExperienceScreen.xml"/>
+                <Include file="worlds/menu/employersScreen.xml"/>
+                <Include file="worlds/menu/projectsScreen.xml"/>
+                    <Include file="worlds/menu/projectDetailsScreen.xml"/>
+                <Include file="worlds/menu/sdkIntegrationScreen.xml"/>
+                <Include file="worlds/menu/professionalExperienceCategoryScreen.xml"/>
+                    <Include file="worlds/menu/professionalExperienceCategoryDetailsScreen.xml"/>
+            <Include file="worlds/menu/skillsAndInterestsScreen.xml"/>
+                <Include file="worlds/menu/skillsAndInterestsCategoryScreen.xml"/>
+                <Include file="worlds/menu/philosophyScreen.xml"/>
+            <Include file="worlds/menu/aboutScreen.xml"/>
+    </Entity>
 
     <Entity name="header">
         <!-- M::header -->
@@ -55,7 +60,7 @@
         <Template name="navigationTab">
             <Frame width="68" height="46" touchable="._touchable" pivot="0.5 0.5" layerDepth="true" layer="2"/>
             <Entity name="buttonText">
-                <TextSprite text="" translate="false" font="font11" color="1 1 1" pivot="0.5 0.5" width="68" layerDepth="true" layer="2" alpha="0"/>
+                <TextSprite text="" translate="false" font="font11" color="1 1 1" pivot="0.5 0.5" width="68" layerDepth="true" layer="2" alpha="0" maxLines="3" ellipsis="true"/>
                 <Layouter sprite="TextSprite" parent="super.Frame" flags="HCenter|VCenter"/>
             </Entity>
         </Template>
@@ -111,9 +116,25 @@
         <Layouter sprite="Sprite" flags="Top|Right"/>
     </Entity>
 
+    <Constant name="FooterHeight" value="36"/>
+
     <Entity name="footer">
         <!-- M::footer -->
-        <RectangleSprite width=":appWidth" height="36" color="DarkTheme" layerDepth="true" layer="2"/>
+        <RectangleSprite width=":appWidth" height="FooterHeight" color="DarkTheme" layerDepth="true" layer="2"/>
         <Layouter sprite="RectangleSprite" flags="Left|Bottom"/>
+
+        <!-- M::fullscreenButtonTransition -->
+        <Entity name="fullscreenButtonTransition">
+            <Entity name="fullscreenButtonFrame">
+                <!-- M::fullscreenButtonFrame -->
+                <Frame width="FooterHeight" height="FooterHeight"/>
+                <Layouter sprite="Frame" parent="footer.RectangleSprite" flags="Right|VCenter"/>
+                <Entity name="fullscreenButton">
+                    <!-- M::fullscreenButton -->
+                    <Sprite image="images/menu/fullscreen.png" pivot="0.5 0.5" layerDepth="true" layer="2" color="LightBlueSprite" touchable="true"/>
+                    <Layouter sprite="Sprite" parent="super.Frame" flags="HCenter|VCenter"/>
+                </Entity>
+            </Entity>
+        </Entity>
     </Entity>
 </World>

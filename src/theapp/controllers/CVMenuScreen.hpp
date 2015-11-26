@@ -1,4 +1,4 @@
-// rev: 524a6b2, exported: 2015-10-22 11:19:28
+// rev: 5b8c3b9, exported: 2015-11-26 00:57:21
 
 #ifndef __INCLUDED_THE_APP_CV_MENU_SCREEN_HPP__
 #define __INCLUDED_THE_APP_CV_MENU_SCREEN_HPP__
@@ -21,34 +21,21 @@ namespace TheApp
 
     // ---------------- //
 
-    class CVMenuScreen_Transition: public CVMenuScreen_Interpolation
+    class CVMenuScreen_Fullscreen: public CVMenuScreen_Interpolation
     {
     private:
         typedef CVMenuScreen_Interpolation Base;
 
     protected:
-        virtual void Deserialize( const Tau::Deserializer& d ) _override;
-
-        Tau::MenuScreen* Transition_SwitchTo( const Tau::String& screenName, bool back );
-
-        virtual void OnTransition( Tau::Real t ) {}
-
-        Property::WeakPtr< Tau::Entity, CVMenuScreen_Transition > ZoomInTransition;
-        Property::WeakPtr< Tau::Entity, CVMenuScreen_Transition > SlideInBottomTransition;
-
-        Property::Pointer< CVMenuScreen_Transition, CVMenuScreen_Transition > NewScreen;
-        Property::Bool< CVMenuScreen_Transition > ShiftBack;
-
-    private:
-        void Transition_OnProgress( Tau::Real t );
+        virtual void OnSpriteUp( Tau::AbstractSprite* sprite, const Tau::String& name ) _override;
     };
 
     // ---------------- //
 
-    class CVMenuScreen_ListView: public CVMenuScreen_Transition
+    class CVMenuScreen_ListView: public CVMenuScreen_Fullscreen
     {
     private:
-        typedef CVMenuScreen_Transition Base;
+        typedef CVMenuScreen_Fullscreen Base;
 
     public:
         void ListView_OnRadioButtonStateChanged( const Tau::RadioButtonGroup::StateChangedInfo& info );
@@ -88,10 +75,34 @@ namespace TheApp
 
     // ---------------- //
 
-    class CVMenuScreen_Navigation: public CVMenuScreen_ListView
+    class CVMenuScreen_Transition: public CVMenuScreen_ListView
     {
     private:
         typedef CVMenuScreen_ListView Base;
+
+    protected:
+        virtual void Deserialize( const Tau::Deserializer& d ) _override;
+
+        Tau::MenuScreen* Transition_SwitchTo( const Tau::String& screenName, bool back );
+
+        virtual void OnTransition( Tau::Real t ) {}
+
+        Property::WeakPtr< Tau::Entity, CVMenuScreen_Transition > ZoomInTransition;
+        Property::WeakPtr< Tau::Entity, CVMenuScreen_Transition > SlideInBottomTransition;
+
+        Property::Pointer< CVMenuScreen_Transition, CVMenuScreen_Transition > NewScreen;
+        Property::Bool< CVMenuScreen_Transition > ShiftBack;
+
+    private:
+        void Transition_OnProgress( Tau::Real t );
+    };
+
+    // ---------------- //
+
+    class CVMenuScreen_Navigation: public CVMenuScreen_Transition
+    {
+    private:
+        typedef CVMenuScreen_Transition Base;
 
     public:
         static void Init( const Tau::String& firstScreenName );

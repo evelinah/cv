@@ -1,4 +1,4 @@
-<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
+<!-- rev: 5b8c3b9, exported: 2015-11-26 00:57:21 -->
 
 <World>
     <Entity name="homeScreen" active="false">
@@ -20,26 +20,26 @@
                     <Sprite sprite="professionalExperienceButton.Sprite"/>
                     <Sprite sprite="skillsAndInterestsButton.Sprite"/>
                 </SpriteGroup>
-                <Layouter sprite="SpriteGroup" flags="HCenter|VCenter"/>
+                <Layouter sprite="SpriteGroup" parent="contentFrame.Frame" flags="HCenter|VCenter"/>
             </Entity>
             <Entity name="lkText">
                 <TextSprite text="TEXT_LUKASZ_KOSAKOWSKI" font="font22" color="0 0 0"/>
-                <Layouter sprite="TextSprite" flags="HCenter|Top" padding="0 -77"/>
+                <Layouter sprite="TextSprite" parent="contentFrame.Frame" flags="HCenter|Top" padding="0 -76"/>
             </Entity>
             <Entity name="seText">
                 <TextSprite text="TEXT_SOFTWARE_ENGINEER" font="font14" color="0 0 0"/>
-                <Layouter sprite="TextSprite" flags="HCenter|Top" padding="0 -104"/>
+                <Layouter sprite="TextSprite" parent="contentFrame.Frame" flags="HCenter|Top" padding="0 -103"/>
             </Entity>
             <Entity name="cvText">
                 <TextSprite text="TEXT_CURRICULUM_VITAE" font="font18" color="0 0 0"/>
-                <Layouter sprite="TextSprite" flags="HCenter|Bottom" padding="0 86"/>
+                <Layouter sprite="TextSprite" parent="contentFrame.Frame" flags="HCenter|Bottom" padding="0 84"/>
             </Entity>
         </Entity>
 
         <Entity name="aboutButton">
             <!-- M::aboutButton -->
             <Sprite image="images/menu/about_button.png" pivot="1 0" touchable="true"/>
-            <Layouter sprite="Sprite" flags="Right|Bottom" padding="0 35.75"/>
+            <Layouter sprite="Sprite" flags="Right|Bottom" padding=":aboutButtonPadding"/>
         </Entity>
     </Entity>
 </World>

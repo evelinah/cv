@@ -1,4 +1,4 @@
-<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
+<!-- rev: 5b8c3b9, exported: 2015-11-26 00:57:21 -->
 
 <ProgrammingLanguages>
     <ProgrammingLanguage name="C" icon="images/menu/icons/c.png" url="https://en.wikipedia.org/wiki/C_(programming_language)">
@@ -102,6 +102,9 @@
     </ProgrammingLanguage>
     <ProgrammingLanguage name="Ruby" icon="images/menu/icons/ruby.png" url="https://en.wikipedia.org/wiki/Lua_(programming_language)">
         <Project name="HERE Maps"/>
+    </ProgrammingLanguage>
+    <ProgrammingLanguage name="JavaScript" icon="images/menu/icons/javascript.png" url="https://en.wikipedia.org/wiki/JavaScript" firstUsed="2015/Q4">
+        <Project name="Tau"/>
     </ProgrammingLanguage>
     <ProgrammingLanguage name="Perl" icon="images/menu/icons/perl.png" url="https://en.wikipedia.org/wiki/Perl">
         <Project name="Claw"/>

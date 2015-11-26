@@ -1,11 +1,21 @@
-// rev: 524a6b2, exported: 2015-10-22 11:19:28
+// rev: 5b8c3b9, exported: 2015-11-26 00:57:21
 
 #include "theapp/controllers/ProfessionalExperienceScreen.hpp"
 #include "theapp/models/ProfessionalExperience.hpp"
+#include "taugen/TauSettingsCache.hpp"
 #include "taugen/TauWorldsCache.hpp"
+
+#include "components/graphics/Camera.hpp"
 
 namespace TheApp
 {
+
+    void ProfessionalExperienceScreen::Deserialize( const Tau::Deserializer& d )
+    {
+        CVMenuScreen::Deserialize( d );
+
+        M::pageButtons->StateChangedEvent += EventHandler( ProfessionalExperienceScreen, OnRadioButtonStateChanged, const Tau::RadioButtonGroup::StateChangedInfo& );
+    }
 
     static Tau::String GetCategoryName( Tau::AbstractSprite* sprite )
     {
@@ -37,7 +47,15 @@ namespace TheApp
     {
         CVMenuScreen::OnSpriteUp( sprite, name );
 
-        if( sprite == M::employersButton )
+        if( sprite == M::pageButton1 )
+        {
+            Slide( false );
+        }
+        else if( sprite == M::pageButton2 )
+        {
+            Slide( true );
+        }
+        else if( sprite == M::employersButton )
         {
             this->Navigation_ShiftTo( "employersScreen" );
         }
@@ -58,6 +76,16 @@ namespace TheApp
                 this->Navigation_ShiftTo( "professionalExperienceCategoryScreen", categoryName );
             }
         }
+    }
+
+    void ProfessionalExperienceScreen::Slide( bool forth )
+    {
+        Tau::Interpolator::Interpolate< Tau::RelaxedInterpolator >( this, forth ? Tau::Real::ZERO : -Tau::Camera::Get()->ProjectionRect.Val().Width, forth ? -Tau::Camera::Get()->ProjectionRect.Val().Width : Tau::Real::ZERO, C::interpolationSlideTime.Get(), C::interpolationSlideType.Get(), EventHandlerSetX( M::professionalExperiencePageSlideTransition ) );
+    }
+
+    void ProfessionalExperienceScreen::OnRadioButtonStateChanged( const Tau::RadioButtonGroup::StateChangedInfo& info )
+    {
+        Tau::Interpolator::Interpolate( this, info.active ? C::interpolationRadioButtonDisabledAlpha.Get() : 1, info.active ? 1 : C::interpolationRadioButtonDisabledAlpha.Get(), info.init ? 0 : C::interpolationRadioButtonTime.Get(), C::interpolationRadioButtonType.Get(), EventHandlerSetAlpha( info.sprite ) );
     }
 
 }

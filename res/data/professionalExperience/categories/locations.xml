@@ -1,4 +1,4 @@
-<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
+<!-- rev: 5b8c3b9, exported: 2015-11-26 00:57:21 -->
 
 <Locations>
     <Location name="Szczecin, Poland" icon="images/menu/icons/poland.png" url="https://en.wikipedia.org/wiki/Szczecin">
@@ -51,5 +51,8 @@
     </Location>
     <Location name="Munich, Germany" icon="images/menu/icons/germany.png" url="https://en.wikipedia.org/wiki/Munich" firstUsed="2013/Q4" lastUsed="2013/Q4">
         <Project name="7TV"/>
+    </Location>
+    <Location name="Berlin, Germany" icon="images/menu/icons/germany.png" url="https://en.wikipedia.org/wiki/Berlin" firstUsed="2015/Q4" lastUsed="2015/Q4">
+        <Project name="HERE Maps"/>
     </Location>
 </Locations>

@@ -1,8 +1,8 @@
-<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
+<!-- rev: 5b8c3b9, exported: 2015-11-26 00:57:21 -->
 
 <World>
     <Template name="cellHighlight">
-        <RectangleSprite width=":appWidth" height="._height" color="CellHighlight" touchable="true" touchTransparent="true" pivot="0 0.5" alpha="0"/>
+        <RectangleSprite width=":contentWidth" height="._height" color="CellHighlight" touchable="true" touchTransparent="true" pivot="0 0.5" alpha="0"/>
         <Layouter sprite="RectangleSprite" parent="super.Frame" flags="Left|Top"/>
     </Template>
     <Template name="cellIcon">
@@ -11,7 +11,7 @@
         <Layouter sprite="Sprite" parent="super.Frame" selfFlags="HCenter|VCenter" parentFlags="Left|VCenter" padding="._padding"/>
     </Template>
     <Template name="cellName">
-        <TextSprite text="" translate="false" font="font16" pivot="0 0.5" color="0 0 0" width="._width" justify="Left" ellipsis="._ellipsis"/>
+        <TextSprite text="" translate="false" font="font16" pivot="0 0.5" color="0 0 0" width="._width" justify="Left" ellipsis="._ellipsis" maxLines="1"/>
         <Layouter sprite="TextSprite" parent="super.Frame" flags="Left|VCenter" padding="._padding"/>
     </Template>
     <Template name="cellText">
@@ -19,13 +19,13 @@
         <Layouter sprite="Frame" parent="super.Frame" flags="._flags" padding="._padding"/>
         <Entity name="text">
             <TextSprite text="._text" translate="._translate" font="font9" color="._color"/>
-            <Layouter sprite="TextSprite" parent="super.Frame" flags="._textFlags" padding="0 -2"/>
+            <Layouter sprite="TextSprite" parent="super.Frame" flags="._textFlags"/>
         </Entity>
     </Template>
 
     <Virtual name="educationAndTrainingCell">
         <ListViewCell/>
-        <Frame width=":appWidth" height="82"/>
+        <Frame width=":contentWidth" height="82"/>
         <Entity name="highlight" template="cellHighlight" _height="76"/>
         <Entity name="icon" template="cellIcon" _padding="20 26"/>
         <Entity name="name" template="cellName" _width="0" _ellipsis="false" _padding="41 24"/>
@@ -35,14 +35,14 @@
 
     <Virtual name="basicCell">
         <ListViewCell/>
-        <Frame width=":appWidth" height="C::ui/basicCellHeight"/>
+        <Frame width=":contentWidth" height="C::ui/basicCellHeight"/>
         <Entity name="highlight" template="cellHighlight" _height="C::ui/basicCellHeight"/>
         <Entity name="icon" template="cellIcon" _padding="C::ui/basicCellIconPadding"/>
         <Entity name="name" template="cellName" _width="0" _ellipsis="false" _padding="C::ui/basicCellNamePadding"/>
     </Virtual>
     <Virtual name="employerCell">
         <ListViewCell/>
-        <Frame width=":appWidth" height="82"/>
+        <Frame width=":contentWidth" height="82"/>
         <Entity name="highlight" template="cellHighlight" _height="76"/>
         <Entity name="icon" template="cellIcon" _padding="20 26"/>
         <Entity name="name" template="cellName" _width="0" _ellipsis="false" _padding="41 24"/>
@@ -51,7 +51,7 @@
     </Virtual>
     <Virtual name="sdkIntegrationCell">
         <ListViewCell/>
-        <Frame width=":appWidth" height="C::ui/basicCellHeight"/>
+        <Frame width=":contentWidth" height="C::ui/basicCellHeight"/>
         <Entity name="highlight" template="cellHighlight" _height="C::ui/basicCellHeight"/>
         <Entity name="icon" template="cellIcon" _padding="C::ui/basicCellIconPadding"/>
         <Entity name="name" template="cellName" _width="0" _ellipsis="false" _padding="C::ui/basicCellNamePadding"/>
@@ -60,7 +60,7 @@
     </Virtual>
     <Virtual name="genericCategoryCell">
         <ListViewCell/>
-        <Frame width=":appWidth" height="C::ui/basicCellHeight"/>
+        <Frame width=":contentWidth" height="C::ui/basicCellHeight"/>
         <Entity name="highlight" template="cellHighlight" _height="C::ui/basicCellHeight"/>
         <Entity name="icon" template="cellIcon" _padding="C::ui/basicCellIconPadding"/>
         <Entity name="name" template="cellName" _width=":genericCategoryCellNameWidth" _ellipsis="true" _padding="C::ui/basicCellNamePadding"/>
@@ -71,7 +71,7 @@
 
     <Virtual name="skillsAndInterestsCell">
         <ListViewCell/>
-        <Frame width=":appWidth" height="30"/>
+        <Frame width=":contentWidth" height="30"/>
         <Entity name="dot">
             <Sprite image="images/menu/dot.png" color="LightBlueSprite"/>
             <Layouter sprite="Sprite" parent="super.Frame" flags="Left|VCenter" padding="10 0"/>

@@ -1,3 +1,11 @@
+LK CV 1.1.0 (2015-11-26)
+------------------------
+
+- visual quality improvements
+- performance improvements
+- content update
+- minor corrections
+
 LK CV 1.0.1 (2015-10-22)
 ------------------------
 

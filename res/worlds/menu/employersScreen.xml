@@ -1,4 +1,4 @@
-<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
+<!-- rev: 5b8c3b9, exported: 2015-11-26 00:57:21 -->
 
 <World>
     <Entity name="employersScreen" active="false">
@@ -8,7 +8,7 @@
             <Entity name="employersList">
                 <!-- M::employersList -->
                 <ListView cellName="employerCell" cellMargin="ListCellMargin" height="ListHeight" touchable="true"/>
-                <Layouter sprite="ListView" flags="HCenter|Top" padding="0 -46"/>
+                <Layouter sprite="ListView" parent="contentFrame.Frame" flags="Left|Top" padding="0 -46"/>
             </Entity>
         </Entity>
     </Entity>

@@ -1,4 +1,4 @@
-<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
+<!-- rev: 5b8c3b9, exported: 2015-11-26 00:57:21 -->
 
 <World>
     <Constant name="ListHeight" value="487"/>
@@ -8,14 +8,18 @@
         <ListView cellName="._cellName" cellMargin="ListCellMargin" height="._height" touchable="true"/>
         <ListViewScroller sprite="ListView" slope="0.1" overshoot="50" deselectScroll="10" spriteSelector="._spriteSelector"/>
         <ListViewSorter/>
-        <Layouter sprite="ListView" flags="Left|Top" padding="._padding"/>
+        <Layouter sprite="ListView" flags="Left|Top" parent="contentFrame.Frame" padding="._padding"/>
         <Entity name="topFadeOut">
-            <Sprite image="images/menu/list_gradient.png" flip="None" layer="1" size=":listGradientSize"/>
+            <Sprite image="images/menu/list_gradient.png" layer="1" size=":listGradientSize"/>
             <Layouter sprite="Sprite" parent="._listView" flags="Left|Top" padding="0 0.5"/>
         </Entity>
         <Entity name="bottomFadeOut">
             <Sprite image="images/menu/list_gradient.png" flip="Vertical" layer="1" size=":listGradientSize"/>
             <Layouter sprite="Sprite" parent="._listView" flags="Left|Bottom" padding="0 -0.5"/>
+        </Entity>
+        <Entity name="leftFadeOut" rotation="90 0 0 1">
+            <Sprite image="images/menu/list_gradient.png" layer="1" size="487 9" visible="._leftFadeOut"/>
+            <Layouter sprite="Sprite" parent="._listView" flags="Left|Bottom" padding="9 0"/>
         </Entity>
     </Template>
 </World>

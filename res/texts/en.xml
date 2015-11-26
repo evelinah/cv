@@ -1,4 +1,4 @@
-<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
+<!-- rev: 5b8c3b9, exported: 2015-11-26 00:57:21 -->
 
 <Dictionary>
     <!-- home -->
@@ -61,7 +61,8 @@
     <Text name="TEXT_PROJECTS_COUNT_COLON" value="Projects ($()):"/>
     <Text name="TEXT_SELECT_PROJECT" value="Select project"/>
     <!-- project details -->
-    <Text name="TEXT_UNAVAILABLE" value="None (unavailable)"/>
+    <Text name="TEXT_NOT_YET_AVAILABLE" value="None (not yet available)"/>
+    <Text name="TEXT_NO_LONGER_AVAILABLE" value="None (no longer available)"/>
     <Text name="TEXT_INTERNAL_PROJECT" value="None (internal project)"/>
     <Text name="TEXT_CANCELLED" value="None (cancelled)"/>
     <Text name="TEXT_DEMO" value="None (demo project)"/>

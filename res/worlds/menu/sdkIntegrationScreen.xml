@@ -1,4 +1,4 @@
-<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
+<!-- rev: 5b8c3b9, exported: 2015-11-26 00:57:21 -->
 
 <World>
     <Entity name="sdkIntegrationScreen" active="false">
@@ -6,15 +6,15 @@
 
         <Entity name="sdkIntegrationScreenZoomInTransition">
             <Entity name="sdkIntegrationListColumnTexts">
-                <Frame width=":appWidth" height="C::ui/basicCellHeight"/>
-                <Layouter sprite="Frame" flags="Left|Top" padding="0 -48"/>
+                <Frame width=":contentWidth" height="C::ui/basicCellHeight"/>
+                <Layouter sprite="Frame" parent="contentFrame.Frame" flags="Left|Top" padding="0 -48"/>
                 <Entity name="sdkIntegrationScreenNameText" template="cellText" _text="TEXT_NAME" _translate="true" _color="LightBlueText" _flags="Left|VCenter" _padding="41 0" _textFlags="Left|VCenter"/>
                 <Entity name="sdkIntegrationScreenDateText" template="cellText" _text="TEXT_DATE" _translate="true" _color="LightBlueText" _flags="Right|VCenter" _padding="-50 0" _textFlags="HCenter|VCenter"/>
                 <Entity name="sdkIntegrationScreenPlatformText" template="cellText" _text="TEXT_PLATFORM" _translate="true" _color="LightBlueText" _flags="Right|VCenter" _padding="-5 0" _textFlags="HCenter|VCenter"/>
             </Entity>
             <!-- M::sdkIntegrationList -> sdkIntegrationList.ListView -->
             <!-- M::sdkIntegrationListSorter -> sdkIntegrationList.ListViewSorter -->
-            <Entity name="sdkIntegrationList" template="list" _cellName="sdkIntegrationCell" _padding="0 -72" _height="461" _spriteSelector="sdkIntegrationScreen.SpriteSelector" _listView="sdkIntegrationList.ListView"/>
+            <Entity name="sdkIntegrationList" template="list" _cellName="sdkIntegrationCell" _padding="0 -72" _height="461" _leftFadeOut="false" _spriteSelector="sdkIntegrationScreen.SpriteSelector" _listView="sdkIntegrationList.ListView"/>
         </Entity>
 
         <Entity name="sdkIntegrationScreenSlideInBottomTransition">
@@ -30,7 +30,7 @@
                     <Sprite sprite="sdkIntegrationSortByDate.Frame"/>
                     <Sprite sprite="sdkIntegrationSortByPlatform.Frame"/>
                 </SpriteGroup>
-                <Layouter sprite="SpriteGroup" flags="Left|Bottom"/>
+                <Layouter sprite="SpriteGroup" parent="contentFrame.Frame" flags="Left|Bottom"/>
                 <!-- M::sdkIntegrationRadioButtons -->
                 <RadioButtonGroup>
                     <SpriteGroup spriteGroup="SpriteGroup"/>

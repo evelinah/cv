@@ -1,4 +1,4 @@
-<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
+<!-- rev: 5b8c3b9, exported: 2015-11-26 00:57:21 -->
 
 <World>
     <Entity name="educationAndTrainingScreen" active="false">
@@ -7,12 +7,12 @@
         <Entity name="educationAndTrainingScreenZoomInTransition">
             <Entity name="educationAndTrainingScreenTopContent" position="0 -46 0">
                 <!-- M::educationList -> educationList.ListView -->
-                <Entity name="educationList" template="list" _cellName="educationAndTrainingCell" _padding="0 0" _height="0" _spriteSelector="educationAndTrainingScreen.SpriteSelector" _listView="educationList.ListView"/>
+                <Entity name="educationList" template="list" _cellName="educationAndTrainingCell" _padding="0 0" _height="0" _leftFadeOut="false" _spriteSelector="educationAndTrainingScreen.SpriteSelector" _listView="educationList.ListView"/>
                 <!-- M::trainingList -> trainingList.ListView -->
-                <Entity name="trainingList" template="list" _cellName="educationAndTrainingCell" _padding="0 -250" _height="0" _spriteSelector="educationAndTrainingScreen.SpriteSelector" _listView="trainingList.ListView"/>
+                <Entity name="trainingList" template="list" _cellName="educationAndTrainingCell" _padding="0 -250" _height="0" _leftFadeOut="false" _spriteSelector="educationAndTrainingScreen.SpriteSelector" _listView="trainingList.ListView"/>
                 <Entity name="educationAndTrainingDividerLine">
                     <RectangleSprite width=":textWidth10" height="1" color="DarkTheme" alpha="0.25"/>
-                    <Layouter sprite="RectangleSprite" flags="Left|Top" padding="10 -250"/>
+                    <Layouter sprite="RectangleSprite" parent="contentFrame.Frame" flags="Left|Top" padding="10 -250"/>
                 </Entity>
             </Entity>
         </Entity>

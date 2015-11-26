@@ -1,9 +1,13 @@
-<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
+<!-- rev: 5b8c3b9, exported: 2015-11-26 00:57:21 -->
 
 <Settings>
     <Node name="interpolation">
         <Node name="startBrighten">
             <Real name="time" value="0.8"/>
+            <String name="type" value="linear"/>
+        </Node>
+        <Node name="exitDim">
+            <Real name="time" value="0.4"/>
             <String name="type" value="linear"/>
         </Node>
         <Node name="setVisible">
@@ -16,6 +20,15 @@
             <Real name="disabledAlpha" value="0.5"/>
             <Real name="slideInFactor" value="0.5"/>
         </Node>
+        <Node name="slide">
+            <Real name="time" value="0.2"/>
+            <String name="type" value="cubic"/>
+        </Node>
+        <Node name="radioButton">
+            <Real name="time" value="0.2"/>
+            <String name="type" value="cubic"/>
+            <Real name="disabledAlpha" value="0.66"/>
+        </Node>
         <Node name="backButton">
             <Real name="time" value="0.2"/>
             <String name="type" value="cubic"/>
@@ -23,6 +36,7 @@
         </Node>
     </Node>
     <Node name="transition">
+        <Real name="time" value="0.2"/>
         <Real name="zoomInFactor" value="0.15"/>
         <Real name="slideInBottomFactor" value="1.2"/>
     </Node>
@@ -32,9 +46,10 @@
     <Node name="ui">
         <String name="basicCellHeight" value="25"/>
         <String name="basicCellIconPadding" value="20 0"/>
-        <String name="basicCellNamePadding" value="41 -1"/>
+        <String name="basicCellNamePadding" value="41 0"/>
         <String name="listGradientHeight" value="9"/>
 
+        <Real name="maxContentWidth" value="568"/>
         <Real name="navigationTabPadding" value="10"/>
         <Real name="margin10" value="10"/>
         <Real name="margin12" value="12"/>

@@ -1,10 +1,10 @@
-<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
+<!-- rev: 5b8c3b9, exported: 2015-11-26 00:57:21 -->
 
 <World>
     <Template name="footerText">
         <Entity name="text">
             <TextSprite text="._text" font="font11" layerDepth="true" layer="3"/>
-            <Layouter sprite="TextSprite" flags="HCenter|Bottom" padding="0 12"/>
+            <Layouter sprite="TextSprite" flags="HCenter|Bottom" padding=":footerTextPadding"/>
         </Entity>
     </Template>
     <Template name="detailsTextLine">
@@ -25,7 +25,7 @@
     </Template>
 
     <Virtual name="projectsLabelText">
-        <Frame width=":appWidth" height="C::ui/projects/labelHeight"/>
+        <Frame width=":contentWidth" height="C::ui/projects/labelHeight"/>
         <Entity name="text">
             <TextSprite text="" translate="false" font="font13" color="LightBlueText"/>
             <Layouter sprite="TextSprite" parent="super.Frame" flags="Left|Bottom" padding="10 3"/>

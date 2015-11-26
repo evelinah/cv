@@ -1,4 +1,4 @@
-<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
+<!-- rev: 5b8c3b9, exported: 2015-11-26 00:57:21 -->
 
 <DevelopmentTeamSizes>
     <DevelopmentTeamSize name="1" icon="images/menu/icons/default.png">
@@ -6,6 +6,8 @@
         <Project name="Memo Blocks"/>
         <Project name="Poker Slot Machine"/>
         <Project name="TGOL iOS6"/>
+        <Project name="League Of Heroes"/>
+        <Project name="Monster Shooter"/>
         <Project name="The Sims 3 iOS6"/>
         <Project name="Silent Film Director Symbian Belle"/>
         <Project name="Crazy Hamster iOS"/>
@@ -40,8 +42,6 @@
         <Project name="HERE Maps"/>
         <Project name="I Am MTV"/>
         <Project name="7TV"/>
-        <Project name="League Of Heroes"/>
-        <Project name="Monster Shooter"/>
         <Project name="Fable: Coin Golf"/>
         <Project name="Time Crisis"/>
         <Project name="Claw"/>

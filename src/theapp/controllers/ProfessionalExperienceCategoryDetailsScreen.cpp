@@ -1,4 +1,4 @@
-// rev: 524a6b2, exported: 2015-10-22 11:19:28
+// rev: 5b8c3b9, exported: 2015-11-26 00:57:21
 
 #include "theapp/controllers/ProfessionalExperienceCategoryDetailsScreen.hpp"
 #include "theapp/models/ProfessionalExperience.hpp"
@@ -30,14 +30,13 @@ namespace TheApp
         this->Navigation_SetAnalyticsName( setupData.categoryName + ", " + DataSource->Name );
 
         M::professionalExperienceCategoryDetailsIcon->SetImage( DataSource->Icon );
-        M::professionalExperienceCategoryDetailsIcon->SetHeight( M::professionalExperienceCategoryDetailsIcon->GetComponent( Tau::Frame )->Height );
         M::professionalExperienceCategoryDetailsName->SetText( DataSource->DisplayName );
         M::professionalExperienceCategoryDetailsTimeFrame->GetChild( "value" )->GetComponent( Tau::TextSprite )->SetText( DataSource->GetFirstUsed() + " - " + DataSource->GetLastUsed() );
 
-        Website->SetWidth( Tau::Camera::Get()->ProjectionResolution - C::uiMargin10.Get() - Website->GetPosition().X + Tau::Camera::Get()->ProjectionRect.Val().X, false );
+        Website->SetWidth( Tau::Camera::Get()->ProjectionRect.Val().Width - C::uiMargin10.Get() - Website->GetPosition().X + Tau::Camera::Get()->ProjectionRect.Val().X, false );
         Website->SetEllipsis( true, false );
         Website->SetText( DataSource->DisplayUrl );
-        Website->SetPivot( Website->GetTextWidth() / ( 2 * Website->Width ) );
+        Website->SetPivot( Tau::Vector2D( Website->GetTextWidth() / ( 2 * Website->Width ), 0.5 ) );
         Website->GetComponent( Tau::Layouter )->Align();
         Website->SetTouchable( DataSource->Url.Val().HasLength() );
 
@@ -47,8 +46,6 @@ namespace TheApp
         A::professionalExperience->Projects.Select( Projects, TAU_DELEGATE( bool, ProfessionalExperienceCategoryDetailsScreen, SelectProject, ProfessionalExperience::ProjectPtr ) );
         A::professionalExperience->SetProjectsModel( Projects, M::professionalExperienceCategoryDetailsList );
         ListView->GetComponent( Tau::ListViewScroller )->Reset();
-
-        M::professionalExperienceCategoryDetailsFrame->SetWidth( M::professionalExperienceCategoryDetailsName->GetPosition().X + M::professionalExperienceCategoryDetailsName->GetWidth() - M::professionalExperienceCategoryDetailsIcon->GetPosition().X );
     }
 
     void ProfessionalExperienceCategoryDetailsScreen::OnSpriteUp( Tau::AbstractSprite* sprite, const Tau::String& name )

@@ -1,4 +1,4 @@
-<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
+<!-- rev: 5b8c3b9, exported: 2015-11-26 00:57:21 -->
 
 <World>
     <Template name="sectionButton">
@@ -11,7 +11,7 @@
     <Template name="sectionButtonSmallSquare">
         <Sprite image="images/menu/button_small_square.png" touchable="true" pivot="0.5 0.5" color="._color"/>
         <Entity name="buttonText">
-            <TextSprite text="._text" font="font14" color="1 1 1" pivot="0.5 0.5" width="76"/>
+            <TextSprite text="._text" font="font13" color="1 1 1" pivot="0.5 0.5" width="80"/>
             <Layouter sprite="TextSprite" parent="super.Sprite" flags="HCenter|VCenter"/>
         </Entity>
     </Template>

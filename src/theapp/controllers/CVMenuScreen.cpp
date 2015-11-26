@@ -1,4 +1,4 @@
-// rev: 524a6b2, exported: 2015-10-22 11:19:28
+// rev: 5b8c3b9, exported: 2015-11-26 00:57:21
 
 #include "theapp/controllers/CVMenuScreen.hpp"
 #include "theapp/models/EducationAndTraining.hpp"
@@ -32,36 +32,14 @@ namespace TheApp
 
     // ---------------- //
 
-    void CVMenuScreen_Transition::Deserialize( const Tau::Deserializer& d )
+    void CVMenuScreen_Fullscreen::OnSpriteUp( Tau::AbstractSprite* sprite, const Tau::String& name )
     {
-        Base::Deserialize( d );
+        Base::OnSpriteUp( sprite, name );
 
-        this->TryCache( this->Owner->Name + "ZoomInTransition", ZoomInTransition.m_v );
-        this->TryCache( this->Owner->Name + "SlideInBottomTransition", SlideInBottomTransition.m_v );
-    }
-
-    Tau::MenuScreen* CVMenuScreen_Transition::Transition_SwitchTo( const Tau::String& screenName, bool back )
-    {
-        ShiftBack = back;
-        NewScreen = static_cast< CVMenuScreen_Transition* >( this->SwitchTo( screenName, 0.2, EventHandler( CVMenuScreen_Transition, Transition_OnProgress, Tau::Real ) ) );
-        return NewScreen;
-    }
-
-    void CVMenuScreen_Transition::Transition_OnProgress( Tau::Real t )
-    {
-        M::fadeOut->SetAlpha( ShiftBack ? 1 - t : t );
-        M::fadeIn->SetAlpha( ShiftBack ? 1 - t : t );
-
-        Tau::Real zoomZ = Tau::Camera::Get()->ProjectionCenter.Val().Z * C::transitionZoomInFactor.Get();
-        if( ZoomInTransition ) { ZoomInTransition->GetTransform().SetZ( ( ShiftBack ? zoomZ : -zoomZ ) * t ); }
-        if( NewScreen->ZoomInTransition ) { NewScreen->ZoomInTransition->GetTransform().SetZ( ( ShiftBack ? -zoomZ : zoomZ ) * ( 1 - t ) ); }
-
-        Tau::Real slideY = -M::footer->Height * C::transitionSlideInBottomFactor.Get();
-        if( SlideInBottomTransition ) { SlideInBottomTransition->GetTransform().SetY( slideY * t ); }
-        if( NewScreen->SlideInBottomTransition ) { NewScreen->SlideInBottomTransition->GetTransform().SetY( slideY * ( 1 - t ) ); }
-
-        OnTransition( 1 - t );
-        NewScreen->OnTransition( t );
+        if( sprite == M::fullscreenButton )
+        {
+            Tau::Screen::SwitchFullscreen();
+        }
     }
 
     // ---------------- //
@@ -99,7 +77,7 @@ namespace TheApp
                 buttonWidths.Add( GetSortButtonWidth( it->Cast< const Tau::Frame >() ) );
             }
 
-            Tau::Real space = ( Tau::Camera::Get()->ProjectionResolution - Tau::ContainerUtils::Sum< Tau::Real >( buttonWidths ) ) / ( buttons.Size() + 1 );
+            Tau::Real space = ( Tau::StringUtils::To< Tau::Real >( Tau::System::TryGetWorldGlobal( ":contentWidth" ) ) - Tau::ContainerUtils::Sum< Tau::Real >( buttonWidths ) ) / ( buttons.Size() + 1 );
             Tau::Real x = space;
 
             for( int i = 0; i < buttons.Size(); i++ )
@@ -124,8 +102,6 @@ namespace TheApp
 
     void CVMenuScreen_ListView::ListView_OnRadioButtonStateChanged( const Tau::RadioButtonGroup::StateChangedInfo& info )
     {
-        info.sprite->SetTouchable( !info.active );
-
         Tau::Sprite* icon = info.sprite->Owner->GetChild( "buttonIcon" )->GetComponent( Tau::Sprite );
         Tau::Interpolator::Interpolate( this, icon->Alpha, info.active ? C::interpolationSortDisabledAlpha.Get() : 1, info.init ? 0 : C::interpolationSortTime.Get(), C::interpolationSortType.Get(), EventHandlerSetAlpha( icon ) );
 
@@ -147,6 +123,42 @@ namespace TheApp
     Tau::ListViewCell* CVMenuScreen_ListView::ListView_GetCell( Tau::AbstractSprite* sprite )
     {
         return sprite && sprite->Owner->Parent ? sprite->Owner->Parent->TryGetComponent( Tau::ListViewCell ) : NULL;
+    }
+
+    // ---------------- //
+
+    void CVMenuScreen_Transition::Deserialize( const Tau::Deserializer& d )
+    {
+        Base::Deserialize( d );
+
+        this->TryCache( this->Owner->Name + "ZoomInTransition", ZoomInTransition.m_v );
+        this->TryCache( this->Owner->Name + "SlideInBottomTransition", SlideInBottomTransition.m_v );
+    }
+
+    Tau::MenuScreen* CVMenuScreen_Transition::Transition_SwitchTo( const Tau::String& screenName, bool back )
+    {
+        ShiftBack = back;
+        NewScreen = static_cast< CVMenuScreen_Transition* >( this->SwitchTo( screenName, C::transitionTime.Get(), EventHandler( CVMenuScreen_Transition, Transition_OnProgress, Tau::Real ) ) );
+        return NewScreen;
+    }
+
+    void CVMenuScreen_Transition::Transition_OnProgress( Tau::Real t )
+    {
+        M::fadeOut->SetAlpha( ShiftBack ? 1 - t : t );
+        M::fadeIn->SetAlpha( ShiftBack ? 1 - t : t );
+
+        Tau::Real zoomZ = Tau::Camera::Get()->ProjectionCenter.Val().Z * C::transitionZoomInFactor.Get();
+        if( ZoomInTransition ) { ZoomInTransition->GetTransform().SetZ( ( ShiftBack ? zoomZ : -zoomZ ) * t ); }
+        if( NewScreen->ZoomInTransition ) { NewScreen->ZoomInTransition->GetTransform().SetZ( ( ShiftBack ? -zoomZ : zoomZ ) * ( 1 - t ) ); }
+
+        Tau::Real slideY = -M::footer->Height * C::transitionSlideInBottomFactor.Get();
+        if( SlideInBottomTransition ) { SlideInBottomTransition->GetTransform().SetY( slideY * t ); }
+        if( NewScreen->SlideInBottomTransition ) { NewScreen->SlideInBottomTransition->GetTransform().SetY( slideY * ( 1 - t ) ); }
+
+        if( NewScreen->SortButtons != SortButtons ) { M::fullscreenButtonTransition->GetTransform().SetX( M::fullscreenButtonFrame->Width * ( NewScreen->SortButtons ? t : 1 - t ) ); }
+
+        OnTransition( 1 - t );
+        NewScreen->OnTransition( t );
     }
 
     // ---------------- //
@@ -249,6 +261,10 @@ namespace TheApp
                 s_navigationStack.RemoveLast();
                 Navigation_ValidateStack();
                 Navigation_UpdateBackButton( true );
+            }
+            else if( Tau::System::GetBuildConfig< bool >( "tizenBuild" ) )
+            {
+                A::screenDimmer->StartDim( Tau::Color::BLACK, C::interpolationExitDimTime.Get(), C::interpolationExitDimType.Get() )->SetOnFinished( EventHandlerExtVoid( Tau::Application, Exit, const Tau::Any&, Tau::System::GetApplication() ) );
             }
         }
         else if( IsNavigationTab( sprite ) )

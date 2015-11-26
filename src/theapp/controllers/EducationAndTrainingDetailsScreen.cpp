@@ -1,4 +1,4 @@
-// rev: 524a6b2, exported: 2015-10-22 11:19:28
+// rev: 5b8c3b9, exported: 2015-11-26 00:57:21
 
 #include "theapp/controllers/EducationAndTrainingDetailsScreen.hpp"
 #include "theapp/models/EducationAndTraining.hpp"
@@ -28,24 +28,22 @@ namespace TheApp
         this->Navigation_SetAnalyticsName( DataSource->Name );
 
         M::educationAndTrainingDetailsIcon->SetImage( DataSource->Icon );
-        M::educationAndTrainingDetailsIcon->SetHeight( M::educationAndTrainingDetailsIcon->GetComponent( Tau::Frame )->Height );
-        M::educationAndTrainingDetailsName->SetWidth( Tau::Camera::Get()->ProjectionResolution - C::uiMargin10.Get() - M::educationAndTrainingDetailsName->GetPosition().X + Tau::Camera::Get()->ProjectionRect.Val().X, false );
+        M::educationAndTrainingDetailsName->GetComponent( Tau::Layouter )->Align();
+        M::educationAndTrainingDetailsName->SetWidth( Tau::Camera::Get()->ProjectionRect.Val().Width - C::uiMargin10.Get() - M::educationAndTrainingDetailsName->GetPosition().X + Tau::Camera::Get()->ProjectionRect.Val().X, false );
         M::educationAndTrainingDetailsName->SetText( DataSource->DisplayName );
         M::educationAndTrainingDetailsInfo->SetText( DataSource->Info );
-        M::educationAndTrainingDetailsInfoShift->GetTransform().SetY( ( 1 - M::educationAndTrainingDetailsInfo->Lines ) * M::educationAndTrainingDetailsInfo->GetLineHeight() );
+        M::educationAndTrainingDetailsInfoShift->GetTransform().SetY( ( 1 - M::educationAndTrainingDetailsInfo->GetLines() ) * M::educationAndTrainingDetailsInfo->GetLineHeight() );
         M::educationAndTrainingDetailsTimeFrame->GetChild( "value" )->GetComponent( Tau::TextSprite )->SetText( DataSource->StartDate + " - " + DataSource->EndDate );
 
-        Website->SetWidth( Tau::Camera::Get()->ProjectionResolution - C::uiMargin10.Get() - Website->GetPosition().X + Tau::Camera::Get()->ProjectionRect.Val().X, false );
+        Website->SetWidth( Tau::Camera::Get()->ProjectionRect.Val().Width - C::uiMargin10.Get() - Website->GetPosition().X + Tau::Camera::Get()->ProjectionRect.Val().X, false );
         Website->SetEllipsis( true, false );
         Website->SetText( DataSource->DisplayUrl );
-        Website->SetPivot( Website->GetTextWidth() / ( 2 * Website->Width ) );
+        Website->SetPivot( Tau::Vector2D( Website->GetTextWidth() / ( 2 * Website->Width ), 0.5 ) );
         Website->GetComponent( Tau::Layouter )->Align();
         TAU_ASSERT( DataSource->Url.Val().HasLength() )
         Website->SetTouchable( true );
 
         M::educationAndTrainingDetailsLocation->GetChild( "value" )->GetComponent( Tau::TextSprite )->SetText( DataSource->Location );
-
-        M::educationAndTrainingDetailsFrame->SetWidth( M::educationAndTrainingDetailsName->GetPosition().X + M::educationAndTrainingDetailsName->GetWidth() - M::educationAndTrainingDetailsIcon->GetPosition().X );
     }
 
     void EducationAndTrainingDetailsScreen::OnSpriteUp( Tau::AbstractSprite* sprite, const Tau::String& name )

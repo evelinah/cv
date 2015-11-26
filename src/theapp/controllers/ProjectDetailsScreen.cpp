@@ -1,4 +1,4 @@
-// rev: 524a6b2, exported: 2015-10-22 11:19:28
+// rev: 5b8c3b9, exported: 2015-11-26 00:57:21
 
 #include "theapp/controllers/ProjectDetailsScreen.hpp"
 #include "theapp/controllers/ProfessionalExperienceCategoryDetailsScreen.hpp"
@@ -7,8 +7,9 @@
 #include "taugen/TauWorldsCache.hpp"
 
 #include "components/base/Dictionary.hpp"
-#include "components/graphics/Layouter.hpp"
+#include "components/graphics/Camera.hpp"
 #include "components/graphics/Frame.hpp"
+#include "components/graphics/Layouter.hpp"
 
 #include "extensions_platform/SystemUtils.hpp"
 
@@ -31,7 +32,8 @@ namespace TheApp
         switch( projectStatus )
         {
             case ProfessionalExperience::PROJECT_STATUS_LIVE: return "TEXT_EMPTY";
-            case ProfessionalExperience::PROJECT_STATUS_UNAVAILABLE: return "TEXT_UNAVAILABLE";
+            case ProfessionalExperience::PROJECT_STATUS_NOT_YET_AVAILABLE: return "TEXT_NOT_YET_AVAILABLE";
+            case ProfessionalExperience::PROJECT_STATUS_NO_LONGER_AVAILABLE: return "TEXT_NO_LONGER_AVAILABLE";
             case ProfessionalExperience::PROJECT_STATUS_INTERNAL: return "TEXT_INTERNAL_PROJECT";
             case ProfessionalExperience::PROJECT_STATUS_CANCELLED: return "TEXT_CANCELLED";
             case ProfessionalExperience::PROJECT_STATUS_DEMO: return "TEXT_DEMO";
@@ -57,10 +59,10 @@ namespace TheApp
         this->Navigation_SetAnalyticsName( projectName );
 
         M::projectDetailsIcon->SetImage( Project_->Icon );
-        M::projectDetailsIcon->SetHeight( M::projectDetailsIcon->GetComponent( Tau::Frame )->Height );
+        M::projectDetailsName->SetWidth( Tau::Camera::Get()->ProjectionRect.Val().Width - C::uiMargin10.Get() - M::projectDetailsName->GetPosition().X + Tau::Camera::Get()->ProjectionRect.Val().X, false );
         M::projectDetailsName->SetText( Project_->DisplayName );
         M::projectDetailsDescription->SetText( Project_->Description );
-        M::projectDetailsDescriptionShift->GetTransform().SetY( ( 1 - M::projectDetailsDescription->Lines ) * M::projectDetailsDescription->GetLineHeight() );
+        M::projectDetailsDescriptionShift->GetTransform().SetY( ( 1 - M::projectDetailsDescription->GetLines() ) * M::projectDetailsDescription->GetLineHeight() );
         M::projectDetailsTimeFrame->GetChild( "value" )->GetComponent( Tau::TextSprite )->SetText( Project_->StartDate + " - " + Project_->EndDate );
         M::projectDetailsPublisher->GetChild( "value" )->GetComponent( Tau::TextSprite )->SetText( Project_->Publisher );
 

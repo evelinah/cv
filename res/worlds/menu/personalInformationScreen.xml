@@ -1,4 +1,4 @@
-<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
+<!-- rev: 5b8c3b9, exported: 2015-11-26 00:57:21 -->
 
 <World>
     <Entity name="personalInformationScreen" active="false">
@@ -6,7 +6,7 @@
 
         <Template name="personalInformationData">
             <TextSprite text="._key" font="font16" color="LightBlueText"/>
-            <Layouter sprite="TextSprite" flags="Top|Left" padding="._padding"/>
+            <Layouter sprite="TextSprite" parent="contentFrame.Frame" flags="Top|Left" padding="._padding"/>
             <Entity name="value">
                 <TextSprite text="._value" translate="false" font="font16" color="0 0 0" pivot="0.5 0.5" touchable="._touchable"/>
                 <Layouter sprite="TextSprite" parent="super.TextSprite" flags="VCenter|Left" padding="120 0"/>
@@ -16,8 +16,8 @@
         <Entity name="personalInformationScreenZoomInTransition">
             <Entity name="personalInformationContent" position="12 -58 0">
                 <Entity name="personalInformationPhoto">
-                    <Sprite image="images/menu/photo.png"/>
-                    <Layouter sprite="Sprite" flags="Top|Left"/>
+                    <Sprite image="images/menu/photo.png" flip="Horizontal"/>
+                    <Layouter sprite="Sprite" parent="contentFrame.Frame" flags="Top|Left"/>
                 </Entity>
                 <Entity name="personalInformation" position="0 -141 0">
                     <Entity name="personalInformationName" template="personalInformationData" _key="TEXT_NAME_COLON" _value="Łukasz Kosakowski" _padding="0 0" _touchable="false"/>

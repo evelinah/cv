@@ -1,4 +1,4 @@
-<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
+<!-- rev: 5b8c3b9, exported: 2015-11-26 00:57:21 -->
 
 <World>
     <Entity name="skillsAndInterestsScreen" active="false">
@@ -20,7 +20,7 @@
                     <Sprite sprite="interestsButton.Sprite"/>
                     <Sprite sprite="philosophyButton.Sprite"/>
                 </SpriteGroup>
-                <Layouter sprite="SpriteGroup" flags="HCenter|VCenter"/>
+                <Layouter sprite="SpriteGroup" parent="contentFrame.Frame" flags="HCenter|VCenter"/>
             </Entity>
         </Entity>
 

@@ -1,4 +1,4 @@
-<!-- rev: 524a6b2, exported: 2015-10-22 11:19:28 -->
+<!-- rev: 5b8c3b9, exported: 2015-11-26 00:57:21 -->
 
 <World>
     <Entity name="educationAndTrainingDetailsScreen" active="false">
@@ -7,11 +7,9 @@
         <Entity name="educationAndTrainingDetailsScreenZoomInTransition">
             <Entity name="educationAndTrainingDetailsContent" position="10 -56 0">
                 <Entity name="educationAndTrainingDetailsIcon">
-                    <!-- M::educationAndTrainingDetailsFrame -->
-                    <Frame width="0" height="42"/>
                     <!-- M::educationAndTrainingDetailsIcon -->
                     <Sprite image="images/menu/empty.png"/>
-                    <Layouter sprite="Frame" flags="Left|Top"/>
+                    <Layouter sprite="Sprite" parent="contentFrame.Frame" flags="Left|Top"/>
                     <Entity name="educationAndTrainingDetailsName">
                         <!-- M::educationAndTrainingDetailsName -->
                         <TextSprite text="" translate="false" font="font19" pivot="0 0.5" color="0 0 0" justify="Left" netHeight="true"/>
@@ -21,17 +19,17 @@
                 <Entity name="educationAndTrainingDetailsInfo">
                     <!-- M::educationAndTrainingDetailsInfo -->
                     <TextSprite text="" translate="false" font="font14" color="0 0 0" width=":textWidth10" justify="Left" interline="3"/>
-                    <Layouter sprite="TextSprite" flags="Left|Top" padding="0 -57"/>
+                    <Layouter sprite="TextSprite" parent="contentFrame.Frame" flags="Left|Top" padding="0 -57"/>
                 </Entity>
                 <!-- M::educationAndTrainingDetailsInfoShift -->
                 <Entity name="educationAndTrainingDetailsInfoShift">
                     <Entity name="educationAndTrainingDetailsLines" position="0 -95 0">
                         <!-- M::educationAndTrainingDetailsTimeFrame -->
-                        <Entity name="educationAndTrainingDetailsTimeFrame" template="detailsTextLine" _key="TEXT_TIME_FRAME_COLON" _parent="" _padding="0 0"/>
+                        <Entity name="educationAndTrainingDetailsTimeFrame" template="detailsTextLine" _key="TEXT_TIME_FRAME_COLON" _parent="contentFrame.Frame" _padding="0 0"/>
                         <!-- M::educationAndTrainingDetailsWebsite -->
-                        <Entity name="educationAndTrainingDetailsWebsite" template="detailsTextLine" _key="TEXT_WEBSITE_COLON" _parent="" _padding="0 -25"/>
+                        <Entity name="educationAndTrainingDetailsWebsite" template="detailsTextLine" _key="TEXT_WEBSITE_COLON" _parent="contentFrame.Frame" _padding="0 -25"/>
                         <!-- M::educationAndTrainingDetailsLocation -->
-                        <Entity name="educationAndTrainingDetailsLocation" template="detailsTextLine" _key="TEXT_LOCATION_COLON" _parent="" _padding="0 -50"/>
+                        <Entity name="educationAndTrainingDetailsLocation" template="detailsTextLine" _key="TEXT_LOCATION_COLON" _parent="contentFrame.Frame" _padding="0 -50"/>
                     </Entity>
                 </Entity>
             </Entity>
